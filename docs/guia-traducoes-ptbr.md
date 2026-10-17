@@ -1,77 +1,92 @@
-# 🇧🇷 Guia Mestre de Traduções PT-BR & Verificação de ROMs (Hashes)
+# 🇧🇷 Guia Completo de Traduções e Dublagens PT-BR para Ports de PC
 
-Este guia reúne tudo o que você precisa saber para colocar seus ports nativos e recompilações em **Português do Brasil (PT-BR)** sem erros de instalação, além da tabela de **Hashes SHA-1** para confirmar se a sua ROM é a versão exata exigida por cada projeto.
-
----
-
-## ⚠️ Por que o meu Port rejeitou uma ROM que já estava traduzida em PT-BR?
-
-Essa é a dúvida número 1 de quem começa a usar ports nativos de PC (como *Ship of Harkinian*, *Zelda 64 Recompiled*, *Starship*, *Zelda 3*, *BanjoRecomp*):
-
-1. **Como funcionam as traduções antigas de Emulador:** No emulador, você aplicava um patch `.ips` ou `.bps` direto na ROM (alterando os bytes e ponteiros do arquivo `.z64` ou `.sfc`).
-2. **Como funcionam os Ports Nativos e Recompilações:** O gerador do port precisa extrair funções de código e assets de posições exatas da memória da ROM original americana (`USA v1.0`). Se você fornecer uma ROM modificada com patch `.ips`, o **hash SHA-1 muda** e os ponteiros mudam de lugar, fazendo o port recusar a ROM ou travar.
-3. **A Solução Moderna (Muito Melhor!):**
-   - Sempre use a **ROM original americana limpa (`USA`)** para gerar/instalar o port.
-   - Depois de gerado, coloque o **Mod de Tradução PT-BR** (`.o2r`, `.otr`, `.nrm`, etc.) dentro da pasta `mods/` do port!
-   - Vantagens: Você pode ativar/desativar a tradução quando quiser, usar fontes em alta definição com acentuação perfeita (`ã`, `ç`, `é`) e combinar a tradução PT-BR com pacotes de texturas HD (*Reloaded*, *Djipi 3DS*) sem conflito!
+Este guia reúne o passo a passo exato e os links de onde baixar e instalar as **traduções e dublagens em Português Brasileiro (PT-BR)** para os ports nativos de console, recompilações estáticas (`PS2Recomp`, `XenonRecomp`, `ReXGlue`, `N64Recomp`, `libultraship`, `DolRecomp`) e source ports listados neste repositório.
 
 ---
 
-## 🔑 Tabela de Hashes SHA-1 das ROMs Mais Usadas
+## 📊 Legenda dos 4 Tipos de Suporte a PT-BR
 
-Você pode verificar se a sua ROM é a correta usando a opção **`[V] Verificar Hash de ROM`** no nosso script `Instalar-Ports.bat` (ou rodando `Get-FileHash -Algorithm SHA1 "sua_rom.z64"` no PowerShell):
-
-| Jogo Original | Port(s) que utilizam | Versão Exigida da ROM | Hash SHA-1 Oficial (ROM Limpa) |
-| :--- | :--- | :--- | :--- |
-| **Zelda: Ocarina of Time** | *Ship of Harkinian (SoH)* | NTSC-U 1.0 (`z64` Big Endian) ou PAL Debug | `5bd1fe107bf8106b2ab6650abecd54d6ace95755` *(USA 1.0)*<br>`cee6bc3c2a634b41728f2af8da54d9bf8cc14099` *(PAL GC MQ Debug)* |
-| **Zelda: Majora's Mask** | *2 Ship 2 Harkinian* & *Zelda 64: Recompiled* | USA v1.0 (`baserom.us.rev0.z64`) | `d6133ace5afaa0882cf214cf88daba39e266c078` |
-| **Super Mario 64** | *sm64coopdx*, *Render96ex*, *Ghostship* | USA v1.0 (`baserom.us.z64`) | `9bef1128717f958171a4afac3ed78ee2bb4e86ce` |
-| **Star Fox 64** | *Starship* | USA v1.1 / Rev A (`.z64`) | `09f0d105f476b00efa5303a3ebc42e60a7753b7a` |
-| **Mario Kart 64** | *SpaghettiKart* | USA v1.0 (`.z64`) | `579c48e211ae952530ffc8738709f078d5dd215e` |
-| **Banjo-Kazooie** | *Banjo: Recompiled* & *Lighthouse* | USA v1.0 (`.z64`) | `ded6ee166e740ad1bc810fd678a84b48e245ab80` |
-| **Perfect Dark** | *Perfect Dark PC Port* | USA v1.1 / Rev A (`pd.ntsc-final.z64`) | `af8ae8a2fb7885de2f4ed9f0b2f35f54a6c1a9f1` |
-| **Wave Race 64** | *Wave Race 64: Recompiled* | USA v1.1 / Rev A (`.z64`) | `5f4eb2e4fb27bc2e6e1eb8627a57cb35629a5fa0` |
-| **Zelda: A Link to the Past** | *Zelda 3 (`snesrev/zelda3`)* | USA (`zelda3.sfc` sem cabeçalho, 1 MB) | `6d4f10a8b10e10dbe624cb23cf03b88bb8252973` |
-| **Super Metroid** | *Super Metroid (`snesrev/sm`)* | JU / USA (`sm.smc` sem cabeçalho, 3 MB) | `da957f0d63d14cb441d215462904c4fa8519c613` |
-| **Super Mario World** | *Super Mario World (`snesrev/smw`)* | USA (`smw.sfc` sem cabeçalho, 512 KB) | `6b47bb75d16514b6a476aa0c73a683a2a4c18765` |
-| **Sonic 3 & Knuckles** | *Sonic 3 A.I.R.* | Mega Drive (`Sonic_Knuckles_wSonic3.bin`) | `fa52a9ef828bfa17fa8f9e2f20b709c3b20097a2` |
-
-> [!TIP]
-> **E se minha ROM de N64 estiver em formato `.n64` ou `.v64` (Byte-swapped)?**
-> A maioria dos ports modernos (como *Zelda64Recomp*, *Ship of Harkinian* e *BanjoRecomp*) converte ou aceita automaticamente, ou você pode converter gratuitamente no navegador usando o [Marc Robledo ROM Patcher JS / N64 Swapper](https://www.marcrobledo.com/rom-patcher-js/) para o formato **`.z64` (Big Endian)**.
+1. 🟢 **PT-BR Nativo / Oficial no Port:** O próprio executável do port ou a mídia original (como os discos brasileiros de PS4 e Xbox 360) já vem com Português Brasileiro integrado (basta escolher `Português (Brasil)` nas configurações).
+2. 🧩 **Mod Direto no Port (`.otr`, `.o2r`, `.nrm`, Mod Manager):** A tradução é um arquivo leve que você coloca na pasta `mods/` do port (ou ativa no Mod Manager próprio) **sem precisar alterar sua ROM/ISO original**.
+3. 🛠️ **Patch na ROM / ISO (`.bps`, `.xdelta`, `.ips`, `.pak`):** Você aplica a tradução na ROM/ISO (ou substitui os arquivos `.PAK`/`.WAD`) antes de o port extrair os assets.
+4. ⚪ **Sem Tradução Conhecida / Textos Mínimos:** Jogos de corrida/luta arcade com pouquíssimo texto ou projetos recentes cuja tradução ainda está em andamento.
 
 ---
 
-## 🗂️ Resumo Rápido: Onde Baixar as Principais Traduções PT-BR
+## 1. 🟢 Jogos com PT-BR 100% Nativo (Zero Configuração Extra!)
 
-### 1. Jogos que JÁ VÊM em PT-BR (Não precisa baixar nada externo!)
-- **Jak & Daxter 1, Jak II e Jak 3** ([OpenGOAL](https://opengoal.dev/)) -> Menu de Opções > Idioma > *Português (Brasil)*.
-- **Diablo 1 + Hellfire** ([DevilutionX](https://github.com/diasurgical/DevilutionX/releases)) -> Settings > Language > *Português (Brasil)*.
-- **Another Metroid 2 Remake** ([AM2RLauncher](https://github.com/AM2R-Community-Developers/AM2RLauncher/releases)) -> Options > Language > *Português*.
-- **RollerCoaster Tycoon 1 & 2** ([OpenRCT2](https://openrct2.io/)) -> Opções > Idioma > *Português (BR)*.
-- **Transport Tycoon Deluxe** ([OpenTTD](https://www.openttd.org/)) -> Opções > *Português (Brasil)*.
-- **Theme Hospital** ([CorsixTH](https://github.com/CorsixTH/CorsixTH/releases)) -> Settings > *Português (Brasil)*.
-- **Heroes of Might and Magic II** ([fheroes2](https://github.com/ihhub/fheroes2/releases)) -> Configurações > *Português*.
-- **Re-Volt** ([RVGL](https://rvgl.org/)) -> Options > Language > *Portuguese*.
-- **Doom I & II / Heretic / Hexen / Duke 3D** ([GZDoom](https://github.com/ZDoom/gzdoom/releases) / [UZDoom](https://github.com/UZDoom/UZDoom/releases) / [Raze](https://github.com/ZDoom/Raze/releases)) -> Menus e textos de sistema nativos em PT-BR.
-- **Sonic Time Twisted**, **Mega Man Maker**, **PokéMMO** -> Nativos em PT-BR nas opções.
+Estes projetos já trazem **Português Brasileiro** (muitos inclusive com **Dublagem Oficial Brasileira!**) direto de fábrica:
 
-### 2. Mods `.o2r` / `.otr` / `.nrm` (Arrastar para a pasta `mods/`)
-- **Zelda: Ocarina of Time (*Ship of Harkinian*)**: [GameBanana - SoH Complete Translations](https://gamebanana.com/mods/cats/17165) (*PT-BR Translation* por LordeJabiraca / *Pt-Br OoT HD & Djipi 3DS* por EduardoA).
-- **Zelda: Majora's Mask (*2 Ship 2 Harkinian*)**: [GameBanana - 2S2H Mods](https://gamebanana.com/games/20369) (*Brazilian Portuguese translation mod* por Srchronotrigger & GhostlyDark).
-- **Zelda: Majora's Mask (*Zelda 64: Recompiled*)**: [GameBanana - Zelda 64 Recompiled](https://gamebanana.com/games/20420) / [Thunderstore](https://thunderstore.io/c/zelda-64-recompiled/) (*Tradução Pt-Br Majora's Mask Recompiled* `.nrm` por EduardoA).
-- **Banjo-Kazooie (*Banjo: Recompiled*)**: [GameBanana - Banjo Recompiled](https://gamebanana.com/games/21188) / [Thunderstore](https://thunderstore.io/c/banjo-recompiled/) (*Banjo-Kazooie: Recomp PtBr* `.nrm`).
-- **Star Fox 64 (*Starship*)**: [GameBanana - Starship](https://gamebanana.com/games/21291) (Tradução e Dublagem PT-BR `.o2r`).
-- **Super Mario 64 (*sm64coopdx*)**: [GameBanana - Localização Brasileira SM64COOPDX](https://gamebanana.com/mods/505265).
-- **Sonic Unleashed (*Unleashed Recompiled*)**: [GameBanana - Sonic Unleashed](https://gamebanana.com/games/6465) (*Sonic Braleashed* — Legenda + Dublagem PT-BR via [HedgeModManager](https://github.com/thesupersonic16/HedgeModManager/releases)).
-- **Sonic Mania Plus (*RSDKv5*)**: [GameBanana - Sonic Mania](https://gamebanana.com/games/6059) (*Sonic Mania Plus - PT-BR Translation Mod*).
-- **Sonic 3 & Knuckles (*Sonic 3 A.I.R.*)**: [GameBanana - Sonic 3 A.I.R.](https://gamebanana.com/games/7342) (*[PT-BR] HUD em Português / Brasonic 3 A.I.R.*).
+| Jogo / Projeto | O que está em PT-BR? | Como ativar |
+| :--- | :--- | :--- |
+| **God of War III Remastered (`gow3_pc`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Use o dump da edição brasileira/latina (`CUSA01623`). O idioma já inicia em PT-BR nativamente! |
+| **Shadow of the Colossus Remake (`ShadowOfTheColossus-PC`)** | 📝 **Legendas e Menus Oficiais em PT-BR** | Já incluso nativamente nos arquivos do Remake (`CUSA08809`). |
+| **Bloodborne (`bloodborne_pc`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso nativamente no dump de *Bloodborne GOTY* (`CUSA03173` / `CUSA00900`). |
+| **MediEvil Remake (`medievil_2019_pc_port`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso nativamente nos arquivos do jogo. |
+| **Forza Horizon 1 (`pinyon-shift` / `FH1-ReImagined`) & Forza Horizon 2 (`fh2-recompiled`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Gears of War: Judgment (`gears-judgement-recomp`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Viva Piñata: Trouble in Paradise (`TiP-Recomp`)** | 🎙️ **Dublagem Oficial Brasileira + Textos PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Jak and Daxter 1, Jak II e Jak 3 (`OpenGOAL`)** | 📝 **Menus, Diálogos e Legendas 100% em PT-BR** | No menu de opções do jogo no **OpenGOAL**, mude o idioma de texto/legenda para **Português (Brasil)**. |
+| **Silent Hill 2 (`Enhanced Edition`)** | 📝 **Menus, Cartas, Enigmas e Legendas 100% em PT-BR** | Durante o instalador oficial (`SH2EE Setup`), marque o pacote de idioma **Brazilian Portuguese**. |
+| **The Legend of Dragoon (`Severed Chains`)** | 📝 **Tradução PT-BR Completa (+ Projeto de Dublagem)** | Parceria oficial com a equipe brasileira **Projeto Dragoon** (`projeto-dragoon.com.br`). |
+| **Crash of the Titans (`MojoRecomp`)** | 📝 **Menus e Legendas 100% em PT-BR** | Criado pelo próprio tradutor brasileiro **OAleex**, com suporte nativo à sua tradução PT-BR! |
+| **Diablo 1 + Hellfire (`DevilutionX`)** | 📝 **100% em PT-BR** (+ pacote de dublagem PT-BR opcional) | Selecione `Português (Brasil)` em *Settings > Language*. |
+| **AM2R (Another Metroid 2 Remake)** | 📝 **Menus e Logs 100% em PT-BR** | Selecione `Português` nas opções de idioma do jogo. |
+| **OpenRCT2 / OpenTTD / CorsixTH / fheroes2 / VCMI** | 📝 **100% em PT-BR** | Selecione `Portuguese (Brazilian)` nas opções do launcher/jogo. |
+| **Grim Fandango / Full Throttle / The Dig (`ScummVM`)** | 🎙️ **Dublagem Clássica Oficial da Brasoft em PT-BR!** | Use os CDs brasileiros originais distribuídos pela Brasoft nos anos 90. |
 
-### 3. Traduções e Dublagens Clássicas / Nexus Mods / ModDB
-- **Caesar III (*Julius & Augustus*)**: [Wiki Oficial do Julius - Language Patches](https://github.com/bvschaik/julius/wiki/Language-patches) (Tradução e Dublagem clássica PT-BR da Brasoft!).
-- **Half-Life 1 (*Xash3D FWGS*)**: [ModDB - Half-Life Dublado PT-BR (Mesa Preta Dubs)](https://www.moddb.com/mods/half-life-dublado-pt-br).
-- **Grim Fandango, Full Throttle, Monkey Island 1-3, The Dig, Day of the Tentacle (*ScummVM*)**: [Grupo ScummBR](http://www.scummbr.org/).
-- **Morrowind (*OpenMW*)**: [Nexus Mods - Morrowind PT-BR](https://www.nexusmods.com/morrowind).
-- **Daggerfall (*Daggerfall Unity*)**: [Nexus Mods - Tradução Daggerfall Unity #565](https://www.nexusmods.com/daggerfallunity/mods/565).
-- **Fallout 1 & 2 (*fallout1-ce / fallout2-ce*)**: [GitHub fpaganini/Fallout_ptbr](https://github.com/fpaganini/Fallout_ptbr) e [Nexus Mods Fallout 2](https://www.nexusmods.com/fallout2/mods).
-- **GTA III & Vice City (*re3 / reVC*)**: [MixMods - Traduções PT-BR re3/reVC](https://www.mixmods.com.br/).
+---
+
+## 2. 🧩 Como Instalar Mods PT-BR nos Ports de N64, Xbox 360 e GameCube/Wii U
+
+### A. Ship of Harkinian (Ocarina of Time) & 2Ship2Harkinian (Majora's Mask)
+1. Gere o seu arquivo base normalmente com uma ROM original (**sem patch**) do jogo.
+2. Baixe o pacote de tradução PT-BR no **GameBanana**:
+   * **Ocarina of Time (SoH):** [Tradução PT-BR `.otr` / `.o2r`](https://gamebanana.com/mods/473895)
+   * **Majora's Mask (2S2H):** [Tradução PT-BR `.o2r`](https://gamebanana.com/mods/542278)
+3. Coloque o arquivo `.otr` ou `.o2r` baixado dentro da pasta `mods/` (localizada junto ao executável do port).
+4. Abra o jogo, pressione `Esc` (ou `F1`) para abrir a barra superior -> *Settings* -> **Languages** e ative a opção do mod PT-BR (ou reinicie o jogo com o mod ativo).
+
+### B. Zelda64: Recompiled & Banjo: Recompiled (`N64Recomp`)
+Os projetos baseados no `N64Recomp` suportam mods nativos no formato **`.nrm`** (basta arrastar e soltar na tela de Mods do jogo!):
+* **Zelda64: Recompiled (Majora's Mask):** Baixe o [Mod `.nrm` PT-BR no GameBanana (#678789)](https://gamebanana.com/mods/678789) e clique em **Mods -> Install Mod** no menu inicial.
+* **Banjo: Recompiled (Banjo-Kazooie):** Baixe o [Mod `.nrm` PT-BR no GameBanana (#678790)](https://gamebanana.com/mods/678790) e instale pelo menu **Mods** do jogo.
+
+### C. Xbox 360 Recomps (`UnleashedRecomp`, `re:Blue`, `LostOdysseyRecomp`, `Fable2Recomp`, `DownpourRecomp`)
+* **Sonic Unleashed (`UnleashedRecomp`):** Use o **HedgeModManager** para instalar o mod **Sonic Braleashed (Tradução PT-BR)** e a **Dublagem Projeto Lobão** disponíveis na seção [Sonic Unleashed do GameBanana](https://gamebanana.com/games/6475).
+* **Blue Dragon (`re:Blue`):** Compatível com a tradução 100% PT-BR feita por **LeandroCiC** (disponível no *Romhacking.net.br* e *João13 Traduções*).
+* **Lost Odyssey (`LostOdysseyRecomp`):** Possui pacote completo de tradução PT-BR (incluindo os contos "Mil Anos de Sonhos" e dublagem IA opcional) feito especificamente para o *LostOdysseyRecomp*.
+* **Fable II (`Fable-2-Recomp`):** Compatível com a localização PT-BR da edição GOTY liderada por **Dio Carvalho** (GitHub / Romhacking.net.br).
+* **Silent Hill: Downpour (`DownpourRecomp`), Dante's Inferno (`hells-gate-recomp`) & Condemned 2 (`Condemned2Recomp`):** Compatíveis com as traduções de Xbox 360 disponíveis na **Tribo Gamer** e **João13 Traduções**.
+
+### D. GameCube & Wii U Ports (`ZeldaWWHDRecomp`, `Dusklight`, `Nebula`, `sms-pc-port`)
+* **The Wind Waker HD (`ZeldaWWHDRecomp` / `SwitchWakerHD`):** Baixe a tradução PT-BR de Wii U da equipe **Triforce Heroes Traduções** e aplique na pasta `content/` do seu dump do Wii U.
+* **Twilight Princess (`Dusklight`):** Compatível com pacotes de localização e com a tradução PT-BR de GameCube (Central de Traduções / Tribo Gamer).
+* **Super Mario Galaxy (`Nebula`) & Mario Kart Wii (`WiiCompiled`):** Compatíveis com as traduções PT-BR de Wii dos grupos *Brazilian Warriors / Nintendo BR* e *Guilherme Dias* (*João13 Traduções*).
+* **Super Mario Sunshine (`sms-pc-port`):** Compatível com a tradução PT-BR de GameCube (geralmente selecionando o idioma Espanhol nas opções do jogo após aplicar o patch).
+
+---
+
+## 3. 🛠️ Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
+
+### A. Recompilações de PS2 (`PS2Recomp`) — *God of War 1 & 2, Shadow of the Colossus, Urban Reign, Burnout 3*
+Como os projetos baseados em `PS2Recomp` traduzem o executável principal (`SCUS`/`SLUS`) para C++ nativo, mas **carregam os arquivos de dados (`.PAK`, `.WAD`, `.DAT`, `.STR`) diretamente da ISO**:
+* **God of War 1 (`god-of-war-recomp`) & God of War II (`gow2-recomp`):** Você pode substituir os arquivos `GOW1.PAK` / `GOW2.PAK` (ou usar a ISO `SCUS-97399` / `SCUS-97481` modificada) pela **Tradução PT-BR v4.4 do OAleex Traduções** ou pela **Dublagem PT-BR da STR Brasil**!
+* **Burnout 3 (`burnout3-pc`), Urban Reign (`urban-reign-recomp`), Castlevania: Curse of Darkness (`noble-archimedes`) e Resident Evil Code: Veronica X (`recvx-decomp`):** Compatíveis com as ISOs traduzidas em PT-BR disponíveis no *João13 Traduções*, *Romhacking.net.br* e *Central de Traduções*.
+
+### B. Recompilações e Ports de PS1 (`PSXRecomp`, `SymphonyRecomp`, `REDRIVER2`, `Classic REbirth`)
+* **Castlevania: Symphony of the Night (`SymphonyRecomp`):** Aceita a imagem `.bin/.cue` americana (`SLUS-00067`) com as clássicas traduções e dublagens PT-BR aplicadas!
+* **Driver 2 (`REDRIVER2`) & Legacy of Kain: Soul Reaver (`soul-reaver-recomp`):** Aceitam os CDs com as lendárias **Dublagens Brasileiras de PS1**!
+* **Resident Evil 1, 2, 3 & Dino Crisis 1, 2 (`Classic REbirth` / `Project-RE-Visited-RE3`):** Possuem pacotes completos de legendas PT-BR e dublagens brasileiras.
+
+### C. Ports Nativos de SNES (`zelda3`, `smw`, `snesrecomp`)
+* **Zelda: A Link to the Past (`snesrev/zelda3`):** Ao rodar o extrator de assets, você pode passar uma ROM já traduzida em PT-BR ou configurar o `zelda3.ini` para carregar o pacote de diálogos traduzidos!
+* **Super Mario World (`snesrev/smw`), Super Metroid (`SuperMetroidRecomp`), DKC 1/2/3 (`DKCRecomp`) e International Superstar Soccer Deluxe (`issd-native`):** Compatíveis com patches de tradução PT-BR na ROM.
+
+---
+
+## 🌐 Onde Encontrar Traduções e Dublagens Confiáveis no Brasil
+* [**GameBanana**](https://gamebanana.com/) — Principal hub de mods `.otr`, `.o2r` e `.nrm` para ports de N64, Xbox 360 e Sonic.
+* [**Fórum Unificado de Romhacking e Tradução (FURT / Romhacking.net.br)**](https://www.romhacking.net.br/) — Maior arquivo histórico de patches `.ips`, `.bps` e `.xdelta` para ROMs e ISOs no Brasil.
+* [**Central de Traduções**](https://www.centraldetraducoes.net.br/) & [**Tribo Gamer**](https://tribogamer.com/traducoes/) — Principais portais para traduções de PC, PS2, PS3, Xbox 360 e GameCube.
+* [**OAleex Traduções**](https://oaleex.blogspot.com/) — Referência em traduções de *God of War 1 & 2*, *Crash* e criador do *MojoRecomp*.
