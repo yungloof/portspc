@@ -1,0 +1,33 @@
+# Pasta de jogos baixados sob demanda pelo instalador
+Jogos_Instalados/
+
+# ROMs, ISOs e arquivos proprietários de jogos (NUNCA comitar)
+*.z64
+*.n64
+*.v64
+*.sfc
+*.smc
+*.nes
+*.nds
+*.3ds
+*.cia
+*.iso
+*.bin
+*.cue
+*.chd
+*.rvz
+*.wux
+*.rpx
+*.mpq
+*.wad
+*.pk3
+*.pk4
+*.o2r
+*.otr
+*.nrm
+*.rsdk
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+*.tmp
