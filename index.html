@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortsPC — O Catálogo Definitivo de Ports para PC (com Guia PT-BR)</title>
+  <style>
+    :root {
+      --bg: #0B0F19;
+      --card-bg: #111827;
+      --card-hover: #1F2937;
+      --border: #1F2937;
+      --border-hover: #4F46E5;
+      --text-main: #F9FAFB;
+      --text-muted: #94A3B8;
+      --primary: #6366F1;
+      --primary-hover: #4F46E5;
+      --emerald: #10B981;
+      --amber: #F59E0B;
+      --blue: #0284C7;
+      --red: #DC2626;
+      --xbox: #107C10;
+      --ps: #00439C;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding: 0;
+    }
+
+    header {
+      background: #111827;
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #FFF;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-badge {
+      background: var(--primary);
+      color: #FFF;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .search-bar {
+      flex: 1;
+      max-width: 450px;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 100%;
+      background: #1E293B;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 0.6rem 1rem 0.6rem 2.5rem;
+      color: #FFF;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--primary);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.85rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .filter-bar {
+      background: #0D131F;
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 2rem;
+    }
+
+    .filter-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .category-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      background: #1E293B;
+      color: var(--text-muted);
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .chip:hover {
+      background: #2D3748;
+      color: #FFF;
+    }
+
+    .chip.active {
+      background: var(--primary);
+      color: #FFF;
+      border-color: var(--primary);
+    }
+
+    .ptbr-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--emerald);
+      cursor: pointer;
+    }
+
+    .ptbr-toggle input {
+      accent-color: var(--emerald);
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 1.5rem auto;
+      padding: 0 2rem;
+    }
+
+    .stats-bar {
+      margin-bottom: 1.25rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .desktop-app-banner {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(16, 185, 129, 0.1));
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .desktop-app-text h3 {
+      font-size: 1.1rem;
+      color: #FFF;
+      margin-bottom: 0.25rem;
+    }
+
+    .desktop-app-text p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn-download-app {
+      background: var(--primary);
+      color: #FFF;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-download-app:hover {
+      background: var(--primary-hover);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-hover);
+      background: var(--card-hover);
+    }
+
+    .card-top {
+      margin-bottom: 0.75rem;
+    }
+
+    .platform-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      color: #FFF;
+    }
+
+    .badge-ps { background: var(--ps); }
+    .badge-xbox { background: var(--xbox); }
+    .badge-nintendo { background: var(--red); }
+    .badge-pc { background: #7C3AED; }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #FFF;
+      margin-bottom: 0.35rem;
+    }
+
+    .card-requires {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .ptbr-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+    }
+
+    .ptbr-dublado { background: rgba(16, 185, 129, 0.2); color: #34D399; border: 1px solid rgba(16, 185, 129, 0.4); }
+    .ptbr-nativo { background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .ptbr-mod { background: rgba(2, 132, 199, 0.2); color: #38BDF8; border: 1px solid rgba(2, 132, 199, 0.4); }
+    .ptbr-patch { background: rgba(245, 158, 11, 0.2); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .ptbr-ingles { background: rgba(100, 116, 139, 0.2); color: #94A3B8; border: 1px solid rgba(100, 116, 139, 0.3); }
+
+    .card-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-action {
+      background: #1E293B;
+      color: #FFF;
+      border: 1px solid #334155;
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-action:hover {
+      background: #334155;
+    }
+
+    .btn-action.primary {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .btn-action.primary:hover {
+      background: var(--primary-hover);
+    }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #111827;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      max-width: 650px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover {
+      color: #FFF;
+    }
+
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #FFF;
+      margin-bottom: 0.5rem;
+    }
+
+    .modal-category {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .modal-section {
+      margin-bottom: 1.25rem;
+    }
+
+    .modal-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .modal-section-title.amber { color: var(--amber); }
+    .modal-section-title.emerald { color: var(--emerald); }
+
+    .modal-section-text {
+      font-size: 0.95rem;
+      color: #CBD5E1;
+      background: #1E293B;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #334155;
+    }
+
+    .modal-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .modal-btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: none;
+    }
+
+    .modal-btn.primary { background: var(--primary); color: #FFF; }
+    .modal-btn.primary:hover { background: var(--primary-hover); }
+    .modal-btn.secondary { background: #1E293B; color: #FFF; border: 1px solid #334155; }
+    .modal-btn.secondary:hover { background: #334155; }
+    .modal-btn.ptbr { background: var(--emerald); color: #FFF; }
+    .modal-btn.ptbr:hover { background: #059669; }
+
+    @media (max-width: 768px) {
+      .header-container { flex-direction: column; align-items: stretch; }
+      .search-bar { max-width: 100%; }
+      .filter-container { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <div class="logo-title">🎮 PortsPC</div>
+        <span class="logo-badge">Catálogo Definitivo</span>
+      </div>
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Buscar jogo, plataforma ou franquia...">
+      </div>
+    </div>
+  </header>
+
+  <div class="filter-bar">
+    <div class="filter-container">
+      <div class="category-chips">
+        <button class="chip active" onclick="setCategory('Todos', this)">Todos</button>
+        <button class="chip" onclick="setCategory('PlayStation', this)">PlayStation</button>
+        <button class="chip" onclick="setCategory('Xbox', this)">Xbox</button>
+        <button class="chip" onclick="setCategory('Nintendo', this)">Nintendo</button>
+        <button class="chip" onclick="setCategory('PC & Outros', this)">PC & Outros</button>
+        <button class="chip" onclick="setCategory('Fangames', this)">Fangames</button>
+      </div>
+      <label class="ptbr-toggle">
+        <input type="checkbox" id="ptbrOnly" onchange="togglePtbr(this.checked)">
+        <span>🇧🇷 Apenas com PT-BR</span>
+      </label>
+    </div>
+  </div>
+
+  <main>
+    <div class="desktop-app-banner">
+      <div class="desktop-app-text">
+        <h3>🚀 Prefere um programa nativo de verdade no Windows?</h3>
+        <p>Criamos o <strong>PortsPC.exe</strong> (aplicativo desktop com tema escuro de jogos, pesquisa instantânea e instalador de 1 clique que poupa seu HD!).</p>
+      </div>
+      <a href="https://github.com/yungloof/portspc/raw/main/PortsPC.exe" class="btn-download-app">
+        📥 Baixar PortsPC.exe (32 KB)
+      </a>
+    </div>
+
+    <div class="stats-bar">
+      <span id="statsCount">Carregando catálogo...</span>
+      <span>GitHub: <a href="https://github.com/yungloof/portspc" style="color: var(--primary); text-decoration: none;" target="_blank">yungloof/portspc</a></span>
+    </div>
+
+    <div class="grid" id="gamesGrid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="gameModal" onclick="closeModalOnBg(event)">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-title" id="mTitle"></div>
+      <div class="modal-category" id="mCat"></div>
+
+      <div class="modal-section">
+        <div class="modal-section-title amber">📋 O Que Você Precisa (ROM / ISO / DUMP):</div>
+        <div class="modal-section-text" id="mReq"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title emerald">🇧🇷 Português Brasileiro (PT-BR):</div>
+        <div class="modal-section-text">
+          <div style="font-weight: 700; margin-bottom: 0.4rem;" id="mPtStatus"></div>
+          <div id="mPtDetails"></div>
+        </div>
+      </div>
+
+      <div class="modal-buttons">
+        <a id="mWebBtn" class="modal-btn secondary" target="_blank">🌐 GitHub / Site Oficial</a>
+        <a id="mPtbrBtn" class="modal-btn ptbr" target="_blank" style="display: none;">🇧🇷 Baixar Tradução / Mod</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let allGames = [];
+    let currentCategory = 'Todos';
+    let onlyPtbr = false;
+
+    fetch('catalog.json')
+      .then(res => res.json())
+      .then(data => {
+        allGames = data;
+        renderGames();
+      })
+      .catch(err => {
+        document.getElementById('statsCount').innerText = 'Erro ao carregar catalog.json: ' + err.message;
+      });
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      renderGames();
+    }
+
+    function togglePtbr(val) {
+      onlyPtbr = val;
+      renderGames();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', () => {
+      renderGames();
+    });
+
+    function getPlatformClass(platform) {
+      platform = platform || '';
+      if (platform.includes('PS')) return 'badge-ps';
+      if (platform.includes('Xbox')) return 'badge-xbox';
+      if (['Switch', 'Wii', 'GameCube', 'N64', 'SNES', 'NES', 'GBA'].some(p => platform.includes(p))) return 'badge-nintendo';
+      return 'badge-pc';
+    }
+
+    function getPtbrBadge(status) {
+      status = status || '';
+      if (status.includes('Dublad')) return { cls: 'ptbr-dublado', text: '🎙️ ' + status };
+      if (status.includes('Nativo')) return { cls: 'ptbr-nativo', text: '🟢 ' + status };
+      if (status.includes('Mod')) return { cls: 'ptbr-mod', text: '🧩 ' + status };
+      if (status.includes('Tradução') || status.includes('ISO')) return { cls: 'ptbr-patch', text: '🛠️ ' + status };
+      return { cls: 'ptbr-ingles', text: '⚪ ' + status };
+    }
+
+    function renderGames() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      const grid = document.getElementById('gamesGrid');
+      grid.innerHTML = '';
+
+      const filtered = allGames.filter(g => {
+        // Category filter
+        if (currentCategory === 'PlayStation' && !g.category.toLowerCase().includes('playstation')) return false;
+        if (currentCategory === 'Xbox' && !g.category.toLowerCase().includes('xbox')) return false;
+        if (currentCategory === 'Nintendo' && !(g.category.toLowerCase().includes('nintendo') || g.category.toLowerCase().includes('gamecube') || g.category.toLowerCase().includes('harbour masters'))) return false;
+        if (currentCategory === 'PC & Outros' && !g.category.toLowerCase().includes('source ports')) return false;
+        if (currentCategory === 'Fangames' && !g.category.toLowerCase().includes('fangames')) return false;
+
+        // PTBR filter
+        if (onlyPtbr) {
+          const pt = (g.ptbr_status || '').toLowerCase();
+          if (pt.includes('em inglês') || pt.includes('textos mínimos') || pt.includes('luta arcade') || pt.includes('corrida simulação')) return false;
+        }
+
+        // Search query
+        if (query) {
+          const haystack = (g.name + ' ' + g.game + ' ' + g.platform + ' ' + g.category + ' ' + g.ptbr_status).toLowerCase();
+          if (!haystack.includes(query)) return false;
+        }
+
+        return true;
+      });
+
+      document.getElementById('statsCount').innerText = `Exibindo ${filtered.length} de ${allGames.length} jogos catalogados`;
+
+      filtered.forEach((game, idx) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.onclick = () => openModal(game);
+
+        const pt = getPtbrBadge(game.ptbr_status);
+
+        card.innerHTML = `
+          <div class="card-top">
+            <span class="platform-badge ${getPlatformClass(game.platform)}">${game.platform}</span>
+            <div class="card-title">${game.name}</div>
+            <div class="card-requires">${game.requires}</div>
+          </div>
+          <div>
+            <div class="ptbr-badge ${pt.cls}">${pt.text}</div>
+            <div class="card-footer">
+              <span style="font-size: 0.8rem; color: var(--text-muted);">${game.category.split('(')[0]}</span>
+              <button class="btn-action primary" onclick="event.stopPropagation(); openModal(allGames.find(x => x.id === '${game.id}'))">Detalhes</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function openModal(game) {
+      document.getElementById('mTitle').innerText = game.name;
+      document.getElementById('mCat').innerText = `Plataforma: ${game.platform} | Categoria: ${game.category}`;
+      document.getElementById('mReq').innerText = game.requires;
+      document.getElementById('mPtStatus').innerText = game.ptbr_status;
+      document.getElementById('mPtDetails').innerText = game.ptbr_details;
+
+      const webBtn = document.getElementById('mWebBtn');
+      webBtn.href = game.website;
+
+      const ptBtn = document.getElementById('mPtbrBtn');
+      if (game.ptbr_url) {
+        ptBtn.href = game.ptbr_url;
+        ptBtn.style.display = 'inline-flex';
+      } else {
+        ptBtn.style.display = 'none';
+      }
+
+      document.getElementById('gameModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('gameModal').classList.remove('active');
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'gameModal') closeModal();
+    }
+  </script>
+</body>
+</html>

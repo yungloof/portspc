@@ -21,12 +21,17 @@ Bem-vindo ao **PortsPC**! Este repositório é um catálogo **100% atualizado (O
 
 ---
 
-## 🚀 Como Usar o Instalador Sob Demanda (Windows)
+## 🚀 Como Usar o Launcher com Interface Gráfica (`PortsPC.exe`)
 
-Não quer caçar links no GitHub nem lotar seu disco?
-1. Dê dois cliques em **`Instalar-Ports.bat`** (ou rode `powershell -ExecutionPolicy Bypass -File .\scripts\portspc.ps1`).
-2. Escolha a categoria ou digite o número do port desejado (mais de **100 projetos configurados** no [`catalog.json`](catalog.json)!).
-3. O script baixa apenas o executável oficial mais recente para `F:\Jogos\PortsPC\<id-do-port>`, extrai os arquivos, **remove o `.zip` temporário imediatamente** para poupar espaço no seu disco `F:` e exibe na tela exatamente qual ROM/ISO você precisa e **como ativar o PT-BR**!
+Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, um programa Windows nativo, leve (apenas 32 KB!) e com interface moderna em tema escuro de jogos:
+
+1. **Dê dois cliques em [`PortsPC.exe`](PortsPC.exe)** (já compilado e pronto na raiz da pasta, sem precisar instalar nada!).
+2. **Navegue visualmente pelos cards:** pesquise pelo nome do jogo, filtre por console (`PlayStation`, `Xbox`, `Nintendo`, `PC`, `Fangames`) ou marque a opção **`🇧🇷 Somente com PT-BR`**.
+3. **Instalação em 1 Clique:** selecione qualquer jogo e clique em **`📥 Instalar Jogo`**. O launcher baixa a versão oficial mais recente direto do GitHub com barra de progresso em tempo real, extrai para `F:\Jogos\PortsPC\<jogo>`, **apaga o `.zip` temporário na mesma hora** para poupar os 200 GB do seu disco `F:`, gera o guia de instruções e abre a pasta do jogo!
+4. **Links Rápidos:** botões integrados para abrir a pasta do jogo instalada, ver o repositório oficial no GitHub ou baixar mods de tradução e dublagem PT-BR no GameBanana.
+
+> 🌐 **Versão Web Interativa (Navegador / Celular / Steam Deck):**  
+> Prefere navegar pelo browser ou compartilhar com amigos? Abra o [`index.html`](index.html) ou acesse via GitHub Pages para pesquisar e filtrar todos os jogos catalogados com design responsivo!
 
 ---
 
