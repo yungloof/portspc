@@ -45,4 +45,35 @@ Este guia reúne **todos os projetos de Ports Nativos, Recompilações Estática
 | **Luigi's Mansion** | [**lm-decomp** (`theplayerrolo/lm-decomp`)](https://github.com/theplayerrolo/lm-decomp) | GameCube | 🚧 **Descompilação avançada / Port em dev** | 🟢 **Tradução PT-BR 100% Completa!** (*JumpManClub Brasil*) |
 | **Paper Mario: The Thousand-Year Door** | [**doldecomp/ttyd**](https://github.com/doldecomp/ttyd) | GameCube | 🚧 **Descompilação avançada** | 🟢 **Tradução PT-BR Completa** (GC por *SBraz Gamer* e Switch) |
 | **Mario Kart: Double Dash!!** | [**doldecomp/mkdd**](https://github.com/doldecomp/mkdd) | GameCube | 🚧 **Descompilação em andamento** | 🟢 Possui tradução PT-BR na ISO |
-| **Star Fox Adventures** | [**SFA-Decomp** (`zcanann/SFA-Decomp`)](https://github.com/zcanann/SFA-Decomp) | GameCube | 🚧 **Descompilação em andamento** | 🟢 Possui tradução PT-BR na ISO |
+| **Star Fox Adventures** | [**SFA-Decomp**](https://github.com/zcanann/SFA-Decomp) | GameCube | 🚧 **Descompilação em andamento** | 🟢 Possui tradução PT-BR na ISO |
+
+---
+
+## 🥊 Parte 3: Franquia Super Smash Bros. no PC (Ultimate, Melee, Brawl, Smash 4 e 64)
+
+Todos os projetos de ports nativos, recompilações estáticas, descompilações e pacotes standalone para a franquia **Super Smash Bros.** no PC, com suporte a **Português Brasileiro (PT-BR)**:
+
+| Jogo | Projeto & Links Oficiais | Plataforma Base | Tipo de Port / Tecnologia | Status Atual | 🇧🇷 Suporte a PT-BR |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Super Smash Bros. Ultimate** | [**ssbu-recomp** (`Denkishi/ssbu-recomp`)](https://github.com/Denkishi/ssbu-recomp)<br>[**WindowSmash** (`SNO2207/WindowSmash`)](https://github.com/SNO2207/WindowSmash)<br>[**ssbu-decomp** (`sbergeron42/ssbu-decomp`)](https://github.com/sbergeron42/ssbu-decomp) | Nintendo Switch (v13.0.4) | Recompilação Estática AArch64 -> x64 nativo no Windows (Vulkan / D3D11 / SDL) & Decomp C++ | ✅ **Ativo / Jogável** — Execução nativa x64 direta, sem overhead de interpretador/JIT de emulador, suporte a scripts de lutadores editáveis em C++ | 🟢 **Mod PT-BR Completo (Textos + Dublagem do Narrador!)**:<br>• Mod [*SSBU Traduzido pra PT-BR*](https://gamebanana.com/mods/402324) (Menus, Espíritos, Regras)<br>• Mod [*Brazilian Dub (Dublagem PT-BR)*](https://gamebanana.com/sounds/58580) (Narrador e anúncios de vitória!) |
+| **Super Smash Bros. Ultimate (HDR)** | [**HewDraw Remix (HDR)** (`HDR-Development/HewDraw-Remix`)](https://github.com/HDR-Development/HewDraw-Remix)<br>[**HDR Releases**](https://github.com/HDR-Development/HDR-Releases) | Nintendo Switch (PC Standalone) | Overhaul Competitivo Standalone para PC com Rollback Netcode | ✅ **100% Jogável** — Wavedash, L-cancel, novos movimentos, rollback netcode online no PC | 🟢 Compatível com pacotes de tradução PT-BR via Arcropolis |
+| **Super Smash Bros. Melee** | [**melee-pc** (`999sian/melee-pc`)](https://github.com/999sian/melee-pc)<br>[**Melee Unlocked** (`Hero88go/melee-unlocked`)](https://github.com/Hero88go/melee-unlocked)<br>[**Project Slippi** (`project-slippi/slippi-launcher`)](https://slippi.gg/)<br>[**doldecomp/melee**](https://github.com/doldecomp/melee) | GameCube (`GALE01` v1.02) | Port Nativo via `Aurora` (Vulkan/Metal/D3D12/SDL3) e Standalone Rollback Netcode | ✅ **100% Jogável e Competitivo** — Matchmaking global instantâneo, 60 FPS cravados, input lag menor que o console original | 🟡 Menus e troféus em português via patches na ISO |
+| **Super Smash Bros. Brawl / Project+** | [**Project+ (P+)** (`projectplusgame.com`)](https://projectplusgame.com/)<br>[**Project-Plus Repo**](https://github.com/projectplus/Project-Plus) | Wii (`RSBE01`) | Standalone PC Launcher com Rollback Netcode integrado | ✅ **100% Jogável** — Equilíbrio competitivo profissional, física aprimorada, online rollback | 🟡 Jogo arcade de luta focado em gameplay |
+| **Super Smash Bros. for Wii U (Smash 4)** | [**Smash 4 PC Standalone Setup**](https://github.com/cemu-project/Cemu) | Wii U | Standalone x64 com Async Shaders, 4K/Ultrawide e Mods | ✅ **100% Jogável** — 60 FPS 4K, suporte completo a controles de GameCube | 🟢 Menus e nomes de lutadores traduzidos |
+| **Super Smash Bros. 64** | [**BattleShip** (`JRickey/BattleShip`)](https://github.com/JRickey/BattleShip)<br>[**smash64r** (`zestydevy/smash64r`)](https://github.com/zestydevy/smash64r)<br>[**ssb-decomp-re**](https://github.com/VetriTheRetri/ssb-decomp-re) | Nintendo 64 | Port Nativo via `libultraship` (`BattleShip`) e Recompilação Estática `N64Recomp` + `RT64` | ✅ **100% Jogável** — Widescreen 16:9/21:9, 60+ FPS, Ray Tracing opcional, input nativo | 🟢 Compatível com a tradução PT-BR da ROM de N64 |
+
+---
+
+### 📦 Como Rodar Super Smash Bros. Ultimate com Tradução e Dublagem PT-BR no PC
+
+1. **Dump dos Arquivos Originais:**
+   * Obtenha o dump legal do jogo base atualizado para a versão **13.0.4** (`01006A800016E000`).
+2. **Execução no PC:**
+   * **Via `ssbu-recomp` / `WindowSmash`:** Coloque os binários descompactados e os assets na pasta do executável do `ssbu-recomp`.
+   * **Via Standalone HDR / Arcropolis:** Se estiver usando o launcher competitivo do **HewDraw Remix (HDR)**, o jogo roda direto com rollback netcode.
+3. **Instalação do Mod PT-BR (Textos + Dublagem do Narrador):**
+   * Baixe o mod de tradução [**SSBU Traduzido pra PT-BR** no GameBanana](https://gamebanana.com/mods/402324).
+   * Baixe o mod de dublagem [**Brazilian Dub (Dublagem PT-BR)** no GameBanana](https://gamebanana.com/sounds/58580).
+   * Extraia os arquivos para a pasta `ultimate/mods/` (ou `atmosphere/contents/01006A800016E000/romfs/`).
+   * Ao abrir o jogo, todos os menus, nomes de espíritos, regras e **a voz do Narrador ao anunciar os personagens e a vitória** estarão 100% em **Português do Brasil**!
+

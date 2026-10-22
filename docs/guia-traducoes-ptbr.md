@@ -65,6 +65,16 @@ Os projetos baseados no `N64Recomp` suportam mods nativos no formato **`.nrm`** 
 * **Super Mario Galaxy (`Nebula`) & Mario Kart Wii (`WiiCompiled`):** Compatíveis com as traduções PT-BR de Wii dos grupos *Brazilian Warriors / Nintendo BR* e *Guilherme Dias* (*João13 Traduções*).
 * **Super Mario Sunshine (`sms-pc-port`):** Compatível com a tradução PT-BR de GameCube (geralmente selecionando o idioma Espanhol nas opções do jogo após aplicar o patch).
 
+### E. Super Smash Bros. Ultimate no PC (`ssbu-recomp` / `WindowSmash` / `smash-ultimate-hdr`)
+* **Tradução Completa de Menus e Regras:** Baixe o mod [**SSBU Traduzido pra PT-BR** no GameBanana (#402324)](https://gamebanana.com/mods/402324). Esse mod substitui as mensagens do sistema, nomes de golpes, regras de torneio, espíritos e modo aventura para o Português do Brasil.
+* **Dublagem Oficial do Narrador e Personagens:** Baixe o mod [**Brazilian Dub (Dublagem PT-BR)** no GameBanana (#58580)](https://gamebanana.com/sounds/58580). Ele insere os áudios e anúncios do Narrador em português ao selecionar lutadores e nas telas de vitória!
+* **Como Instalar no PC:**
+  1. Extraia o conteúdo dos dois mods para a pasta de mods do seu port (ex: `ultimate/mods/` no standalone HDR ou na subpasta `mods/` do `ssbu-recomp`).
+  2. Ao iniciar o jogo, ele carregará os assets em PT-BR automaticamente!
+* **Outros jogos da franquia Smash:**
+  * **Super Smash Bros. Melee (`melee-pc` / `Melee Unlocked`):** Compatível com patches PT-BR aplicados na ISO `GALE01` de GameCube e pacotes de texturas personalizadas.
+  * **Super Smash Bros. 64 (`BattleShip` / `smash64r`):** Aplique o patch de tradução PT-BR na ROM de Nintendo 64 (via FURT / Romhacking.net.br) antes de extrair os assets.
+
 ---
 
 ## 3. 🛠️ Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
