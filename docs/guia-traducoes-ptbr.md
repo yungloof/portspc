@@ -34,6 +34,9 @@ Estes projetos já trazem **Português Brasileiro** (muitos inclusive com **Dubl
 | **AM2R (Another Metroid 2 Remake)** | 📝 **Menus e Logs 100% em PT-BR** | Selecione `Português` nas opções de idioma do jogo. |
 | **OpenRCT2 / OpenTTD / CorsixTH / fheroes2 / VCMI** | 📝 **100% em PT-BR** | Selecione `Portuguese (Brazilian)` nas opções do launcher/jogo. |
 | **Grim Fandango / Full Throttle / The Dig (`ScummVM`)** | 🎙️ **Dublagem Clássica Oficial da Brasoft em PT-BR!** | Use os CDs brasileiros originais distribuídos pela Brasoft nos anos 90. |
+| **Disney's Hercules (`hercules-recompiled`)** | 🎙️ **Dublagem Clássica Oficial da Disney em PT-BR!** | Use a imagem de disco do CD original brasileiro de Hércules. O port carrega o áudio em português dos dubladores do filme automaticamente! |
+| **The Simpsons: Hit & Run (Donut Team / PC)** | 🎙️ **Dublagem dos Simpsons em PT-BR + Textos** | Baixe o pacote de dublagem brasileira e ative no **Lucas' Simpsons Hit & Run Mod Launcher**. |
+| **International Superstar Soccer Deluxe (`issd-native`)** | 🎙️ **Narração Brasileira Clássica (Ronaldinho 97!)** | Roda nativamente com a ROM modificada do Campeonato Brasileiro / Ronaldinho 97! |
 
 ---
 
