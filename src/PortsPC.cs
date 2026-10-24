@@ -253,12 +253,26 @@ namespace PortsPCLauncher {
                 Content = "🇧🇷 Somente com PT-BR",
                 Foreground = new SolidColorBrush(Color.FromRgb(52, 211, 153)), // Emerald #34D399
                 VerticalAlignment = VerticalAlignment.Center,
-                Margin = new Thickness(16, 4, 0, 0),
+                Margin = new Thickness(16, 4, 16, 0),
                 FontWeight = FontWeights.SemiBold
             };
             chkPtbr.Checked += (s, e) => { onlyPtbr = true; ApplyFilter(); };
             chkPtbr.Unchecked += (s, e) => { onlyPtbr = false; ApplyFilter(); };
             filterRow.Children.Add(chkPtbr);
+
+            var btnSync = new Button {
+                Content = "🔄 Buscar Novos Ports Online",
+                Margin = new Thickness(8, 0, 0, 4),
+                Padding = new Thickness(12, 5, 12, 5),
+                Background = new SolidColorBrush(Color.FromRgb(16, 185, 129)), // Emerald #10B981
+                Foreground = Brushes.White,
+                BorderThickness = new Thickness(0),
+                Cursor = Cursors.Hand,
+                FontSize = 12,
+                FontWeight = FontWeights.Bold
+            };
+            btnSync.Click += BtnUpdateCatalog_Click;
+            filterRow.Children.Add(btnSync);
 
             headerStack.Children.Add(filterRow);
             headerBorder.Child = headerStack;
@@ -495,7 +509,7 @@ namespace PortsPCLauncher {
             return detailPanel;
         }
 
-        private void LoadCatalog() {
+        private string GetCatalogPath() {
             string catalogPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "catalog.json");
             if (!File.Exists(catalogPath)) {
                 string parentPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "catalog.json");
@@ -503,7 +517,11 @@ namespace PortsPCLauncher {
                     catalogPath = System.IO.Path.GetFullPath(parentPath);
                 }
             }
+            return catalogPath;
+        }
 
+        private void LoadCatalog() {
+            string catalogPath = GetCatalogPath();
             if (!File.Exists(catalogPath)) {
                 statsText.Text = "Erro: catalog.json não encontrado!";
                 statsText.Foreground = Brushes.Red;
@@ -511,13 +529,139 @@ namespace PortsPCLauncher {
             }
 
             try {
-                string json = File.ReadAllText(catalogPath);
+                string json = File.ReadAllText(catalogPath, System.Text.Encoding.UTF8);
                 var serializer = new JavaScriptSerializer();
+                serializer.MaxJsonLength = int.MaxValue;
                 allGames = serializer.Deserialize<List<GameItem>>(json);
                 ApplyFilter();
             } catch (Exception ex) {
                 statsText.Text = "Erro ao carregar catálogo: " + ex.Message;
                 statsText.Foreground = Brushes.Red;
+            }
+        }
+
+        private async void BtnUpdateCatalog_Click(object sender, RoutedEventArgs e) {
+            var btn = sender as Button;
+            if (btn != null) {
+                btn.IsEnabled = false;
+                btn.Content = "⏳ Buscando novos ports...";
+            }
+            statsText.Text = "Sincronizando catálogo online e varrendo novos ports no GitHub...";
+
+            int addedCount = 0;
+            try {
+                ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
+                var serializer = new JavaScriptSerializer();
+                serializer.MaxJsonLength = int.MaxValue;
+
+                var knownIds = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                var knownRepos = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                foreach (var g in allGames) {
+                    if (!string.IsNullOrEmpty(g.id)) knownIds.Add(g.id);
+                    if (!string.IsNullOrEmpty(g.github_repo)) knownRepos.Add(g.github_repo);
+                }
+
+                // 1. Sync with official yungloof/portspc repository catalog.json
+                using (var web = new WebClient()) {
+                    web.Encoding = System.Text.Encoding.UTF8;
+                    web.Headers["User-Agent"] = "PortsPC-Launcher";
+                    try {
+                        string remoteJson = await web.DownloadStringTaskAsync("https://raw.githubusercontent.com/yungloof/portspc/main/catalog.json");
+                        var remoteList = serializer.Deserialize<List<GameItem>>(remoteJson);
+                        if (remoteList != null) {
+                            foreach (var rg in remoteList) {
+                                if (!knownIds.Contains(rg.id) && (string.IsNullOrEmpty(rg.github_repo) || !knownRepos.Contains(rg.github_repo))) {
+                                    allGames.Add(rg);
+                                    knownIds.Add(rg.id);
+                                    if (!string.IsNullOrEmpty(rg.github_repo)) knownRepos.Add(rg.github_repo);
+                                    addedCount++;
+                                }
+                            }
+                        }
+                    } catch { }
+                }
+
+                // 2. Discover brand-new playable ports from awesome-decomp-games (updated daily)
+                using (var web = new WebClient()) {
+                    web.Encoding = System.Text.Encoding.UTF8;
+                    web.Headers["User-Agent"] = "PortsPC-Launcher";
+                    try {
+                        string md = await web.DownloadStringTaskAsync("https://raw.githubusercontent.com/SubmitGame/awesome-decomp-games/main/README.md");
+                        string currentCat = "Nintendo (N64, 3DS, DS, GBA, SNES)";
+                        string[] lines = md.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+                        var rx = new Regex(@"^\-\s+\*\*\[([^\]]+)\]\(https://github\.com/([^/\)]+/[^/\)]+)\)\*\*.*\[release\]\(([^\)]+)\)", RegexOptions.IgnoreCase);
+
+                        foreach (string line in lines) {
+                            if (line.StartsWith("## ")) {
+                                if (line.Contains("PlayStation")) currentCat = "PlayStation (PS4, PS3, PS2, PS1, PSP)";
+                                else if (line.Contains("Xbox")) currentCat = "Xbox 360 & Xbox Clássico";
+                                else if (line.Contains("GameCube") || line.Contains("Wii") || line.Contains("Switch")) currentCat = "GameCube, Wii, Wii U & Switch";
+                                else if (line.Contains("PC")) currentCat = "Source Ports de Clássicos de PC";
+                                else currentCat = "Nintendo & Sega Recomps (N64, 3DS, DS, GBA, SNES, Mega Drive)";
+                                continue;
+                            }
+                            var m = rx.Match(line);
+                            if (m.Success) {
+                                string title = m.Groups[1].Value.Trim();
+                                string repo = m.Groups[2].Value.Trim();
+                                if (!knownRepos.Contains(repo)) {
+                                    string idSlug = Regex.Replace(title.ToLower(), @"[^a-z0-9]+", "-").Trim('-');
+                                    if (knownIds.Contains(idSlug)) idSlug = idSlug + "-port";
+                                    var newGame = new GameItem {
+                                        id = idSlug,
+                                        name = title + " (Port Nativo PC)",
+                                        game = title,
+                                        platform = "Console / PC",
+                                        category = currentCat,
+                                        github_repo = repo,
+                                        website = "https://github.com/" + repo + "/releases",
+                                        asset_regex = ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
+                                        windows = true,
+                                        linux = true,
+                                        requires = "Arquivos / ROM original do jogo (veja instruções no GitHub oficial)",
+                                        ptbr_status = "Verifique tradução da comunidade / ROM PT-BR",
+                                        ptbr_details = "Projeto descoberto automaticamente pelo buscador online do PortsPC! Compatível com patches de tradução na ROM/ISO base.",
+                                        ptbr_url = "https://github.com/" + repo
+                                    };
+                                    allGames.Add(newGame);
+                                    knownRepos.Add(repo);
+                                    knownIds.Add(idSlug);
+                                    addedCount++;
+                                }
+                            }
+                        }
+                    } catch { }
+                }
+
+                if (addedCount > 0) {
+                    string catalogPath = GetCatalogPath();
+                    string updatedJson = serializer.Serialize(allGames);
+                    File.WriteAllText(catalogPath, updatedJson, System.Text.Encoding.UTF8);
+                }
+
+                ApplyFilter();
+                if (addedCount > 0) {
+                    MessageBox.Show(
+                        string.Format("Foram encontrados e adicionados {0} novos ports ao seu catálogo!\nTotal atual: {1} jogos.", addedCount, allGames.Count),
+                        "Catálogo Atualizado!",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
+                } else {
+                    MessageBox.Show(
+                        string.Format("Seu catálogo já está 100% atualizado com os últimos lançamentos!\nTotal atual: {0} jogos catalogados.", allGames.Count),
+                        "Catálogo em Dia",
+                        MessageBoxButton.OK,
+                        MessageBoxImage.Information
+                    );
+                }
+            } catch (Exception ex) {
+                MessageBox.Show("Erro ao buscar atualizações: " + ex.Message, "Erro", MessageBoxButton.OK, MessageBoxImage.Warning);
+            } finally {
+                if (btn != null) {
+                    btn.IsEnabled = true;
+                    btn.Content = "🔄 Buscar Novos Ports Online";
+                }
             }
         }
 
