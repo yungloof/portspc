@@ -4139,9 +4139,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/Warzone2100/warzone2100"
+    "ptbr_status": "100% Nativo em Português Brasileiro Oficial!",
+    "ptbr_details": "Warzone 2100 conta com suporte nativo completo ao Português Brasileiro em menus, briefings e interface, diretamente nas configurações.",
+    "ptbr_url": "https://wz2100.net"
   },
   {
     "id": "vvvvvv",
@@ -4155,9 +4155,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/TerryCavanagh/VVVVVV"
+    "ptbr_status": "100% Traduzido em Português Brasileiro Oficial!",
+    "ptbr_details": "O código aberto de VVVVVV inclui localização oficial em Português Brasileiro disponível nas opções de idioma.",
+    "ptbr_url": "https://thelettervsixtim.es"
   },
   {
     "id": "opensc2k",
@@ -4171,8 +4171,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Clássica (Brasoft)!",
+    "ptbr_details": "SimCity 2000 conta com a famosa tradução oficial brasileira da Brasoft nos textos e jornais da cidade.",
     "ptbr_url": "https://github.com/OpenSC2K/OpenSC2K"
   },
   {
@@ -4187,9 +4187,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Switch) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/valentderah/totk-pc-recomp"
+    "ptbr_status": "100% Oficial Nativo + Dublagem da Comunidade!",
+    "ptbr_details": "A atualização oficial do Switch v1.2.0+ inclui Português Brasileiro (menus e legendas). Além disso, há o mod completo de dublagem PT-BR da comunidade para Tears of the Kingdom no GameBanana.",
+    "ptbr_url": "https://gamebanana.com/mods/453229"
   },
   {
     "id": "openbor",
@@ -4203,9 +4203,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/DCurrent/openbor"
+    "ptbr_status": "Engine Beat 'em Up com Suporte a Mods BR",
+    "ptbr_details": "Beats of Rage / OpenBOR suporta centenas de jogos e mods criados por brasileiros com textos e áudios em Português.",
+    "ptbr_url": "https://www.chronocrash.com"
   },
   {
     "id": "chocolate-doom",
@@ -4219,9 +4219,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/chocolate-doom/chocolate-doom"
+    "ptbr_status": "FPS Clássico / Compatível com Wad PT-BR",
+    "ptbr_details": "Fidelidade 1:1 ao Doom original DOS, compatível com mods e WADs traduzidos em PT-BR.",
+    "ptbr_url": "https://www.chocolate-doom.org"
   },
   {
     "id": "generalsgamecode",
@@ -4235,8 +4235,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Dublado e Legendado em PT-BR Oficial (EA Brasil)!",
+    "ptbr_details": "Command & Conquer: Generals possui versão brasileira oficial lançada pela EA com dublagem marcante e menus em Português!",
     "ptbr_url": "https://github.com/TheSuperHackers/GeneralsGameCode"
   },
   {
@@ -4251,8 +4251,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "FPS Clássico / Suporta Mods e Menus PT-BR",
+    "ptbr_details": "Quake II com renderização moderna via Vulkan, compatível com pacotes de tradução em Português.",
     "ptbr_url": "https://github.com/kondrak/vkQuake2"
   },
   {
@@ -4267,8 +4267,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Arena FPS / Textos Mínimos",
+    "ptbr_details": "Quake III Arena moderno focado no multiplayer ultra rápido.",
     "ptbr_url": "https://github.com/ec-/Quake3e"
   },
   {
@@ -4283,8 +4283,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "FPS Clássico / Vulkan Moderno",
+    "ptbr_details": "Quake 1 rodando sob Vulkan moderno, compatível com arquivos originais.",
     "ptbr_url": "https://github.com/Novum/vkQuake"
   },
   {
@@ -4299,9 +4299,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/cxong/cdogs-sdl"
+    "ptbr_status": "Shoot 'em Up Cooperativo / Textos em Português",
+    "ptbr_details": "C-Dogs SDL conta com suporte a idiomas da comunidade.",
+    "ptbr_url": "https://cxong.github.io/cdogs-sdl/"
   },
   {
     "id": "cataclysm-dda",
@@ -4315,9 +4315,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/CleverRaven/Cataclysm-DDA"
+    "ptbr_status": "100% Traduzido em Português Brasileiro Oficial!",
+    "ptbr_details": "Cataclysm: Dark Days Ahead possui tradução completa em PT-BR mantida no repositório oficial, selecionável no menu de opções.",
+    "ptbr_url": "https://cataclysmdda.org"
   },
   {
     "id": "doukutsu-rs",
@@ -4331,9 +4331,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/doukutsu-rs/doukutsu-rs"
+    "ptbr_status": "100% Traduzido em Português Brasileiro!",
+    "ptbr_details": "Cave Story possui tradução consagrada em PT-BR pela comunidade brasileira. Basta selecionar ou colocar o arquivo de tradução na pasta do jogo.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "ironwail",
@@ -4347,8 +4347,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Quake 1 Moderno / Alta Performance",
+    "ptbr_details": "Port de Quake 1 com suporte a alta taxa de quadros e comandos em console.",
     "ptbr_url": "https://github.com/andrei-drexler/ironwail"
   },
   {
@@ -4363,8 +4363,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "RPG Clássico Chinês / Tradução em Inglês/Espanhol",
+    "ptbr_details": "Legend of Sword and Fairy (Paladin) clássico do PC.",
     "ptbr_url": "https://github.com/sdlpal/sdlpal"
   },
   {
@@ -4379,9 +4379,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/luanti-org/luanti"
+    "ptbr_status": "100% Traduzido em Português Brasileiro Nativo!",
+    "ptbr_details": "Luanti (antigo Minetest) tem suporte completo nativo ao Português Brasileiro em menus e inventários.",
+    "ptbr_url": "https://www.luanti.org"
   },
   {
     "id": "openloco",
@@ -4395,9 +4395,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/OpenLoco/OpenLoco"
+    "ptbr_status": "Tradução PT-BR Disponível (Locomotion)!",
+    "ptbr_details": "Chris Sawyer's Locomotion reimplementado com suporte a idiomas da comunidade brasileira.",
+    "ptbr_url": "https://openloco.io"
   },
   {
     "id": "rbdoom-3-bfg",
@@ -4411,9 +4411,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/RobertBeckebans/RBDOOM-3-BFG"
+    "ptbr_status": "Tradução PT-BR Completa (GameVicio / Tribo Gamer)!",
+    "ptbr_details": "Doom 3 BFG Edition conta com tradução completa em Português Brasileiro para legendas e terminais de áudio.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "rigelengine",
@@ -4427,8 +4427,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Duke Nukem II Reimplementado / Textos em Inglês",
+    "ptbr_details": "Duke Nukem II com suporte a widescreen e controles modernos.",
     "ptbr_url": "https://github.com/lethal-guitar/RigelEngine"
   },
   {
@@ -4443,9 +4443,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/OpenRA/OpenRA"
+    "ptbr_status": "100% Traduzido em Português Brasileiro Oficial!",
+    "ptbr_details": "OpenRA (Command & Conquer, Red Alert e Dune 2000) tem localização oficial em PT-BR selecionável nas configurações.",
+    "ptbr_url": "https://www.openra.net"
   },
   {
     "id": "openz",
@@ -4459,8 +4459,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Estratégia RTS Clássico / Menus em Inglês",
+    "ptbr_details": "Reimplementação do clássico jogo de estratégia \"Z\" dos Bitmap Brothers.",
     "ptbr_url": "https://github.com/playopenz/OpenZ"
   },
   {
@@ -4475,25 +4475,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Game Boy Color) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/UNDERdecoded/Gen2Recomped"
-  },
-  {
-    "id": "zeldawwhdrecomp",
-    "name": "ZeldaWWHDRecomp",
-    "game": "ZeldaWWHDRecomp",
-    "platform": "Wii U",
-    "category": "GameCube, Wii, Wii U & Switch",
-    "github_repo": "ZeldaWWHDRecomp/ZeldaWWHDRecomp",
-    "website": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Wii U) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Zambrio / Rayner)!",
+    "ptbr_details": "Pokémon Gold, Silver e Crystal possuem traduções clássicas perfeitas em Português Brasileiro pela comunidade de Romhacking Brasil. Basta carregar a ROM traduzida.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "nblood",
@@ -4507,8 +4491,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "FPS Clássico Sangrento / Pouco Texto",
+    "ptbr_details": "Blood (1997) na engine EDuke32 / NBlood com compatibilidade moderna.",
     "ptbr_url": "https://github.com/NBlood/NBlood"
   },
   {
@@ -4523,8 +4507,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Fidelidade Máxima ao Quake DOS",
+    "ptbr_details": "Quake original preservado com fidelidade nostálgica exata.",
     "ptbr_url": "https://github.com/Henrique194/chocolate-quake"
   },
   {
@@ -4539,8 +4523,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Doom Clássico a 60+ FPS em Widescreen",
+    "ptbr_details": "Compatível com WADs de tradução em Português Brasileiro.",
     "ptbr_url": "https://github.com/fabiangreffrath/crispy-doom"
   },
   {
@@ -4555,8 +4539,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Doom Clássico com Suporte a MBF21",
+    "ptbr_details": "Port moderno com alta fidelidade ao Doom original.",
     "ptbr_url": "https://github.com/fabiangreffrath/woof"
   },
   {
@@ -4571,9 +4555,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/bradharding/doomretro"
+    "ptbr_status": "Doom Clássico Refinado para Windows",
+    "ptbr_details": "Visual clássico aprimorado e suporte a pacotes de tradução.",
+    "ptbr_url": "https://www.doomretro.com"
   },
   {
     "id": "fs2open-github-com",
@@ -4587,9 +4571,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/scp-fs2open/fs2open.github.com"
+    "ptbr_status": "Simulador Espacial Épico / Tradução da Comunidade",
+    "ptbr_details": "FreeSpace 2 Source Code Project com suporte a pacotes gráficos e mods de texto.",
+    "ptbr_url": "https://scp.indiegames.us"
   },
   {
     "id": "mbhaxe",
@@ -4603,8 +4587,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Plataforma 3D / Menus em Inglês",
+    "ptbr_details": "Marble Blast Gold recriado com suporte a física precisa e 60 FPS.",
     "ptbr_url": "https://github.com/RandomityGuy/MBHaxe"
   },
   {
@@ -4619,9 +4603,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/odamex/odamex"
+    "ptbr_status": "Doom Multiplayer Online / Menus em Inglês",
+    "ptbr_details": "Cliente online para partidas clássicas e competitivas de Doom.",
+    "ptbr_url": "https://odamex.net"
   },
   {
     "id": "raze",
@@ -4635,9 +4619,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/ZDoom/Raze"
+    "ptbr_status": "Engine Moderna para Duke 3D, Blood, Shadow Warrior e Redneck",
+    "ptbr_details": "Baseada no GZDoom, compatível com traduções e dublagens brasileiras de Duke Nukem 3D!",
+    "ptbr_url": "https://raze.zdoom.org"
   },
   {
     "id": "spelunkyclassichd",
@@ -4651,8 +4635,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Disponível!",
+    "ptbr_details": "Spelunky Classic HD conta com tradução da comunidade para Português Brasileiro.",
     "ptbr_url": "https://github.com/yancharkin/SpelunkyClassicHD"
   },
   {
@@ -4667,9 +4651,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/team-eternity/eternity"
+    "ptbr_status": "Motor Avançado de Doom / Suporte a Mods",
+    "ptbr_details": "The Eternity Engine com recursos avançados de scripting e renderização.",
+    "ptbr_url": "https://www.doomworld.com/eternity"
   },
   {
     "id": "cncgeneralszh-reforged",
@@ -4683,8 +4667,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Dublado e Legendado em PT-BR Oficial (Zero Hour)!",
+    "ptbr_details": "Compatível com a dublagem e textos oficiais da expansão C&C Generals: Zero Hour no Brasil.",
     "ptbr_url": "https://github.com/olcayseygan/CnCGeneralsZH-Reforged"
   },
   {
@@ -4699,9 +4683,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/Aleph-One-Marathon/alephone"
+    "ptbr_status": "Trilogia Marathon da Bungie / Tradução da Comunidade",
+    "ptbr_details": "Marathon 1, 2 e Infinity com suporte a alta resolução e controles modernos.",
+    "ptbr_url": "https://alephone.lhowon.org"
   },
   {
     "id": "cataclysm-bn",
@@ -4715,8 +4699,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Integrada nas Opções!",
+    "ptbr_details": "Cataclysm: Bright Nights inclui localização em Português Brasileiro diretamente no menu de configurações.",
     "ptbr_url": "https://github.com/cataclysmbn/Cataclysm-BN"
   },
   {
@@ -4731,8 +4715,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Disponível nas Opções",
+    "ptbr_details": "Fork da comunidade Cataclysm com tradução em Português.",
     "ptbr_url": "https://github.com/Cataclysm-TLG/Cataclysm-TLG"
   },
   {
@@ -4747,9 +4731,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/dhewm/dhewm3"
+    "ptbr_status": "Tradução PT-BR Completa (GameVicio / Tribo Gamer)!",
+    "ptbr_details": "Doom 3 original com motor C++ moderno, compatível com o patch de tradução PT-BR da Tribo Gamer.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "exult",
@@ -4763,9 +4747,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/exult/exult"
+    "ptbr_status": "Tradução PT-BR Completa (ScummBR / Romhacking)!",
+    "ptbr_details": "Ultima VII: The Black Gate e Serpent Isle contam com tradução épica da comunidade brasileira.",
+    "ptbr_url": "https://scummbr.com"
   },
   {
     "id": "heretic2r",
@@ -4779,8 +4763,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Ação e Magia em Terceira Pessoa / Pouco Texto",
+    "ptbr_details": "Heretic II rodando nativamente no Windows moderno com suporte a OpenGL.",
     "ptbr_url": "https://github.com/m-x-d/Heretic2R"
   },
   {
@@ -4795,9 +4779,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/ja2-stracciatella/ja2-stracciatella"
+    "ptbr_status": "Tradução PT-BR Disponível (Jagged Alliance 2)!",
+    "ptbr_details": "Jagged Alliance 2 conta com projeto de tradução para Português Brasileiro.",
+    "ptbr_url": "https://ja2-stracciatella.github.io"
   },
   {
     "id": "alive-reversing",
@@ -4811,9 +4795,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/AliveTeam/alive_reversing"
+    "ptbr_status": "Tradução PT-BR Completa (Oddworld Brasil)!",
+    "ptbr_details": "Oddworld: Abe's Oddysee e Abe's Exoddus contam com legendas completas em Português Brasileiro.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "openfodder",
@@ -4827,9 +4811,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/OpenFodder/openfodder"
+    "ptbr_status": "Estratégia e Ação Militar / Pouco Texto",
+    "ptbr_details": "Cannon Fodder 1 e 2 preservados para sistemas modernos.",
+    "ptbr_url": "https://openfodder.com"
   },
   {
     "id": "openapoc",
@@ -4843,9 +4827,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/OpenApoc/OpenApoc"
+    "ptbr_status": "Estratégia Tática Alienígena / Textos em Inglês",
+    "ptbr_details": "X-COM: Apocalypse reimplementado com melhorias de resolução e bugs corrigidos.",
+    "ptbr_url": "https://openapoc.org"
   },
   {
     "id": "openciv3",
@@ -4859,8 +4843,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Completa (Brasoft / CivBrasil)!",
+    "ptbr_details": "Civilization III possui a consagrada tradução em Português Brasileiro lançada no país.",
     "ptbr_url": "https://github.com/C7-Game/OpenCiv3"
   },
   {
@@ -4875,8 +4859,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Plataforma 2D / Textos Mínimos",
+    "ptbr_details": "Jazz Jackrabbit 1 reimplementado para computadores modernos com ação rápida.",
     "ptbr_url": "https://github.com/AlisterT/openjazz"
   },
   {
@@ -4891,9 +4875,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/omf2097/openomf"
+    "ptbr_status": "Luta de Robôs 2D / Textos Mínimos",
+    "ptbr_details": "One Must Fall: 2097 reimplementado com gráficos nítidos e controles modernos.",
+    "ptbr_url": "https://www.openomf.org"
   },
   {
     "id": "opentesarena",
@@ -4907,8 +4891,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Disponível (Elder Scrolls Brasil)!",
+    "ptbr_details": "The Elder Scrolls: Arena conta com projeto de tradução para Português Brasileiro.",
     "ptbr_url": "https://github.com/afritz1/OpenTESArena"
   },
   {
@@ -4923,9 +4907,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/JGRennison/OpenTTD-patches"
+    "ptbr_status": "100% Nativo em Português Brasileiro Oficial!",
+    "ptbr_details": "OpenTTD inclui localização completa em Português Brasileiro mantida pela comunidade.",
+    "ptbr_url": "https://www.openttd.org"
   },
   {
     "id": "opentyrian",
@@ -4939,8 +4923,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Shoot 'em Up Espacial / Textos Mínimos",
+    "ptbr_details": "Tyrian 2000 clássico com trilha sonora e combate espacial viciante.",
     "ptbr_url": "https://github.com/opentyrian/opentyrian"
   },
   {
@@ -4955,8 +4939,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Tradução PT-BR Completa (System Shock Brasil)!",
+    "ptbr_details": "Shockolate preserva o revolucionário System Shock (1994) com suporte a legendas em PT-BR.",
     "ptbr_url": "https://github.com/Interrupt/systemshock"
   },
   {
@@ -4971,8 +4955,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Ação Tática Cyberpunk / Textos em Inglês",
+    "ptbr_details": "Syndicate Wars atualizado para PCs modernos com alta resolução.",
     "ptbr_url": "https://github.com/swfans/syndwarsfx"
   },
   {
@@ -4987,8 +4971,8 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
+    "ptbr_status": "Plataforma Mario / Suporte a PT-BR",
+    "ptbr_details": "Recriação moderna da engine do Super Mario Bros. X com física precisa de SNES.",
     "ptbr_url": "https://github.com/TheXTech/TheXTech"
   },
   {
@@ -5003,9 +4987,9 @@
     "windows": true,
     "linux": true,
     "requires": "Arquivos do jogo original (se necessário) — veja instruções do projeto",
-    "ptbr_status": "Verificar idioma no jogo / arquivos originais",
-    "ptbr_details": "Usa os arquivos do jogo original; o idioma depende da sua cópia (PT-BR se a edição original tiver) ou de mods da comunidade.",
-    "ptbr_url": "https://github.com/Wargus/wargus"
+    "ptbr_status": "Tradução e Dublagem PT-BR (Warcraft II)!",
+    "ptbr_details": "Warcraft II: Tides of Darkness possui dublagem clássica em Português Brasileiro e textos traduzidos.",
+    "ptbr_url": "https://wargus.github.io"
   },
   {
     "id": "ace-combat-x-recompilation",
@@ -5019,9 +5003,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PSP) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/sal063/Ace-Combat-X-Recompilation"
+    "ptbr_status": "Tradução PT-BR Completa na ISO (PSP)!",
+    "ptbr_details": "Ace Combat X: Skies of Deception de PSP conta com patch de tradução para Português Brasileiro dos briefings e diálogos de rádio.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "aloneinthedarkrehaunted",
@@ -5035,9 +5019,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/spacefarergames/AloneInTheDarkReHaunted"
+    "ptbr_status": "Dublado e Legendado em PT-BR (Brasoft Clássico)!",
+    "ptbr_details": "Alone in the Dark clássico conta com a lendária localização brasileira oficial da Brasoft.",
+    "ptbr_url": "https://scummbr.com"
   },
   {
     "id": "doaxvb-re",
@@ -5051,8 +5035,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Vôlei de Praia / Textos Mínimos",
+    "ptbr_details": "Dead or Alive Xtreme Beach Volleyball do Xbox original focado em minigames e partidas de vôlei na praia.",
     "ptbr_url": "https://github.com/NoRain211/doaxvb-re"
   },
   {
@@ -5067,9 +5051,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/masterspike52/reDAHM"
+    "ptbr_status": "Tradução PT-BR Disponível (Tribo Gamer)!",
+    "ptbr_details": "Destroy All Humans: Path of the Furon possui tradução em Português Brasileiro das legendas e diálogos.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "fear360-recomp",
@@ -5083,9 +5067,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Juansolo457/fear360-recomp"
+    "ptbr_status": "Tradução PT-BR Completa (GameVicio / Tribo Gamer)!",
+    "ptbr_details": "F.E.A.R. possui tradução completa para Português Brasileiro compatível com os arquivos de texto e legendas.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "fuc-recomp",
@@ -5099,25 +5083,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PSP) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Arcade Anime / Textos Mínimos",
+    "ptbr_details": "Fate/unlimited codes de PSP com combate frenético da franquia Fate.",
     "ptbr_url": "https://github.com/elprogramadorloco-arch/fuc-recomp"
-  },
-  {
-    "id": "forzahorizon1-reimagined",
-    "name": "Forza Horizon 1",
-    "game": "Forza Horizon 1",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "FH1-ReImagined/ForzaHorizon1-ReImagined",
-    "website": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined"
   },
   {
     "id": "cogbox",
@@ -5131,8 +5099,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Gears of War 2, 3 e Judgment em 60+ FPS!",
+    "ptbr_details": "Suporta os dumps oficiais de Gears 2, Gears 3 e Gears: Judgment (este último possui Dublagem Brasileira Oficial consagrada!).",
     "ptbr_url": "https://github.com/Shagg88/COGBox"
   },
   {
@@ -5147,8 +5115,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Dublagem e Legendas PT-BR Disponíveis!",
+    "ptbr_details": "Gears of War 3 possui legendas e compatibilidade com áudio em Português Brasileiro nos arquivos oficiais.",
     "ptbr_url": "https://github.com/Flippage/gears-of-war-3-recomp"
   },
   {
@@ -5163,9 +5131,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS2) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/moesuito/gt4-staticrecomp"
+    "ptbr_status": "Tradução PT-BR Completa na ISO (PS2)!",
+    "ptbr_details": "Gran Turismo 4 possui um dos maiores projetos de tradução para Português Brasileiro do PS2, com menus, carros e licenças 100% em PT-BR.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "medal-of-honor-psx-recomp",
@@ -5179,25 +5147,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/FractalEngineer/Medal-Of-Honor-PSX-Recomp"
-  },
-  {
-    "id": "melee-pc",
-    "name": "MeleePC",
-    "game": "MeleePC",
-    "platform": "GameCube",
-    "category": "GameCube, Wii, Wii U & Switch",
-    "github_repo": "999sian/melee-pc",
-    "website": "https://github.com/999sian/melee-pc/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (GameCube) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/999sian/melee-pc"
+    "ptbr_status": "Dublado e Legendado em PT-BR (STR Brasil)!",
+    "ptbr_details": "Medal of Honor de PS1 conta com dublagem completa em Português Brasileiro pela STR Brasil e legendas aplicadas na ISO.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "midtown-madness-3-pc-native",
@@ -5211,8 +5163,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Tradução PT-BR nos Menus!",
+    "ptbr_details": "Midtown Madness 3 de Xbox clássico com corridas em Paris e Washington.",
     "ptbr_url": "https://github.com/lakshya16157/midtown-madness-3-PC-Native"
   },
   {
@@ -5227,25 +5179,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Switch) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/morerokk/MHGURecomp"
-  },
-  {
-    "id": "nfsu1-recompiled",
-    "name": "Need for Speed: Underground",
-    "game": "Need for Speed: Underground",
-    "platform": "PC",
-    "category": "Source Ports de Clássicos",
-    "github_repo": "codepdbh/nfsu1-recompiled",
-    "website": "https://github.com/codepdbh/nfsu1-recompiled/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/codepdbh/nfsu1-recompiled"
+    "ptbr_status": "Tradução PT-BR da Comunidade Disponível!",
+    "ptbr_details": "Monster Hunter Generations Ultimate possui mod de tradução dos diálogos, armas e itens para Português Brasileiro.",
+    "ptbr_url": "https://gamebanana.com"
   },
   {
     "id": "opentie",
@@ -5259,8 +5195,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Espacial Star Wars / Textos em Inglês",
+    "ptbr_details": "TIE Fighter reimplementado com suporte a resoluções modernas.",
     "ptbr_url": "https://github.com/elyosh/OpenTIE"
   },
   {
@@ -5275,9 +5211,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/nikolaygorb/PerfectDarkRemasterRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (XBLA)!",
+    "ptbr_details": "A versão remasterizada de Perfect Dark para Xbox 360 conta com patch completo de tradução para Português Brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "perfectdarkzerorecomp",
@@ -5291,8 +5227,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Oficialmente Legendado em Português!",
+    "ptbr_details": "Perfect Dark Zero de Xbox 360 conta com textos oficiais em Português no disco.",
     "ptbr_url": "https://github.com/nikolaygorb/PerfectDarkZeroRecomp"
   },
   {
@@ -5307,8 +5243,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte de Precisão / Textos Mínimos",
+    "ptbr_details": "Rockstar Games presents Table Tennis focado na física hiper-realista do tênis de mesa.",
     "ptbr_url": "https://github.com/davidptrssvea/Table-Tennis-Rockstar-PC"
   },
   {
@@ -5323,8 +5259,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "RPG Tático em Turnos / Japonês e Inglês",
+    "ptbr_details": "Shin Megami Tensei: NINE exclusivo do Xbox clássico ambientado em Tokyo virtual.",
     "ptbr_url": "https://github.com/gymzatan/smt-nine-recomp"
   },
   {
@@ -5339,9 +5275,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/cdlewis/snowboardkids2-recomp"
+    "ptbr_status": "Tradução PT-BR Disponível na ROM!",
+    "ptbr_details": "Snowboard Kids 2 de N64 possui tradução para Português Brasileiro dos diálogos e história.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "speedbreaker",
@@ -5355,8 +5291,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Noturna / Compatível com Mods PT-BR",
+    "ptbr_details": "Need for Speed Most Wanted / Carbon Xbox 360 recompilado nativamente com suporte a mods de tradução.",
     "ptbr_url": "https://github.com/SpeedBreakerProject/speedbreaker"
   },
   {
@@ -5371,8 +5307,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Snowboard Radical / Textos Mínimos",
+    "ptbr_details": "SSX Tricky focado nas descidas na neve e no famoso grito \"It's Tricky!\".",
     "ptbr_url": "https://github.com/GiZcesi/OpenTricky"
   },
   {
@@ -5387,9 +5323,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/StarFoxSNESRecomp"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "Star Fox de SNES tem patch de tradução para Português Brasileiro nos diálogos e menus das missões.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "tekken-tag-2-ultimate-edition",
@@ -5403,8 +5339,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Wii U) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Arcade / Textos Mínimos",
+    "ptbr_details": "Tekken Tag Tournament 2 focado em combate competitivo e golpes, menus intuitivos.",
     "ptbr_url": "https://github.com/Petexy/Tekken-Tag-2-Ultimate-Edition"
   },
   {
@@ -5419,8 +5355,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "RPG Clássico em Calabouços / Textos em Inglês",
+    "ptbr_details": "Ultima Underworld 1 e 2 reimplementados com suporte a mouse e controles modernos.",
     "ptbr_url": "https://github.com/abedegno/underworld-exhumed"
   },
   {
@@ -5435,8 +5371,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Espacial Clássico / Menus em Inglês",
+    "ptbr_details": "Wing Commander II com suporte a sistemas modernos.",
     "ptbr_url": "https://github.com/neuromancer/wc2-re"
   },
   {
@@ -5451,25 +5387,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre / Pouco Texto",
+    "ptbr_details": "WWE '12 com combates dinâmicos e elenco clássico da WWE.",
     "ptbr_url": "https://github.com/iMrBurn/wwe12-pc"
-  },
-  {
-    "id": "wwe2k14-recomp",
-    "name": "WWE 2K14 (WWE 2K14 Recomp)",
-    "game": "WWE 2K14",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "PromethenDev/wwe2k14-recomp",
-    "website": "https://github.com/PromethenDev/wwe2k14-recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/PromethenDev/wwe2k14-recomp"
   },
   {
     "id": "wwe-svr2008-recomp",
@@ -5483,8 +5403,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre / Pouco Texto",
+    "ptbr_details": "WWE SmackDown vs. Raw 2008 com estilo de luta ECW e estrelas clássicas.",
     "ptbr_url": "https://github.com/nefariousjosiah/WWE-SVR2008-RECOMP"
   },
   {
@@ -5499,8 +5419,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre / Pouco Texto",
+    "ptbr_details": "WWE SmackDown vs. Raw 2009 com foco em duplas e golpes combinados.",
     "ptbr_url": "https://github.com/nefariousjosiah/WWE-SVR2009-RECOMP"
   },
   {
@@ -5515,25 +5435,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre / Pouco Texto",
+    "ptbr_details": "WWE SmackDown vs. Raw 2010 com modo Road to WrestleMania.",
     "ptbr_url": "https://github.com/nefariousjosiah/WWE-SVR2010-RECOMP"
-  },
-  {
-    "id": "fifa-world-cup-2014-recompiled",
-    "name": "2014 FIFA World Cup Brazil",
-    "game": "2014 FIFA World Cup Brazil",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "HossEz/fifa-world-cup-2014-recompiled",
-    "website": "https://github.com/HossEz/fifa-world-cup-2014-recompiled/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/HossEz/fifa-world-cup-2014-recompiled"
   },
   {
     "id": "aerogauge-recomp",
@@ -5547,8 +5451,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Futurista / Pouco Texto",
+    "ptbr_details": "AeroGauge de N64 focado nas corridas de naves aero-deslizantes.",
     "ptbr_url": "https://github.com/alondero/aerogauge-recomp"
   },
   {
@@ -5563,9 +5467,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/DiegoDeDios/AlienReRecomp"
+    "ptbr_status": "Tradução PT-BR Disponível na ISO!",
+    "ptbr_details": "Alien Resurrection de PS1 conta com patch de tradução para Português Brasileiro nos objetivos e legendas.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "automobililamborghini-recomp",
@@ -5579,8 +5483,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Simulação / Pouco Texto",
+    "ptbr_details": "Automobili Lamborghini de N64 focado em carros e pistas clássicas.",
     "ptbr_url": "https://github.com/alondero/automobililamborghini-recomp"
   },
   {
@@ -5595,8 +5499,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Aventura / Feito por Dev BR (Daniel Gomes)!",
+    "ptbr_details": "Beetle Adventure Racing Recompiled feito pelo desenvolvedor brasileiro Daniel Gomes Vieira.",
     "ptbr_url": "https://github.com/danielgomesvieira2000/beetle-adventure-racing-recomp"
   },
   {
@@ -5611,8 +5515,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Plataforma Temporal / Pouco Texto",
+    "ptbr_details": "Blinx 2: Masters of Time and Space do Xbox original focado nos poderes do tempo.",
     "ptbr_url": "https://github.com/apexJCL/blinx2-recomp"
   },
   {
@@ -5627,8 +5531,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta 3D com Transformações / Pouco Texto",
+    "ptbr_details": "Bloody Roar Extreme do Xbox original focado nas lutas e transformações em feras.",
     "ptbr_url": "https://github.com/bromurok/BloodyRoarExtremeRecomp"
   },
   {
@@ -5643,8 +5547,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida e Destruição / Pouco Texto",
+    "ptbr_details": "Burnout 2: Point of Impact do Xbox original focado no modo Crash e alta velocidade.",
     "ptbr_url": "https://github.com/timftw21/burnout2-recompilation"
   },
   {
@@ -5659,8 +5563,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Estratégia por Turnos / Menus Intuitivos",
+    "ptbr_details": "Civilization Revolution de Xbox 360 com foco na estratégia acessível.",
     "ptbr_url": "https://github.com/ReRevvedRecomp/rerevved"
   },
   {
@@ -5675,25 +5579,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Menus e Legendas em Português Oficial!",
+    "ptbr_details": "Crackdown de Xbox 360 inclui suporte a Português nos menus e missões de agente.",
     "ptbr_url": "https://github.com/saulob/crackdown-xbox360-recompiled"
-  },
-  {
-    "id": "dead-rising-2-case-west-xenon-recomp",
-    "name": "Dead Rising 2: Case West",
-    "game": "Dead Rising 2: Case West",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "wivi514/Dead_Rising_2_Case_West_Xenon_Recomp",
-    "website": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/wivi514/Dead_Rising_2_Case_West_Xenon_Recomp"
   },
   {
     "id": "die-hard-trilogy-recomp",
@@ -5707,8 +5595,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Tiro Arcade / Pouco Texto",
+    "ptbr_details": "Die Hard Trilogy de PS1 reúne 3 estilos de jogo de ação rápida.",
     "ptbr_url": "https://github.com/alexbeavs-ps1-ports/die-hard-trilogy-recomp"
   },
   {
@@ -5723,9 +5611,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/gascarcella/dw2003recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Digimon Brasil)!",
+    "ptbr_details": "Digimon World 2003 / Digimon World 3 de PS1 possui tradução completa dos diálogos, menus e itens em Português Brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "disruptorrecomp",
@@ -5739,41 +5627,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "FPS Sci-Fi de PS1 / Textos em Inglês",
+    "ptbr_details": "Disruptor da Insomniac Games no PS1 com história em FMV e tiro em primeira pessoa.",
     "ptbr_url": "https://github.com/RecompTeam/DisruptorRecomp"
-  },
-  {
-    "id": "dkc2recomp",
-    "name": "Donkey Kong Country 2: Diddy's Kong Quest",
-    "game": "Donkey Kong Country 2: Diddy's Kong Quest",
-    "platform": "SNES",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "elliotttate/DKC2Recomp",
-    "website": "https://github.com/elliotttate/DKC2Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/elliotttate/DKC2Recomp"
-  },
-  {
-    "id": "dkc3recomp",
-    "name": "Donkey Kong Country 3",
-    "game": "Donkey Kong Country 3",
-    "platform": "SNES",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "elliotttate/DKC3Recomp",
-    "website": "https://github.com/elliotttate/DKC3Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/elliotttate/DKC3Recomp"
   },
   {
     "id": "earthbound-companion",
@@ -5787,9 +5643,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/rages4calm/earthbound-companion"
+    "ptbr_status": "Tradução PT-BR Lendária (Earthbound Brasil)!",
+    "ptbr_details": "EarthBound / Mother 2 conta com a premiada tradução completa em Português Brasileiro do grupo Earthbound Brasil.",
+    "ptbr_url": "https://earthboundbrasil.com"
   },
   {
     "id": "earthworm-jim-hd-recompiled",
@@ -5803,25 +5659,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Plataforma Arcade / Textos Mínimos",
+    "ptbr_details": "Earthworm Jim HD com gráficos em alta resolução e ação clássica.",
     "ptbr_url": "https://github.com/TekRantGaming/earthworm-jim-hd-recompiled"
-  },
-  {
-    "id": "fzerosnesrecomp",
-    "name": "F-Zero",
-    "game": "F-Zero",
-    "platform": "SNES",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "RetroPortingToolKit/FZeroSNESRecomp",
-    "website": "https://github.com/RetroPortingToolKit/FZeroSNESRecomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/RetroPortingToolKit/FZeroSNESRecomp"
   },
   {
     "id": "fci-recomp",
@@ -5835,9 +5675,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (og xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/VinceIP/fci-recomp"
+    "ptbr_status": "Tradução PT-BR Completa (GameVicio)!",
+    "ptbr_details": "Far Cry Instincts do Xbox original possui tradução em Português Brasileiro compatível.",
+    "ptbr_url": "https://gamevicio.com"
   },
   {
     "id": "faxanadurecomp",
@@ -5851,9 +5691,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/FaxanaduRecomp"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "Faxanadu de NES conta com excelente tradução para Português Brasileiro feita pela comunidade no Romhacking Brasil.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "xi-on-anything",
@@ -5867,8 +5707,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "MMORPG em Inglês / Servidores Privados",
+    "ptbr_details": "Final Fantasy XI cliente nativo moderno para sistemas atuais com foco no conteúdo clássico online.",
     "ptbr_url": "https://github.com/rubymatrix/xi-on-anything"
   },
   {
@@ -5883,9 +5723,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (GBA) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Lordingard/SacredStonesRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Fire Emblem Brasil)!",
+    "ptbr_details": "Fire Emblem: The Sacred Stones de GBA conta com tradução consagrada de todos os diálogos e menus para Português Brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "flame",
@@ -5899,25 +5739,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "MMORPG FlyFF Reimplementado / Suporte a Idiomas",
+    "ptbr_details": "Cliente moderno e de alta performance para Flyff (Fly For Fun).",
     "ptbr_url": "https://github.com/DiaLight/Flame"
-  },
-  {
-    "id": "forza-motorsport-2-regpu",
-    "name": "Forza Motorsport 2 (Forza Motorsport 2 ReGPU)",
-    "game": "Forza Motorsport 2",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "zer0ducksgiven/Forza-Motorsport-2-ReGPU",
-    "website": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/zer0ducksgiven/Forza-Motorsport-2-ReGPU"
   },
   {
     "id": "genma-recomp",
@@ -5931,8 +5755,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Desenvolvido por Brasileiro (rafaelkenedy) + PT-BR!",
+    "ptbr_details": "Genma Onimusha de Xbox portado nativamente pelo desenvolvedor brasileiro Rafael Kenedy, com compatibilidade a traduções PT-BR.",
     "ptbr_url": "https://github.com/rafaelkenedy/genma-recomp"
   },
   {
@@ -5947,8 +5771,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Twin-Stick Shooter Arcade / Textos Mínimos",
+    "ptbr_details": "Geometry Wars: Retro Evolved 2 de Xbox 360 com foco em ação psicodélica e pontuação.",
     "ptbr_url": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled"
   },
   {
@@ -5963,8 +5787,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "FPS de Ação / Textos em Inglês",
+    "ptbr_details": "GoldenEye 007: Reloaded de Xbox 360 remasterizado com gráficos modernos.",
     "ptbr_url": "https://github.com/nikolaygorb/GoldenEye007ReloadedRecomp"
   },
   {
@@ -5979,8 +5803,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS3) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "FPS Sci-Fi de PS3 / Menus em Inglês",
+    "ptbr_details": "Haze da Free Radical Design portado nativamente com foco em 60 FPS.",
     "ptbr_url": "https://github.com/zdiemer/haze-recomp"
   },
   {
@@ -5995,8 +5819,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Noturna Tokyo / Menus em Inglês",
+    "ptbr_details": "Import Tuner Challenge (Tokyo Xtreme Racer) de Xbox 360 nas rodovias de Tóquio.",
     "ptbr_url": "https://github.com/Spooky098529/ITC-Recomp"
   },
   {
@@ -6011,9 +5835,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Voicedrew11/verdite2"
+    "ptbr_status": "Tradução PT-BR Disponível na ISO!",
+    "ptbr_details": "King's Field II / King's Field de PS1 possui tradução em Português Brasileiro dos diálogos e magias.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "chaotixrecompiled",
@@ -6027,8 +5851,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (32X) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Plataforma 32X / Pouco Texto",
+    "ptbr_details": "Knuckles' Chaotix de Sega 32X com a mecânica elástica dos anéis a 60 FPS.",
     "ptbr_url": "https://github.com/YuutaTsubasa/ChaotixRecompiled"
   },
   {
@@ -6043,9 +5867,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Mabec-games/iss2000-recomp"
+    "ptbr_status": "Futebol Clássico / Suporta Hacks Brasileiros!",
+    "ptbr_details": "International Superstar Soccer 2000 de N64 compatível com narrações e escalações clássicas nacionais.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "medievil-ii-recomp",
@@ -6059,9 +5883,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/alexbeavs-ps1-ports/medievil-ii-recomp"
+    "ptbr_status": "Tradução PT-BR Completa na ISO (PS1)!",
+    "ptbr_details": "MediEvil II de PS1 conta com patch de tradução em Português Brasileiro para a jornada vitoriana de Sir Dan.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "megaman3nesrecomp",
@@ -6075,8 +5899,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Plataforma 8-Bit / Textos Mínimos",
+    "ptbr_details": "Mega Man 3 de NES com jogabilidade refinada e batalhas épicas com Robot Masters.",
     "ptbr_url": "https://github.com/mstan/Megaman3NESRecomp"
   },
   {
@@ -6091,9 +5915,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MegaManX2Recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Mega Man Brasil)!",
+    "ptbr_details": "Mega Man X2 de SNES possui tradução consagrada em Português Brasileiro com todos os diálogos dos X-Hunters.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "megamanx3snesrecomp",
@@ -6107,41 +5931,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MegamanX3SNESRecomp"
-  },
-  {
-    "id": "megamanx5recomp",
-    "name": "Mega Man X5",
-    "game": "Mega Man X5",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "mstan/MegaManX5Recomp",
-    "website": "https://github.com/mstan/MegaManX5Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MegaManX5Recomp"
-  },
-  {
-    "id": "megamanx6recomp",
-    "name": "Mega Man X6",
-    "game": "Mega Man X6",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "mstan/MegaManX6Recomp",
-    "website": "https://github.com/mstan/MegaManX6Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MegaManX6Recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Mega Man Brasil)!",
+    "ptbr_details": "Mega Man X3 de SNES conta com tradução completa em Português Brasileiro e opção de jogar com Zero.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "metroidnesrecomp",
@@ -6155,9 +5947,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MetroidNESRecomp"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "O Metroid original de NES possui patch de tradução em Português Brasileiro na ROM.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "primerecomp",
@@ -6171,9 +5963,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Switch) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/gminustwo/primerecomp"
+    "ptbr_status": "Tradução PT-BR Completa Disponível!",
+    "ptbr_details": "Compatível com o patch de tradução em Português Brasileiro feito para Metroid Prime Remastered no Switch.",
+    "ptbr_url": "https://gamebanana.com"
   },
   {
     "id": "street-recomp-v3",
@@ -6187,8 +5979,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (GameCube) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte Arcade / Menus em Inglês",
+    "ptbr_details": "NBA Street V3 focado nas partidas de basquete de rua com comandos e termos universais da NBA.",
     "ptbr_url": "https://github.com/recomp-code/street-recomp-v3"
   },
   {
@@ -6203,9 +5995,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Wii U) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/nsmbu-recomp/nsmbu-recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa!",
+    "ptbr_details": "New Super Mario Bros. U possui patch completo de tradução para Português Brasileiro compatível com os arquivos de Wii U.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "nsmb-wii-multiplayer-recompilation",
@@ -6219,9 +6011,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Wii) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation"
+    "ptbr_status": "Tradução PT-BR Completa (Equipe Monkey)",
+    "ptbr_details": "New Super Mario Bros. Wii possui tradução consagrada em Português Brasileiro aplicável na ISO/WBFS do jogo.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "spideyps1recomp",
@@ -6235,9 +6027,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/GTTeancum/SpideyPS1recomp"
+    "ptbr_status": "Dublado e Legendado em PT-BR (PS1 Clássico)!",
+    "ptbr_details": "Spider-Man de PS1 conta com dublagem marcante em Português Brasileiro pela comunidade brasileira e legendas na ISO.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "openxvt",
@@ -6251,8 +6043,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Espacial Star Wars / Textos em Inglês",
+    "ptbr_details": "Star Wars: X-Wing vs. TIE Fighter com suporte moderno.",
     "ptbr_url": "https://github.com/elyosh/OpenXvT"
   },
   {
@@ -6267,8 +6059,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Espacial Star Wars / Textos em Inglês",
+    "ptbr_details": "Star Wars: X-Wing Alliance com suporte a resoluções widescreen.",
     "ptbr_url": "https://github.com/elyosh/OpenXWA"
   },
   {
@@ -6283,41 +6075,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Arcade Clássico / Sem Texto",
+    "ptbr_details": "O imortal Pac-Man estilo arcade, dispensa qualquer tradução.",
     "ptbr_url": "https://github.com/Mr-Shizzy/PacManRecomp"
-  },
-  {
-    "id": "pokerecomp",
-    "name": "Pokémon FireRed and LeafGreen (PokeRecomp)",
-    "game": "Pokémon FireRed and LeafGreen",
-    "platform": "GBA",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "sonsegajp/PokeRecomp",
-    "website": "https://github.com/sonsegajp/PokeRecomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (GBA) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/sonsegajp/PokeRecomp"
-  },
-  {
-    "id": "fireredleafgreenrecomp",
-    "name": "Pokémon FireRed and Pokémon LeafGreen",
-    "game": "Pokémon FireRed and Pokémon LeafGreen",
-    "platform": "GBA",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "mstan/FireRedLeafGreenRecomp",
-    "website": "https://github.com/mstan/FireRedLeafGreenRecomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (GBA) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/FireRedLeafGreenRecomp"
   },
   {
     "id": "pgr2-recomp",
@@ -6331,8 +6091,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Simulação / Pouco Texto",
+    "ptbr_details": "Project Gotham Racing 2 focado no sistema Kudos e cidades reais.",
     "ptbr_url": "https://github.com/hk21x/pgr2-recomp"
   },
   {
@@ -6347,9 +6107,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/boricuapab/quest64tale-recompiled"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "Quest 64 / Holy Magic Century de N64 possui tradução completa em Português Brasileiro dos diálogos e magias.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "rallisportchallenge2-decomp",
@@ -6363,8 +6123,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (og xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Rally e Corrida Off-Road / Pouco Texto",
+    "ptbr_details": "RalliSport Challenge 2 do Xbox original, um dos melhores jogos de rally da geração.",
     "ptbr_url": "https://github.com/Mortify7612/RallisportChallenge2-decomp"
   },
   {
@@ -6379,9 +6139,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Game Boy Color) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/sergiomanzur/regaiden-recomp"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "Resident Evil Gaiden do Game Boy Color possui tradução em Português Brasileiro disponível no Romhacking Brasil.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "ridgeracer6-recompilation",
@@ -6395,8 +6155,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Arcade / Textos Mínimos",
+    "ptbr_details": "Ridge Racer 6 de Xbox 360 focado em derrapagens e corridas em alta velocidade a 60 FPS.",
     "ptbr_url": "https://github.com/Sirhalo23/RidgeRacer6-Recompilation"
   },
   {
@@ -6411,9 +6171,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS2) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/silentsudin/RoadTripAdventure-recomp"
+    "ptbr_status": "Tradução PT-BR Disponível na ISO!",
+    "ptbr_details": "Road Trip / Choro Q HG 2 de PS2 possui patch de tradução em Português Brasileiro dos diálogos e missões.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "rs-rearmed",
@@ -6427,8 +6187,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Mac) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "100% Nativo em Português Brasileiro Oficial!",
+    "ptbr_details": "Rocksmith 2014 conta com menus, lições e interface oficial em Português Brasileiro.",
     "ptbr_url": "https://github.com/bbelgg/rs-rearmed"
   },
   {
@@ -6443,8 +6203,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Arcade / Textos Mínimos",
+    "ptbr_details": "Rush 2: Extreme Racing USA focado em acrobacias e corridas intensas.",
     "ptbr_url": "https://github.com/bryantmh/rush2recompiled"
   },
   {
@@ -6459,9 +6219,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Matt-code-d/Saw2Recomp"
+    "ptbr_status": "Tradução PT-BR Disponível (Tribo Gamer)!",
+    "ptbr_details": "Saw II: Flesh & Blood conta com tradução da comunidade para Português Brasileiro.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "sega-superstars-tennis-rematch",
@@ -6475,8 +6235,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte e Festa / Pouco Texto",
+    "ptbr_details": "Sega Superstars Tennis reúne personagens da Sega em partidas divertidas de tênis.",
     "ptbr_url": "https://github.com/m1ndcrap/Sega-Superstars-Tennis-ReMatch"
   },
   {
@@ -6491,8 +6251,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte de Inverno / Pouco Texto",
+    "ptbr_details": "Snowboard Kids de N64 com foco nas descidas na neve e itens estilo Mario Kart.",
     "ptbr_url": "https://github.com/cdlewis/snowboardkids-recomp"
   },
   {
@@ -6507,8 +6267,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Dreamcast) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta 3D Arcade / Textos Mínimos",
+    "ptbr_details": "SoulCalibur de Dreamcast considerado um dos melhores jogos de luta de todos os tempos.",
     "ptbr_url": "https://github.com/enrique363/voldorium"
   },
   {
@@ -6523,8 +6283,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Aventura e Plataforma / Textos em Inglês",
+    "ptbr_details": "Space Station Silicon Valley de N64 focado no controle de animais robóticos.",
     "ptbr_url": "https://github.com/Cellenseres/SSSV_Recomp"
   },
   {
@@ -6539,8 +6299,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida e Acrobacias 3D / Menus em Inglês",
+    "ptbr_details": "Stunts (4D Sports Driving) remasterizado em alta definição com pistas e loops insanos.",
     "ptbr_url": "https://github.com/mr-finster/stunts-hd"
   },
   {
@@ -6555,8 +6315,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Switch) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Menus em Inglês / Arcade Clássico",
+    "ptbr_details": "Super Mario Bros. 35 é focado na ação estilo battle royale com textos mínimos de menu.",
     "ptbr_url": "https://github.com/sm35recomp/sm35recomp"
   },
   {
@@ -6571,8 +6331,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Estratégia Tática Mecha / Textos em Inglês/Japonês",
+    "ptbr_details": "Super Robot Wars 64 focado em batalhas estratégicas de robôs gigantes.",
     "ptbr_url": "https://github.com/dyzz/srw64-recomp"
   },
   {
@@ -6587,25 +6347,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação em Mundo Aberto / Textos em Inglês",
+    "ptbr_details": "Superman Returns de Xbox 360 com Metropolis em escala real e voo livre.",
     "ptbr_url": "https://github.com/MrPowerUp82/superman_returns_recomp"
-  },
-  {
-    "id": "syphon-filter-2-recomp",
-    "name": "Syphon Filter 2",
-    "game": "Syphon Filter 2",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "alexbeavs-ps1-ports/syphon-filter-2-recomp",
-    "website": "https://github.com/alexbeavs-ps1-ports/syphon-filter-2-recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/alexbeavs-ps1-ports/syphon-filter-2-recomp"
   },
   {
     "id": "isaacrecomp",
@@ -6619,8 +6363,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Tradução PT-BR Completa (The Binding of Isaac)!",
+    "ptbr_details": "The Binding of Isaac original conta com mod completo de tradução para Português Brasileiro.",
     "ptbr_url": "https://github.com/whylurking/IsaacRecomp"
   },
   {
@@ -6635,9 +6379,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/LegendOfZeldaNESRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa!",
+    "ptbr_details": "O clássico primeiro The Legend of Zelda de NES possui excelente tradução em Português Brasileiro na ROM base.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "epoch-equinox",
@@ -6651,9 +6395,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Game Boy Color) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/ZakyPew/epoch-equinox"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Zelda BR)!",
+    "ptbr_details": "The Legend of Zelda: Oracle of Ages e Oracle of Seasons contam com traduções impecáveis em Português Brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "themepark-recomp",
@@ -6667,25 +6411,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Construção de Parques / Tradução PT-BR Disponível",
+    "ptbr_details": "Theme Park clássico da Bullfrog com gerenciamento divertido.",
     "ptbr_url": "https://github.com/sp00nznet/themepark-recomp"
-  },
-  {
-    "id": "top-gear-snes-static-recomp",
-    "name": "Top Gear",
-    "game": "Top Gear",
-    "platform": "SNES",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "Junior-Jones/Top-Gear-SNES-Static-Recomp",
-    "website": "https://github.com/Junior-Jones/Top-Gear-SNES-Static-Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Junior-Jones/Top-Gear-SNES-Static-Recomp"
   },
   {
     "id": "toystory2recomp",
@@ -6699,9 +6427,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/PeriBluGaming/ToyStory2Recomp"
+    "ptbr_status": "Dublado e Legendado em PT-BR (Dublagem Oficial Disney)!",
+    "ptbr_details": "Toy Story 2 de PS1 é consagrado por ter a dublagem clássica em Português Brasileiro com as vozes originais dos filmes no CD oficial brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "twistedmetal4recomp",
@@ -6715,8 +6443,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Combate Veicular / Pouco Texto",
+    "ptbr_details": "Twisted Metal 4 de PS1 focado na demolição veicular com armas insanas.",
     "ptbr_url": "https://github.com/TechnicallyComputers/TwistedMetal4Recomp"
   },
   {
@@ -6731,41 +6459,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/Kitrinx/Ultima7_Decomp"
-  },
-  {
-    "id": "vf1-recomp",
-    "name": "Virtua Fighter",
-    "game": "Virtua Fighter",
-    "platform": "Arcade",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "mr-finster/vf1-recomp",
-    "website": "https://github.com/mr-finster/vf1-recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Arcade) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mr-finster/vf1-recomp"
-  },
-  {
-    "id": "vf3-recomp",
-    "name": "Virtua Fighter 3",
-    "game": "Virtua Fighter 3",
-    "platform": "Arcade",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "mr-finster/vf3-recomp",
-    "website": "https://github.com/mr-finster/vf3-recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Arcade) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mr-finster/vf3-recomp"
+    "ptbr_status": "Tradução PT-BR Completa (ScummBR)!",
+    "ptbr_details": "Ultima VII possui excelente tradução da comunidade brasileira no ScummBR.",
+    "ptbr_url": "https://scummbr.com"
   },
   {
     "id": "wc1-re",
@@ -6779,8 +6475,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Espacial Clássico / Menus em Inglês",
+    "ptbr_details": "Wing Commander I reimplementado para sistemas contemporâneos.",
     "ptbr_url": "https://github.com/neuromancer/wc1-re"
   },
   {
@@ -6795,9 +6491,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Wii) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/arelkair/wiiparty-recomp"
+    "ptbr_status": "Tradução PT-BR Completa Disponível!",
+    "ptbr_details": "Wii Party conta com projeto de tradução para Português Brasileiro pela comunidade Nintendo Wii BR.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "wwe13-recomp",
@@ -6811,8 +6507,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre / Modo Attitude Era",
+    "ptbr_details": "WWE '13 focado na épica era Attitude da WWE.",
     "ptbr_url": "https://github.com/PromethenDev/wwe13-recomp"
   },
   {
@@ -6827,41 +6523,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Livre Arcade / Pouco Texto",
+    "ptbr_details": "WWE All Stars com estilo caricato e golpes acrobáticos no ar.",
     "ptbr_url": "https://github.com/shaneomac1337/WWE-AllStars-Recomp"
-  },
-  {
-    "id": "wwe-svr2007-recomp",
-    "name": "WWE SmackDown vs. Raw 2007 (WWE-SVR2007-RECOMP)",
-    "game": "WWE SmackDown vs. Raw 2007",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "nefariousjosiah/WWE-SVR2007-RECOMP",
-    "website": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/nefariousjosiah/WWE-SVR2007-RECOMP"
-  },
-  {
-    "id": "wwe-svr2011-pc",
-    "name": "WWE SmackDown vs. Raw 2011",
-    "game": "WWE SmackDown vs. Raw 2011",
-    "platform": "Xbox 360",
-    "category": "Xbox 360 & Xbox Clássico",
-    "github_repo": "KaikoClanworth1/wwe-svr2011-pc",
-    "website": "https://github.com/KaikoClanworth1/wwe-svr2011-pc/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/KaikoClanworth1/wwe-svr2011-pc"
   },
   {
     "id": "xml1-recomp",
@@ -6875,9 +6539,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/GTTeancum/XML1-recomp"
+    "ptbr_status": "Tradução PT-BR Completa (X-Men Legends)!",
+    "ptbr_details": "X-Men Legends possui tradução para Português Brasileiro de todos os diálogos dos mutantes.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "dinotale",
@@ -6891,25 +6555,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/wootbeer/dinotale"
-  },
-  {
-    "id": "psxrecomp-ports",
-    "name": "Alexbeav's PS1 recomps (psxrecomp-ports)",
-    "game": "Alexbeav's PS1 recomps",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "alexbeavs-ps1-ports/psxrecomp-ports",
-    "website": "https://github.com/alexbeavs-ps1-ports/psxrecomp-ports/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/alexbeavs-ps1-ports/psxrecomp-ports"
+    "ptbr_status": "Tradução PT-BR Completa (Yoshi's Story)!",
+    "ptbr_details": "Yoshi's Story de N64 conta com tradução para Português Brasileiro nas histórias e diálogos das fases.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "blastcorps-recomp",
@@ -6923,9 +6571,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/SlaveOfIDO/blastcorps-recomp"
+    "ptbr_status": "Tradução PT-BR Disponível na ROM!",
+    "ptbr_details": "Blast Corps de Nintendo 64 possui patch de tradução para Português Brasileiro das instruções das missões.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "ctw-native",
@@ -6939,9 +6587,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/official-kryo-to/ctw-native"
+    "ptbr_status": "Tradução PT-BR 100% Completa (GTA Chinatown Wars)!",
+    "ptbr_details": "GTA Chinatown Wars de Nintendo DS possui tradução consagrada e completa em Português Brasileiro na ROM.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "db-final-bout-recomp",
@@ -6955,9 +6603,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/novapowers0/DB-Final-Bout-Recomp"
+    "ptbr_status": "Dublado em Português Brasileiro (Fandub Nostálgico)!",
+    "ptbr_details": "Dragon Ball GT: Final Bout de PS1 conta com o clássico patch brasileiro com as vozes dos dubladores oficiais do anime no Brasil!",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "f15se2-re",
@@ -6971,8 +6619,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (DOS) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Simulador Militar de Caça / Pouco Texto",
+    "ptbr_details": "F-15 Strike Eagle II com combates aéreos clássicos.",
     "ptbr_url": "https://github.com/neuviemeporte/f15se2-re"
   },
   {
@@ -6987,41 +6635,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Arcade) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Arcade Drift / Menus em Japonês/Inglês",
+    "ptbr_details": "Initial D Arcade Stage Ver.3 rodando nativamente a 60 FPS com controles de volante e gamepad.",
     "ptbr_url": "https://github.com/distilledorion-sketch/Initial-D-Arcade-Stage-3-Native-SH-4-Recompilation-WIP-"
-  },
-  {
-    "id": "nfsu2recomp",
-    "name": "Need for Speed: Underground 2",
-    "game": "Need for Speed: Underground 2",
-    "platform": "PC",
-    "category": "Source Ports de Clássicos",
-    "github_repo": "TalhaMudo/NFSU2Recomp",
-    "website": "https://github.com/TalhaMudo/NFSU2Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PC) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/TalhaMudo/NFSU2Recomp"
-  },
-  {
-    "id": "parasite-eve-recomp",
-    "name": "Parasite Eve",
-    "game": "Parasite Eve",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "alexbeavs-ps1-ports/parasite-eve-recomp",
-    "website": "https://github.com/alexbeavs-ps1-ports/parasite-eve-recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/alexbeavs-ps1-ports/parasite-eve-recomp"
   },
   {
     "id": "prototype-switch",
@@ -7035,9 +6651,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/fungalspores/prototype-switch"
+    "ptbr_status": "Tradução PT-BR Completa (GameVicio / Tribo Gamer)!",
+    "ptbr_details": "Prototype 1 e 2 contam com traduções consagradas em Português Brasileiro pela comunidade.",
+    "ptbr_url": "https://tribogamer.com"
   },
   {
     "id": "scooby-doo-refrightened",
@@ -7051,9 +6667,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (GameCube) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/josiahg2502-glitch/Scooby-Doo-Refrightened"
+    "ptbr_status": "Dublagem e Tradução PT-BR Disponíveis!",
+    "ptbr_details": "Projeto da comunidade brasileira com áudio e dublagem em Português adaptado para a ISO do GameCube.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "soulcalibur2hd-recomp",
@@ -7067,8 +6683,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS3) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta 3D Arcade / Textos Mínimos",
+    "ptbr_details": "Soulcalibur II HD Online de PS3 remasterizado em alta definição a 60 FPS.",
     "ptbr_url": "https://github.com/n0madic/Soulcalibur2HD-recomp"
   },
   {
@@ -7083,8 +6699,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta 3D Arcade / Textos Mínimos",
+    "ptbr_details": "Street Fighter EX Plus Alpha de PS1 com foco nos golpes clássicos e combos.",
     "ptbr_url": "https://github.com/guimaraf/plusalpha-recomp"
   },
   {
@@ -7099,8 +6715,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Combate de Tanques / Menus em Inglês",
+    "ptbr_details": "BattleTanx: Global Assault de N64 focado no combate veicular com ação tática.",
     "ptbr_url": "https://github.com/wootbeer/btgarecomp"
   },
   {
@@ -7115,8 +6731,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Combate Naval / Pouco Texto",
+    "ptbr_details": "Blood Wake do Xbox original focado no combate de lanchas armadas.",
     "ptbr_url": "https://github.com/minimalice92/bloodwake-recomp"
   },
   {
@@ -7131,8 +6747,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Party Arcade / Textos Mínimos",
+    "ptbr_details": "Bomberman Party Edition de PS1 focado nas partidas multiplayer e explosões.",
     "ptbr_url": "https://github.com/TechnicallyComputers/BombermanPartyEditionRecomp"
   },
   {
@@ -7147,8 +6763,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Aventura e Labirinto / Pouco Texto",
+    "ptbr_details": "Bomberman World de PS1 com foco nas fases de batalha e chefes.",
     "ptbr_url": "https://github.com/TechnicallyComputers/Bomberman-World-Recomp"
   },
   {
@@ -7163,8 +6779,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Puzzle Arcade / Textos Mínimos",
+    "ptbr_details": "Dr. Mario de NES focado na mecânica de quebra-cabeça com pílulas coloridas.",
     "ptbr_url": "https://github.com/mstan/DrMarioNesRecomp"
   },
   {
@@ -7179,8 +6795,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Boxe Simulação / Textos Mínimos",
+    "ptbr_details": "Fight Night Round 3 de Xbox 360 focado na mecânica analógica de socos e esquivas.",
     "ptbr_url": "https://github.com/djultra64/Fight-Night-Round-3-Recomp"
   },
   {
@@ -7195,8 +6811,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Náutica Arcade / Pouco Texto",
+    "ptbr_details": "Hydro Thunder Hurricane com lanchas potentes e saltos monumentais.",
     "ptbr_url": "https://github.com/monscriser/HydroThunderPORT"
   },
   {
@@ -7211,8 +6827,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida de Moto Aquática / Pouco Texto",
+    "ptbr_details": "Jet Moto 2 de PS1 focado em pistas radicais com hoverbikes.",
     "ptbr_url": "https://github.com/goodshepherd23/JetMoto2-Recomp"
   },
   {
@@ -7227,9 +6843,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/rages4calm/LagoonSNESRecomp"
+    "ptbr_status": "Tradução PT-BR Completa na ROM!",
+    "ptbr_details": "Lagoon de SNES conta com patch de tradução completo em Português Brasileiro feito pela comunidade de romhacking.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "marvel-vs-capcom-clash-of-super-heroes-recomp",
@@ -7243,8 +6859,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Arcade / Textos Mínimos",
+    "ptbr_details": "Marvel vs. Capcom de PS1 focado no combate 2D de heróis e vilões.",
     "ptbr_url": "https://github.com/TechnicallyComputers/Marvel-vs.-Capcom-Clash-of-Super-Heroes-Recomp"
   },
   {
@@ -7259,9 +6875,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/alexbeavs-ps1-ports/mega-man-legends-recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Mega Man Brasil)!",
+    "ptbr_details": "Mega Man Legends de PS1 conta com patch de tradução para Português Brasileiro de toda a história e menus.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "megamanzerorecomp",
@@ -7275,9 +6891,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (GBA) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/MegaManZeroRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Mega Man Brasil)!",
+    "ptbr_details": "Mega Man Zero de GBA conta com tradução completa e polida em Português Brasileiro na ROM.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "metal-slug-x-recomp",
@@ -7291,8 +6907,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Arcade Ação Run & Gun / Textos Mínimos",
+    "ptbr_details": "Metal Slug X de PS1 dispensa tradução, pura ação arcade consagrada.",
     "ptbr_url": "https://github.com/TechnicallyComputers/Metal-Slug-X-Recomp"
   },
   {
@@ -7307,8 +6923,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Wii) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte Arcade / Menus em Inglês",
+    "ptbr_details": "MLB Power Pros 2008 focado no beisebol estilo arcade.",
     "ptbr_url": "https://github.com/HopeAero/MLBPowerPros2008Recomp"
   },
   {
@@ -7323,8 +6939,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Gerenciamento Esportivo / Em Inglês",
+    "ptbr_details": "NFL Head Coach 09 focado na estratégia de bastidores do futebol americano.",
     "ptbr_url": "https://github.com/tools81/nfl-head-coach-09-static-recomp"
   },
   {
@@ -7339,25 +6955,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Hóquei no Gelo / Pouco Texto",
+    "ptbr_details": "NHL: Legacy Edition com elencos completos da NHL.",
     "ptbr_url": "https://github.com/puckhead73/nhl-legacy-recomp"
-  },
-  {
-    "id": "rubysapphirerecomp",
-    "name": "Pokémon Ruby and Pokémon Sapphire",
-    "game": "Pokémon Ruby and Pokémon Sapphire",
-    "platform": "GBA",
-    "category": "Nintendo & Sega Recomps",
-    "github_repo": "mstan/RubySapphireRecomp",
-    "website": "https://github.com/mstan/RubySapphireRecomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (GBA) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/RubySapphireRecomp"
   },
   {
     "id": "rampage-through-time-recomp",
@@ -7371,8 +6971,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Arcade Destruição / Sem Texto Complexo",
+    "ptbr_details": "Rampage Through Time de PS1 com monstros gigantes destruindo cidades.",
     "ptbr_url": "https://github.com/TechnicallyComputers/Rampage---Through-Time-Recomp"
   },
   {
@@ -7387,8 +6987,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Corrida Arcade / Textos Mínimos",
+    "ptbr_details": "San Francisco Rush 2049 focado nas pistas futuristas e manobras acrobáticas.",
     "ptbr_url": "https://github.com/n64hub/rush-2049-recomp"
   },
   {
@@ -7403,8 +7003,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PSP) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Captura / Menus em Japonês/Inglês",
+    "ptbr_details": "Saru Get You: Saru Saru Daisakusen (Ape Escape) no PSP.",
     "ptbr_url": "https://github.com/jackgllghr/bigmission-recomp"
   },
   {
@@ -7419,9 +7019,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Game Boy Color) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/vibecodekun/shantaerecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Romhacking Brasil)!",
+    "ptbr_details": "Shantae original do Game Boy Color possui tradução completa em Português Brasileiro para a ROM.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "sonicthehedgehog2recomp",
@@ -7435,8 +7035,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Genesis) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Tradução PT-BR Oficial TecToy / ROM BR!",
+    "ptbr_details": "Compatível com a clássica versão nacional lançada pela TecToy no Brasil.",
     "ptbr_url": "https://github.com/mstan/SonicTheHedgehog2Recomp"
   },
   {
@@ -7451,8 +7051,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Luta Star Wars / Textos Mínimos",
+    "ptbr_details": "Star Wars: Masters of Teräs Käsi de PS1 focado em duelos de sabre de luz e artes marciais.",
     "ptbr_url": "https://github.com/TechnicallyComputers/MastersOfTerasKasiRecomp"
   },
   {
@@ -7467,8 +7067,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Shoot 'em Up / Textos Mínimos",
+    "ptbr_details": "Jogo clássico de navinha espacial 16-bit com foco 100% na jogabilidade arcade.",
     "ptbr_url": "https://github.com/SlippyGetBackHere/Strike-Gunner-STG-Recomp"
   },
   {
@@ -7483,9 +7083,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (SNES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/SuperMarioRPGRecomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Hexagon / Romhacking)!",
+    "ptbr_details": "Super Mario RPG: Legend of the Seven Stars possui uma das traduções mais queridas do Brasil, com diálogos totalmente em PT-BR na ROM.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "tenchuz-pc",
@@ -7499,8 +7099,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox 360) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação Stealth Ninja / Textos em Inglês",
+    "ptbr_details": "Tenchu Z de Xbox 360 focado na personalização de ninjas e missões de infiltração.",
     "ptbr_url": "https://github.com/8bitninja64/TenchuZ-PC"
   },
   {
@@ -7515,25 +7115,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Xbox) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/abilliontokens/urbz-recomp"
-  },
-  {
-    "id": "tomba2recomp",
-    "name": "Tomba! 2: The Evil Swine Return",
-    "game": "Tomba! 2: The Evil Swine Return",
-    "platform": "PS1",
-    "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "mstan/Tomba2Recomp",
-    "website": "https://github.com/mstan/Tomba2Recomp/releases",
-    "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
-    "windows": true,
-    "linux": true,
-    "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/mstan/Tomba2Recomp"
+    "ptbr_status": "Tradução PT-BR Completa (The Urbz: Sims in the City)!",
+    "ptbr_details": "The Urbz possui tradução consagrada em Português Brasileiro para a vida urbana dos Sims.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "vagrantstory-recomp",
@@ -7547,9 +7131,9 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
-    "ptbr_url": "https://github.com/riotashley81-jpg/vagrantstory_recomp"
+    "ptbr_status": "Tradução PT-BR 100% Completa (Romhacking Brasil)!",
+    "ptbr_details": "O clássico obra-prima Vagrant Story da Square de PS1 possui tradução consagrada em Português Brasileiro.",
+    "ptbr_url": "https://romhacking.net.br"
   },
   {
     "id": "bigodao",
@@ -7563,8 +7147,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Game Boy) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Port Desenvolvido por Brasileiro (GABRIELNNK)!",
+    "ptbr_details": "Recompilação nativa de Wario Land: Super Mario Land 3 feita pelo desenvolvedor brasileiro Gabriel, compatível com a ROM em PT-BR.",
     "ptbr_url": "https://github.com/GABRIELNNK/Bigodao"
   },
   {
@@ -7579,8 +7163,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (N64) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Esporte Arcade / Pouco Texto",
+    "ptbr_details": "Wayne Gretzky's 3D Hockey de N64 focado nas partidas rápidas no gelo.",
     "ptbr_url": "https://github.com/geno55/wg3d-recomp"
   },
   {
@@ -7595,8 +7179,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (PS1) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Ação e Plataforma 2.5D / Pouco Texto",
+    "ptbr_details": "Wild 9 da Shiny Entertainment no PS1 com mecânica do raio eletrostático.",
     "ptbr_url": "https://github.com/plinkr/Wild9Recomp"
   },
   {
@@ -7611,8 +7195,8 @@
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (NES) — veja instruções do projeto",
-    "ptbr_status": "Verificar PT-BR (depende da sua cópia do jogo / mods)",
-    "ptbr_details": "Usa os arquivos da sua cópia original; se a edição do jogo tiver PT-BR, ele aparece no port. Também aceita traduções da comunidade aplicadas na ISO/ROM base.",
+    "ptbr_status": "Puzzle Arcade / Textos Mínimos",
+    "ptbr_details": "Yoshi de NES focado em quebra-cabeça com blocos e ovos de Yoshi.",
     "ptbr_url": "https://github.com/mstan/YoshiNESRecomp"
   }
 ]
