@@ -1,19 +1,19 @@
 [
   {
-    "id": "gow3-pc",
-    "name": "God of War III Remastered PC (SpartanPort v2.7+)",
+    "id": "gow3-remastered-pc",
+    "name": "God of War III Remastered PC (FelipePrado0/gow3_pc)",
     "game": "God of War III Remastered",
     "platform": "PS4",
     "category": "PlayStation (PS4/PS2/PS1)",
-    "github_repo": "FelipePrado0/SpartanPort",
-    "website": "https://github.com/FelipePrado0/SpartanPort",
+    "github_repo": "FelipePrado0/gow3_pc",
+    "website": "https://github.com/FelipePrado0/gow3_pc",
     "asset_regex": ".*(win|windows|x64|gow3).*\\.(zip|7z)$",
     "windows": true,
     "linux": false,
     "requires": "Dump legal de God of War III Remastered de PS4 (CUSA01623 ou CUSA01715)",
-    "ptbr_status": "100% Nativo Oficial (Dublado e Legendado em PT-BR!)",
-    "ptbr_details": "Use a versão brasileira/latina CUSA01623 para ter a Dublagem Oficial Brasileira e menus/legendas em PT-BR nativamente!",
-    "ptbr_url": "https://github.com/FelipePrado0/SpartanPort/releases"
+    "ptbr_status": "PT-BR Oficial Nativo Disponível!",
+    "ptbr_details": "Port/wrapper nativo para PC rodando sobre Vulkan 1.3 a 60-120 FPS com upscalers FSR/RCAS e suporte total aos arquivos da versão CUSA01623 em Português.",
+    "ptbr_url": "https://github.com/FelipePrado0/gow3_pc"
   },
   {
     "id": "gow1-recomp",
@@ -4177,19 +4177,19 @@
   },
   {
     "id": "totk-pc-recomp",
-    "name": "TotK Recomp",
-    "game": "TotK Recomp",
+    "name": "Zelda: Tears of the Kingdom PC Recomp (MacNativeGames / TotK Recomp)",
+    "game": "The Legend of Zelda: Tears of the Kingdom",
     "platform": "Switch",
     "category": "GameCube, Wii, Wii U & Switch",
-    "github_repo": "valentderah/totk-pc-recomp",
-    "website": "https://github.com/valentderah/totk-pc-recomp/releases",
+    "github_repo": "MacNativeGames/totk-recomp",
+    "website": "https://github.com/MacNativeGames/totk-recomp",
     "asset_regex": ".*(win|windows|x64|msvc).*\\.(zip|7z|exe)$",
     "windows": true,
     "linux": true,
     "requires": "Cópia do seu jogo original (Switch) — veja instruções do projeto",
-    "ptbr_status": "100% Oficial Nativo + Dublagem da Comunidade!",
-    "ptbr_details": "A atualização oficial do Switch v1.2.0+ inclui Português Brasileiro (menus e legendas). Além disso, há o mod completo de dublagem PT-BR da comunidade para Tears of the Kingdom no GameBanana.",
-    "ptbr_url": "https://gamebanana.com/mods/453229"
+    "ptbr_status": "Tradução PT-BR Completa Disponível! (Triforce Heroes v3.1)",
+    "ptbr_details": "Recompilação estática nativa ARM64 -> x86_64 para PC (Vulkan, 60+ FPS, Ultrawide, Mods de Shaders e Textos). Tradução completa da equipe Triforce Heroes com suporte a termos clássicos e vozes.",
+    "ptbr_url": "https://triforce-heroes.com.br/traducoes"
   },
   {
     "id": "openbor",
@@ -7198,5 +7198,21 @@
     "ptbr_status": "Puzzle Arcade / Textos Mínimos",
     "ptbr_details": "Yoshi de NES focado em quebra-cabeça com blocos e ovos de Yoshi.",
     "ptbr_url": "https://github.com/mstan/YoshiNESRecomp"
+  },
+  {
+    "id": "pokemon-pokopia-pc",
+    "name": "Pokémon Pokopia (Early PC Vulkan Build / Canary)",
+    "game": "Pokémon Pokopia",
+    "platform": "Switch 2",
+    "category": "GameCube, Wii, Wii U & Switch",
+    "github_repo": "leetcrew/pokopia-pc",
+    "website": "https://twitter.com/l33tcrew1337",
+    "asset_regex": ".*(win|windows|x64).*\\.(zip|7z)$",
+    "windows": true,
+    "linux": false,
+    "requires": "Dump legal de Pokémon Pokopia + placa com Vulkan 1.3",
+    "ptbr_status": "Em Desenvolvimento / Testes Preliminares",
+    "ptbr_details": "Execução experimental em 60 FPS estáveis via backend Vulkan no PC conforme demonstrado pela comunidade (leetcrew). Simulação social onde você controla um Ditto.",
+    "ptbr_url": "https://twitter.com/l33tcrew1337"
   }
 ]
