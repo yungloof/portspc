@@ -587,23 +587,31 @@ namespace PortsPCLauncher {
                     web.Headers["User-Agent"] = "PortsPC-Launcher";
                     try {
                         string md = await web.DownloadStringTaskAsync("https://raw.githubusercontent.com/SubmitGame/awesome-decomp-games/main/README.md");
-                        string currentCat = "Nintendo (N64, 3DS, DS, GBA, SNES)";
+                        string currentCat = "Nintendo & Sega Recomps";
                         string[] lines = md.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                        var rx = new Regex(@"^\-\s+\*\*\[([^\]]+)\]\(https://github\.com/([^/\)]+/[^/\)]+)\)\*\*.*\[release\]\(([^\)]+)\)", RegexOptions.IgnoreCase);
+                        // Linha de tabela: | [Titulo](https://github.com/o/r) | Plataforma | Nota | estrelas | data | ... | [release](...)
+                        var rx = new Regex(@"^\|\s*\[([^\]]+)\]\(https://github\.com/([^/\)]+/[^/\)]+)\)[^|]*\|\s*([^|]+?)\s*\|\s*([\d\.]+)\s*\|.*\[release\]", RegexOptions.IgnoreCase);
+                        string section = "";
 
                         foreach (string line in lines) {
-                            if (line.StartsWith("## ")) {
-                                if (line.Contains("PlayStation")) currentCat = "PlayStation (PS4, PS3, PS2, PS1, PSP)";
-                                else if (line.Contains("Xbox")) currentCat = "Xbox 360 & Xbox Clássico";
-                                else if (line.Contains("GameCube") || line.Contains("Wii") || line.Contains("Switch")) currentCat = "GameCube, Wii, Wii U & Switch";
-                                else if (line.Contains("PC")) currentCat = "Source Ports de Clássicos de PC";
-                                else currentCat = "Nintendo & Sega Recomps (N64, 3DS, DS, GBA, SNES, Mega Drive)";
-                                continue;
-                            }
+                            if (line.StartsWith("## ")) { section = line.Substring(3).Trim(); continue; }
+                            if (section != "Static recompilations" && section != "Source ports" &&
+                                section != "Engine remakes & reimplementations" && section != "Decompilations") continue;
                             var m = rx.Match(line);
                             if (m.Success) {
                                 string title = m.Groups[1].Value.Trim();
                                 string repo = m.Groups[2].Value.Trim();
+                                string plat = m.Groups[3].Value.Trim();
+                                double score = 0;
+                                double.TryParse(m.Groups[4].Value, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out score);
+                                bool isStatic = section == "Static recompilations";
+                                if (score < (isStatic ? 3.8 : 4.3)) continue;
+                                if (Regex.IsMatch(repo + " " + title, "android|3ds|vita|mobile|godot", RegexOptions.IgnoreCase)) continue;
+                                if (plat.StartsWith("PS")) currentCat = "PlayStation (PS4/PS2/PS1)";
+                                else if (plat.IndexOf("xbox", StringComparison.OrdinalIgnoreCase) >= 0) currentCat = "Xbox 360 & Xbox Clássico";
+                                else if (plat == "Wii" || plat == "GameCube" || plat == "Wii U" || plat == "Switch") currentCat = "GameCube, Wii, Wii U & Switch";
+                                else if (plat == "PC" || plat == "DOS" || plat == "Mac") currentCat = "Source Ports de Clássicos";
+                                else currentCat = "Nintendo & Sega Recomps";
                                 if (!knownRepos.Contains(repo)) {
                                     string idSlug = Regex.Replace(title.ToLower(), @"[^a-z0-9]+", "-").Trim('-');
                                     if (knownIds.Contains(idSlug)) idSlug = idSlug + "-port";
