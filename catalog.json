@@ -7214,5 +7214,21 @@
     "ptbr_status": "Em Desenvolvimento / Testes Preliminares",
     "ptbr_details": "Execução experimental em 60 FPS estáveis via backend Vulkan no PC conforme demonstrado pela comunidade (leetcrew). Simulação social onde você controla um Ditto.",
     "ptbr_url": "https://twitter.com/l33tcrew1337"
+  },
+  {
+    "id": "smo-pc-recomp",
+    "name": "Super Mario Odyssey PC (smo-recomp / Coz-0)",
+    "game": "Super Mario Odyssey",
+    "platform": "Switch",
+    "category": "GameCube, Wii, Wii U & Switch",
+    "github_repo": "Coz-0/smo-recomp",
+    "website": "https://github.com/Coz-0/smo-recomp",
+    "asset_regex": ".*(win|windows|x64|smo).*\\.(zip|7z|exe)$",
+    "windows": true,
+    "linux": false,
+    "requires": "Dump legal de Super Mario Odyssey (Switch, versão 1.4.1) + GPU com Vulkan 1.3",
+    "ptbr_status": "100% Nativo Oficial (Menus e Legendas em PT-BR!)",
+    "ptbr_details": "Recompilação estática nativa ARM64 -> Windows x64 com backend Vulkan próprio sem emulação de CPU. O dump da versão 1.4.1 inclui menus e textos oficiais em Português Brasileiro.",
+    "ptbr_url": "https://github.com/Coz-0/smo-recomp"
   }
 ]

@@ -17,7 +17,7 @@ Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, u
 4. **Instalação em 1 Clique:** selecione qualquer jogo e clique em **`📥 Instalar Jogo`**. O launcher baixa a versão oficial mais recente direto do GitHub com barra de progresso em tempo real, extrai para `F:\Jogos\PortsPC\<jogo>`, **apaga o `.zip` temporário na mesma hora** para poupar os 200 GB do seu disco `F:`, gera o guia `LEIAME-PTBR.txt` e abre a pasta do jogo!
 
 > 🌐 **Versão Web Interativa (Navegador / Celular / Steam Deck):**  
-> Prefere navegar pelo browser ou compartilhar com amigos? Abra o [`index.html`](index.html) ou acesse via GitHub Pages para pesquisar e filtrar todos os 451 jogos catalogados com design responsivo!
+> Prefere navegar pelo browser ou compartilhar com amigos? Abra o [`index.html`](index.html) ou acesse via GitHub Pages para pesquisar e filtrar todos os 452 jogos catalogados com design responsivo!
 
 ---
 
