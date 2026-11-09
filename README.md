@@ -1,6 +1,6 @@
 # 🎮 PortsPC — O Catálogo Definitivo de Ports Nativos, Recompilações Estáticas e Descompilações para PC (com Guia PT-BR 🇧🇷)
 
-Bem-vindo ao **PortsPC**! Este repositório é um catálogo **100% atualizado (Outubro de 2026)**, livre, comunitário e sem burocracia com **450 Ports Nativos de Console para PC, Recompilações Estáticas (`PS4/PS3 Native`, `PS2Recomp`, `XenonRecomp`, `ReXGlue`, `N64Recomp`, `DolRecomp`, `PSXRecomp`, `GbaRecomp`), Descompilações (`libultraship`, `OpenGOAL`, `snesrev`), Source Ports e Remakes**, focado em **Windows** (e **Linux / Steam Deck**) e com mapeamento completo de **Traduções e Dublagens em Português Brasileiro (PT-BR)**.
+Bem-vindo ao **PortsPC**! Este repositório é um catálogo **100% atualizado (Outubro de 2026)**, livre, comunitário e sem burocracia com **457 Ports Nativos de Console para PC, Recompilações Estáticas (`PS4/PS3 Native`, `PS2Recomp`, `XenonRecomp`, `ReXGlue`, `N64Recomp`, `DolRecomp`, `PSXRecomp`, `GbaRecomp`), Descompilações (`libultraship`, `OpenGOAL`, `snesrev`), Source Ports e Remakes**, focado em **Windows** (e **Linux / Steam Deck**) e com mapeamento completo de **Traduções e Dublagens em Português Brasileiro (PT-BR)**.
 
 > 💡 **Economia Inteligente de Espaço em Disco:**
 > Este repositório ocupa **menos de 2 MB** no seu HD/SSD! Em vez de obrigar você a clonar ou compilar centenas de gigabytes, incluímos o aplicativo nativo **`PortsPC.exe`** (e o script `Instalar-Ports.bat`): você escolhe apenas o jogo que quer jogar agora, ele baixa a versão oficial pré-compilada direto do GitHub para `F:\Jogos\PortsPC\<Jogo>`, extrai e **apaga o `.zip` temporário imediatamente**.
@@ -12,12 +12,12 @@ Bem-vindo ao **PortsPC**! Este repositório é um catálogo **100% atualizado (O
 Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, um programa Windows nativo, leve (apenas **39 KB**!) e com interface moderna em tema escuro de jogos:
 
 1. **Dê dois cliques em [`PortsPC.exe`](PortsPC.exe)** (já compilado e pronto na raiz da pasta, sem precisar instalar nada!).
-2. **Navegue visualmente pelos 450 cards:** pesquise pelo nome do jogo, filtre por console (`PlayStation`, `Xbox`, `Nintendo`, `PC & Outros`, `Fangames`) ou marque a opção **`🇧🇷 Somente com PT-BR`**.
+2. **Navegue visualmente pelos 457 cards:** pesquise pelo nome do jogo, filtre por console (`PlayStation`, `Xbox`, `Nintendo`, `PC & Outros`, `Fangames`) ou marque a opção **`🇧🇷 Somente com PT-BR`**.
 3. **Botão `🔄 Buscar Novos Ports Online`:** clique a qualquer momento para sincronizar o catálogo online e descobrir automaticamente novos ports e recompilações recém-lançados no GitHub!
 4. **Instalação em 1 Clique:** selecione qualquer jogo e clique em **`📥 Instalar Jogo`**. O launcher baixa a versão oficial mais recente direto do GitHub com barra de progresso em tempo real, extrai para `F:\Jogos\PortsPC\<jogo>`, **apaga o `.zip` temporário na mesma hora** para poupar os 200 GB do seu disco `F:`, gera o guia `LEIAME-PTBR.txt` e abre a pasta do jogo!
 
 > 🌐 **Versão Web Interativa (Navegador / Celular / Steam Deck):**  
-> Prefere navegar pelo browser ou compartilhar com amigos? Abra o [`index.html`](index.html) ou acesse via GitHub Pages para pesquisar e filtrar todos os 452 jogos catalogados com design responsivo!
+> Prefere navegar pelo browser ou compartilhar com amigos? Abra o [`index.html`](index.html) ou acesse via GitHub Pages para pesquisar e filtrar todos os 457 jogos catalogados com design responsivo!
 
 ---
 
@@ -42,7 +42,7 @@ Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, u
 
 ---
 
-# 🗂️ TABELA MESTRA COMPLETA (450 JOGOS CATALOGADOS — 1 PORT DEFINITIVO POR JOGO)
+# 🗂️ TABELA MESTRA COMPLETA (457 JOGOS CATALOGADOS — 1 PORT DEFINITIVO POR JOGO)
 
 ## 1. 🔥 PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (97 jogos)
 
@@ -272,10 +272,14 @@ Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, u
 
 ---
 
-## 3. 🟣 GameCube, Wii, Wii U & Nintendo Switch (40 jogos)
+## 3. 🟣 GameCube, Wii, Wii U & Nintendo Switch 1/2 (44 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | 🇧🇷 Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
+| **The Legend of Zelda: Ocarina of Time Remake** | [**Zelda OoT Remake PC (Lichii / Fork Eglantine)**](https://github.com/zortos293/Lichii) | `Switch 2` | 🟢 **100% Nativo Oficial (Menus e Legendas em PT-BR!)** | Remake oficial com iluminação e grama reformuladas, 1080p upscaler e 60 FPS (Dynamic FPS) no PC via compilação Clang PGO, suporte a Vulkan, FSR/DLSS e cache pré-compilado de ~22.000 shaders. ([Link Repo](https://github.com/zortos293/Lichii)) |
+| **Mario Kart World** | [**Mario Kart World PC (Lichii / Fork Eglantine)**](https://github.com/zortos293/Lichii) | `Switch 2` | 🟢 **100% Nativo Oficial (Menus e Áudio em PT-BR!)** | Título de estreia da nova geração rodando no PC em 60 FPS com correções de física e renderização Vulkan. Dublagem e menus oficiais em PT-BR. ([Link Repo](https://github.com/zortos293/Lichii)) |
+| **Star Fox (Switch 2)** | [**Star Fox Switch 2 PC (Lichii / Fork Eglantine)**](https://github.com/zortos293/Lichii) | `Switch 2` | 🟢 **100% Nativo Oficial** | Janelas nativas e shaders corrigidos com 60 FPS desbloqueado e localização completa em PT-BR. ([Link Repo](https://github.com/zortos293/Lichii)) |
+| **Donkey Kong Bananza** | [**Donkey Kong Bananza PC (Lichii / Fork Eglantine)**](https://github.com/zortos293/Lichii) | `Switch 2` | 🟢 **100% Nativo Oficial** | Plataforma 3D com texturas e sombras corrigidas nos commits recentes do Lichii (branch Bananza). Localização em Português Brasileiro nativa. ([Link Repo](https://github.com/zortos293/Lichii)) |
 | **The Legend of Zelda: Twilight Princess** | [**Dusklight (Zelda: Twilight Princess Native PC Port)**](https://github.com/TwilitRealm/dusklight) | `GameCube` | 🛠️ **Tradução PT-BR Completa Disponível!** | Port nativo 100% jogável construído sobre a descompilação zeldaret/tp + camada Aurora (60+ FPS, Ultrawide, Mods). ([Link PT-BR](https://github.com/TwilitRealm/dusklight/releases)) |
 | **The Legend of Zelda: The Wind Waker HD** | [**ZeldaWWHDRecomp / SwitchWakerHD (The Wind Waker HD PC)**](https://github.com/ZeldaWWHDRecomp/ZeldaWWHDRecomp) | `Wii U` | 🛠️ **Tradução PT-BR 100% Completa (Triforce Heroes)!** | Funciona diretamente com a tradução PT-BR da equipe Triforce Heroes Traduções aplicada na pasta content/! ([Link PT-BR](https://tribogamer.com/traducoes/)) |
 | **The Legend of Zelda: The Wind Waker (GC)** | [**BlueWake (Zelda: The Wind Waker GameCube PC Port)**](https://github.com/chrissotraidis/bluewake) | `GameCube` | 🛠️ **Tradução PT-BR Completa na ISO** | Build nativa para Windows construída sobre a descompilação zeldaret/tww. ([Link PT-BR](https://github.com/chrissotraidis/bluewake/releases)) |
@@ -334,10 +338,11 @@ Chega de tela preta e arquivos `.bat` horrorosos! Criamos o **`PortsPC.exe`**, u
 
 ---
 
-## 5. ⚡ Nintendo 64, 3DS, DS, GBA, GBC, SNES, Mega Drive, Saturn & Dreamcast (90 jogos)
+## 5. ⚡ Nintendo 64, 3DS, DS, GBA, GBC, SNES, Mega Drive, Saturn & Dreamcast (91 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | 🇧🇷 Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
+| **Tony Hawk's Pro Skater 1** | [**Tony Hawk's Pro Skater 1 Recompiled (THPS1-64Recomp)**](https://github.com/filiphs/thps1-recomp) | `N64` | 🛠️ **Tradução da Comunidade Disponível** | Recompilação estática nativa com 60/120+ FPS, suporte a ultrawide e compatível com patches de tradução em Português Brasileiro. ([Link Repo](https://github.com/N64Recomp/N64Recomp)) |
 | **The Legend of Zelda: Majora's Mask** | [**Zelda64: Recompiled (Majora's Mask & OoT N64Recomp)**](https://github.com/Zelda64Recomp/Zelda64Recomp) | `N64` | 🧩 **Mod .nrm PT-BR Completo!** | Arraste o arquivo .nrm de tradução PT-BR para a aba Mods dentro do jogo. ([Link PT-BR](https://gamebanana.com/mods/678789)) |
 | **Banjo-Kazooie** | [**Banjo: Recompiled (Banjo-Kazooie PC)**](https://github.com/BanjoRecomp/BanjoRecomp) | `N64` | 🧩 **Mod .nrm PT-BR Completo!** | Baixe o arquivo .nrm de tradução PT-BR no GameBanana e instale pelo menu Mods do jogo. ([Link PT-BR](https://gamebanana.com/mods/678790)) |
 | **Conker's Bad Fur Day** | [**Conker's Bad Fur Day Reloaded (N64Recomp)**](https://github.com/DahSidiAbdallah/ConkerBFDReloaded) | `N64` | 🛠️ **Compatível com tradução PT-BR** | Port nativo com widescreen, 60+ FPS e câmera moderna. ([Link PT-BR](https://github.com/DahSidiAbdallah/ConkerBFDReloaded/releases)) |
