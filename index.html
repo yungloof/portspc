@@ -3,44 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PortsPC — O Catálogo Definitivo de Ports para PC (com Guia PT-BR)</title>
+  <title>PortsPC — Catálogo de Ports Nativos &amp; Recompilações para PC</title>
   <style>
     :root {
-      --bg: #0B0F19;
-      --card-bg: #111827;
-      --card-hover: #1F2937;
-      --border: #1F2937;
-      --border-hover: #4F46E5;
-      --text-main: #F9FAFB;
-      --text-muted: #94A3B8;
-      --primary: #6366F1;
-      --primary-hover: #4F46E5;
-      --emerald: #10B981;
-      --amber: #F59E0B;
-      --blue: #0284C7;
-      --red: #DC2626;
-      --xbox: #107C10;
-      --ps: #00439C;
+      --bg: #09090b;
+      --surface: #121214;
+      --surface-hover: #18181b;
+      --surface-elevated: #1c1c20;
+      --border: #27272a;
+      --border-hover: #3f3f46;
+      --text: #f4f4f5;
+      --text-secondary: #a1a1aa;
+      --text-muted: #71717a;
+      --emerald: #10b981;
+      --sky: #38bdf8;
+      --amber: #f59e0b;
+      --ps: #3b82f6;
+      --xbox: #22c55e;
+      --nintendo: #ef4444;
+      --pc: #a1a1aa;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html { color-scheme: dark; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
-      color: var(--text-main);
+      color: var(--text);
       line-height: 1.5;
-      padding: 0;
+      -webkit-font-smoothing: antialiased;
     }
 
+    a { color: inherit; }
+
+    /* Header */
     header {
-      background: #111827;
+      background: rgba(9, 9, 11, 0.9);
       border-bottom: 1px solid var(--border);
-      padding: 1.25rem 2rem;
+      padding: 0.9rem 1.5rem;
       position: sticky;
       top: 0;
       z-index: 50;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(10px);
     }
 
     .header-container {
@@ -53,67 +59,127 @@
       gap: 1rem;
     }
 
-    .logo-area {
+    .brand {
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
 
-    .logo-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #FFF;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: grid;
+      place-items: center;
+      color: var(--text);
     }
 
-    .logo-badge {
-      background: var(--primary);
-      color: #FFF;
-      font-size: 0.7rem;
+    .brand-title {
+      font-size: 1.125rem;
       font-weight: 700;
-      padding: 0.2rem 0.5rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .brand-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.45rem;
       border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex: 1;
+      justify-content: flex-end;
+      min-width: 260px;
     }
 
     .search-bar {
       flex: 1;
-      max-width: 450px;
+      max-width: 440px;
       position: relative;
     }
 
     .search-bar input {
       width: 100%;
-      background: #1E293B;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      padding: 0.6rem 1rem 0.6rem 2.5rem;
-      color: #FFF;
-      font-size: 0.95rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 2.4rem 0.5rem 2.25rem;
+      color: var(--text);
+      font-size: 0.875rem;
       outline: none;
-      transition: border-color 0.2s;
+      transition: border-color 0.15s, background-color 0.15s;
     }
 
+    .search-bar input::placeholder { color: var(--text-muted); }
+
     .search-bar input:focus {
-      border-color: var(--primary);
+      border-color: var(--border-hover);
+      background: var(--surface-hover);
     }
 
     .search-icon {
       position: absolute;
-      left: 0.85rem;
+      left: 0.75rem;
       top: 50%;
       transform: translateY(-50%);
       color: var(--text-muted);
-      font-size: 0.9rem;
+      pointer-events: none;
+      display: flex;
     }
 
+    .kbd-hint {
+      position: absolute;
+      right: 0.65rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.05rem 0.35rem;
+      pointer-events: none;
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s, background-color 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--border-hover);
+      color: var(--text);
+      background: var(--surface-hover);
+    }
+
+    /* Filter Bar */
     .filter-bar {
-      background: #0D131F;
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 0.75rem 2rem;
+      padding: 0.7rem 1.5rem;
     }
 
     .filter-container {
@@ -123,76 +189,133 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      gap: 1rem;
+      gap: 0.75rem;
     }
 
-    .category-chips {
+    .category-tabs {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5rem;
+      gap: 0.35rem;
     }
 
     .chip {
-      background: #1E293B;
-      color: var(--text-muted);
-      border: 1px solid #334155;
+      background: transparent;
+      color: var(--text-secondary);
+      border: 1px solid transparent;
       border-radius: 6px;
-      padding: 0.35rem 0.85rem;
-      font-size: 0.85rem;
-      font-weight: 600;
+      padding: 0.35rem 0.7rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
     }
 
     .chip:hover {
-      background: #2D3748;
-      color: #FFF;
+      background: var(--surface);
+      color: var(--text);
     }
 
     .chip.active {
-      background: var(--primary);
-      color: #FFF;
-      border-color: var(--primary);
+      background: var(--surface-elevated);
+      color: var(--text);
+      border-color: var(--border-hover);
+    }
+
+    .chip-count {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .chip.active .chip-count { color: var(--text-secondary); }
+
+    .controls-right {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.65rem;
     }
 
     .ptbr-toggle {
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--emerald);
+      gap: 0.45rem;
+      padding: 0.32rem 0.65rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      cursor: pointer;
+      user-select: none;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .ptbr-toggle:hover { border-color: var(--border-hover); color: var(--text); }
+    .ptbr-toggle.on {
+      border-color: rgba(16, 185, 129, 0.5);
+      color: #34d399;
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    .ptbr-toggle input { display: none; }
+
+    .select-sort {
+      background: var(--surface);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.34rem 0.6rem;
+      font-size: 0.8rem;
+      outline: none;
       cursor: pointer;
     }
 
-    .ptbr-toggle input {
-      accent-color: var(--emerald);
-      cursor: pointer;
-      width: 16px;
-      height: 16px;
+    .select-sort:hover { border-color: var(--border-hover); color: var(--text); }
+
+    .view-switch {
+      display: inline-flex;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2px;
     }
 
+    .view-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.25rem 0.45rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: background-color 0.15s, color 0.15s;
+    }
+
+    .view-btn.active {
+      background: var(--surface-elevated);
+      color: var(--text);
+    }
+
+    /* Main Content */
     main {
       max-width: 1400px;
-      margin: 1.5rem auto;
-      padding: 0 2rem;
+      margin: 1.25rem auto 3rem;
+      padding: 0 1.5rem;
     }
 
-    .stats-bar {
+    /* Clean Launcher Strip */
+    .launcher-strip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.9rem 1.15rem;
       margin-bottom: 1.25rem;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .desktop-app-banner {
-      background: linear-gradient(135deg, rgba(79, 70, 229, 0.15), rgba(16, 185, 129, 0.1));
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -200,143 +323,241 @@
       gap: 1rem;
     }
 
-    .desktop-app-text h3 {
-      font-size: 1.1rem;
-      color: #FFF;
-      margin-bottom: 0.25rem;
+    .launcher-info {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
     }
 
-    .desktop-app-text p {
-      font-size: 0.85rem;
+    .launcher-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
+    .launcher-info h2 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.1rem;
+    }
+
+    .launcher-info p {
+      font-size: 0.8125rem;
       color: var(--text-muted);
     }
 
-    .btn-download-app {
-      background: var(--primary);
-      color: #FFF;
-      padding: 0.6rem 1.2rem;
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+      padding: 0.5rem 0.9rem;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: 700;
-      font-size: 0.9rem;
-      transition: background 0.2s;
+      font-weight: 600;
+      font-size: 0.8125rem;
       display: inline-flex;
       align-items: center;
+      gap: 0.45rem;
+      border: 1px solid var(--text);
+      cursor: pointer;
+      transition: opacity 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn-primary:hover { opacity: 0.9; }
+
+    .stats-bar {
+      margin-bottom: 0.9rem;
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       gap: 0.5rem;
     }
 
-    .btn-download-app:hover {
-      background: var(--primary-hover);
-    }
+    .stats-bar strong { color: var(--text-secondary); font-weight: 600; }
 
+    /* Grid View */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 0.85rem;
     }
 
     .card {
-      background: var(--card-bg);
+      background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.25rem;
+      border-radius: 8px;
+      padding: 1rem 1.05rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: transform 0.2s, border-color 0.2s;
+      gap: 0.75rem;
+      transition: border-color 0.15s, background-color 0.15s;
       cursor: pointer;
     }
 
     .card:hover {
-      transform: translateY(-2px);
       border-color: var(--border-hover);
-      background: var(--card-hover);
+      background: var(--surface-hover);
     }
 
-    .card-top {
-      margin-bottom: 0.75rem;
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.45rem;
     }
 
-    .platform-badge {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 0.2rem 0.5rem;
-      border-radius: 4px;
+    .platform-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.6875rem;
+      font-weight: 600;
       text-transform: uppercase;
-      margin-bottom: 0.5rem;
-      color: #FFF;
+      letter-spacing: 0.03em;
+      color: var(--text-secondary);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
     }
 
-    .badge-ps { background: var(--ps); }
-    .badge-xbox { background: var(--xbox); }
-    .badge-nintendo { background: var(--red); }
-    .badge-pc { background: #7C3AED; }
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-ps { background: var(--ps); }
+    .dot-xbox { background: var(--xbox); }
+    .dot-nintendo { background: var(--nintendo); }
+    .dot-pc { background: var(--pc); }
 
     .card-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #FFF;
-      margin-bottom: 0.35rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
     }
 
     .card-requires {
       font-size: 0.8rem;
       color: var(--text-muted);
-      margin-bottom: 0.75rem;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      line-height: 1.4;
     }
 
-    .ptbr-badge {
-      display: inline-block;
+    .ptbr-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
       font-size: 0.75rem;
-      font-weight: 700;
-      padding: 0.25rem 0.6rem;
+      font-weight: 500;
+      padding: 0.22rem 0.55rem;
       border-radius: 4px;
-      margin-bottom: 0.75rem;
+      border: 1px solid var(--border);
+      max-width: 100%;
     }
 
-    .ptbr-dublado { background: rgba(16, 185, 129, 0.2); color: #34D399; border: 1px solid rgba(16, 185, 129, 0.4); }
-    .ptbr-nativo { background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
-    .ptbr-mod { background: rgba(2, 132, 199, 0.2); color: #38BDF8; border: 1px solid rgba(2, 132, 199, 0.4); }
-    .ptbr-patch { background: rgba(245, 158, 11, 0.2); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.4); }
-    .ptbr-ingles { background: rgba(100, 116, 139, 0.2); color: #94A3B8; border: 1px solid rgba(100, 116, 139, 0.3); }
+    .ptbr-pill span.ptbr-label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .ptbr-nativo { background: rgba(16, 185, 129, 0.1); color: #34d399; border-color: rgba(16, 185, 129, 0.28); }
+    .ptbr-mod { background: rgba(56, 189, 248, 0.1); color: #38bdf8; border-color: rgba(56, 189, 248, 0.28); }
+    .ptbr-patch { background: rgba(245, 158, 11, 0.1); color: #fbbf24; border-color: rgba(245, 158, 11, 0.28); }
+    .ptbr-ingles { background: var(--bg); color: var(--text-muted); border-color: var(--border); }
 
     .card-footer {
       border-top: 1px solid var(--border);
-      padding-top: 0.75rem;
+      padding-top: 0.65rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 0.5rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
     }
 
-    .btn-action {
-      background: #1E293B;
-      color: #FFF;
-      border: 1px solid #334155;
-      padding: 0.35rem 0.75rem;
-      border-radius: 6px;
-      font-size: 0.8rem;
+    .card-link-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Dense Table View */
+    .table-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    table.catalog-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      text-align: left;
+    }
+
+    table.catalog-table th {
+      padding: 0.65rem 0.9rem;
+      font-size: 0.72rem;
       font-weight: 600;
-      text-decoration: none;
-      transition: background 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      white-space: nowrap;
     }
 
-    .btn-action:hover {
-      background: #334155;
+    table.catalog-table td {
+      padding: 0.62rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
     }
 
-    .btn-action.primary {
-      background: var(--primary);
-      border-color: var(--primary);
+    table.catalog-table tbody tr {
+      cursor: pointer;
+      transition: background-color 0.1s;
     }
 
-    .btn-action.primary:hover {
-      background: var(--primary-hover);
+    table.catalog-table tbody tr:hover { background: var(--surface-hover); }
+    table.catalog-table tbody tr:last-child td { border-bottom: none; }
+
+    .td-game { font-weight: 600; color: var(--text); }
+    .td-project { color: var(--text-secondary); font-size: 0.78rem; }
+
+    .empty-state {
+      text-align: center;
+      padding: 3.5rem 1rem;
+      color: var(--text-muted);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
     }
 
     /* Modal */
@@ -348,109 +569,118 @@
       z-index: 100;
       justify-content: center;
       align-items: center;
-      padding: 1.5rem;
+      padding: 1.25rem;
       backdrop-filter: blur(4px);
     }
 
-    .modal-overlay.active {
-      display: flex;
-    }
+    .modal-overlay.active { display: flex; }
 
     .modal-content {
-      background: #111827;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      max-width: 650px;
+      background: var(--surface);
+      border: 1px solid var(--border-hover);
+      border-radius: 10px;
+      max-width: 620px;
       width: 100%;
       max-height: 90vh;
       overflow-y: auto;
-      padding: 2rem;
+      padding: 1.5rem;
       position: relative;
     }
 
-    .modal-close {
-      position: absolute;
-      top: 1.25rem;
-      right: 1.25rem;
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      font-size: 1.5rem;
-      cursor: pointer;
+    .modal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
     }
 
-    .modal-close:hover {
-      color: #FFF;
+    .modal-close {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      transition: border-color 0.15s, color 0.15s;
     }
+
+    .modal-close:hover { border-color: var(--border-hover); color: var(--text); }
 
     .modal-title {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #FFF;
-      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
     }
 
-    .modal-category {
+    .modal-meta {
       color: var(--text-muted);
-      font-size: 0.85rem;
-      margin-bottom: 1.25rem;
+      font-size: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
 
-    .modal-section {
-      margin-bottom: 1.25rem;
-    }
+    .modal-section { margin-bottom: 1rem; }
 
     .modal-section-title {
-      font-size: 0.8rem;
-      font-weight: 700;
+      font-size: 0.72rem;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+      color: var(--text-muted);
       margin-bottom: 0.4rem;
     }
 
-    .modal-section-title.amber { color: var(--amber); }
-    .modal-section-title.emerald { color: var(--emerald); }
-
-    .modal-section-text {
-      font-size: 0.95rem;
-      color: #CBD5E1;
-      background: #1E293B;
-      padding: 0.85rem 1rem;
-      border-radius: 8px;
-      border: 1px solid #334155;
+    .modal-box {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      background: var(--bg);
+      padding: 0.8rem 0.95rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      line-height: 1.55;
     }
 
     .modal-buttons {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-top: 1.5rem;
+      gap: 0.6rem;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
     }
 
     .modal-btn {
-      padding: 0.6rem 1.2rem;
+      padding: 0.5rem 0.9rem;
       border-radius: 6px;
-      font-weight: 700;
-      font-size: 0.9rem;
+      font-weight: 600;
+      font-size: 0.8125rem;
       text-decoration: none;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
-      border: none;
+      gap: 0.45rem;
+      border: 1px solid var(--border);
+      transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
     }
 
-    .modal-btn.primary { background: var(--primary); color: #FFF; }
-    .modal-btn.primary:hover { background: var(--primary-hover); }
-    .modal-btn.secondary { background: #1E293B; color: #FFF; border: 1px solid #334155; }
-    .modal-btn.secondary:hover { background: #334155; }
-    .modal-btn.ptbr { background: var(--emerald); color: #FFF; }
-    .modal-btn.ptbr:hover { background: #059669; }
+    .modal-btn.secondary { background: var(--bg); color: var(--text); }
+    .modal-btn.secondary:hover { background: var(--surface-hover); border-color: var(--border-hover); }
+    .modal-btn.ptbr { background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.4); }
+    .modal-btn.ptbr:hover { background: rgba(16, 185, 129, 0.25); }
 
     @media (max-width: 768px) {
-      .header-container { flex-direction: column; align-items: stretch; }
+      header, .filter-bar, main { padding-left: 1rem; padding-right: 1rem; }
+      .header-right { min-width: 100%; }
       .search-bar { max-width: 100%; }
-      .filter-container { flex-direction: column; align-items: flex-start; }
+      .kbd-hint { display: none; }
     }
   </style>
 </head>
@@ -458,76 +688,156 @@
 
   <header>
     <div class="header-container">
-      <div class="logo-area">
-        <div class="logo-title">🎮 PortsPC</div>
-        <span class="logo-badge">Catálogo Definitivo</span>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="2"/>
+            <path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"/>
+          </svg>
+        </div>
+        <div class="brand-title">PortsPC</div>
+        <span class="brand-tag" id="headerCount">...</span>
       </div>
-      <div class="search-bar">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="searchInput" placeholder="Buscar jogo, plataforma ou franquia...">
+
+      <div class="header-right">
+        <div class="search-bar">
+          <span class="search-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+          </span>
+          <input type="text" id="searchInput" placeholder="Buscar jogo, plataforma ou projeto..." autocomplete="off">
+          <span class="kbd-hint">/</span>
+        </div>
+
+        <a href="https://github.com/yungloof/portspc" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
       </div>
     </div>
   </header>
 
   <div class="filter-bar">
     <div class="filter-container">
-      <div class="category-chips">
-        <button class="chip active" onclick="setCategory('Todos', this)">Todos</button>
-        <button class="chip" onclick="setCategory('PlayStation', this)">PlayStation</button>
-        <button class="chip" onclick="setCategory('Xbox', this)">Xbox</button>
-        <button class="chip" onclick="setCategory('Nintendo', this)">Nintendo</button>
-        <button class="chip" onclick="setCategory('PC & Outros', this)">PC & Outros</button>
-        <button class="chip" onclick="setCategory('Fangames', this)">Fangames</button>
+      <div class="category-tabs" id="categoryTabs">
+        <button class="chip active" data-cat="Todos" onclick="setCategory('Todos', this)">Todos <span class="chip-count" id="cnt-Todos"></span></button>
+        <button class="chip" data-cat="PlayStation" onclick="setCategory('PlayStation', this)">PlayStation <span class="chip-count" id="cnt-PlayStation"></span></button>
+        <button class="chip" data-cat="Xbox" onclick="setCategory('Xbox', this)">Xbox <span class="chip-count" id="cnt-Xbox"></span></button>
+        <button class="chip" data-cat="Nintendo" onclick="setCategory('Nintendo', this)">Nintendo &amp; Sega <span class="chip-count" id="cnt-Nintendo"></span></button>
+        <button class="chip" data-cat="PC & Outros" onclick="setCategory('PC & Outros', this)">PC &amp; Clássicos <span class="chip-count" id="cnt-PC"></span></button>
+        <button class="chip" data-cat="Fangames" onclick="setCategory('Fangames', this)">Fangames <span class="chip-count" id="cnt-Fangames"></span></button>
       </div>
-      <label class="ptbr-toggle">
-        <input type="checkbox" id="ptbrOnly" onchange="togglePtbr(this.checked)">
-        <span>🇧🇷 Apenas com PT-BR</span>
-      </label>
+
+      <div class="controls-right">
+        <label class="ptbr-toggle" id="ptbrLabel">
+          <input type="checkbox" id="ptbrOnly" onchange="togglePtbr(this.checked)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/>
+          </svg>
+          <span>Somente PT-BR</span>
+        </label>
+
+        <select id="sortSelect" class="select-sort" onchange="setSort(this.value)" aria-label="Ordenação">
+          <option value="default">Ordem: Catálogo</option>
+          <option value="name">Ordem: A-Z</option>
+          <option value="platform">Ordem: Plataforma</option>
+        </select>
+
+        <div class="view-switch" role="group" aria-label="Modo de visualização">
+          <button class="view-btn active" id="viewGridBtn" onclick="setView('grid')" title="Grade de Cards">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>
+            </svg>
+          </button>
+          <button class="view-btn" id="viewTableBtn" onclick="setView('table')" title="Lista Compacta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" x2="21" y1="6" y2="6"/><line x1="8" x2="21" y1="12" y2="12"/><line x1="8" x2="21" y1="18" y2="18"/><line x1="3" x2="3.01" y1="6" y2="6"/><line x1="3" x2="3.01" y1="12" y2="12"/><line x1="3" x2="3.01" y1="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
   <main>
-    <div class="desktop-app-banner">
-      <div class="desktop-app-text">
-        <h3>🚀 Prefere um programa nativo de verdade no Windows?</h3>
-        <p>Criamos o <strong>PortsPC.exe</strong> (aplicativo desktop com 450+ ports, buscador automático de novos lançamentos no GitHub e instalador de 1 clique que poupa seu HD!).</p>
+    <div class="launcher-strip">
+      <div class="launcher-info">
+        <div class="launcher-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" x2="12" y1="15" y2="3"/>
+          </svg>
+        </div>
+        <div>
+          <h2>Aplicativo Desktop para Windows (PortsPC.exe)</h2>
+          <p id="launcherSubtitle">Baixa e extrai qualquer port direto do GitHub em 1 clique, apaga arquivos temporários e gera guia PT-BR.</p>
+        </div>
       </div>
-      <a href="https://github.com/yungloof/portspc/raw/main/PortsPC.exe" class="btn-download-app">
-        📥 Baixar PortsPC.exe (39 KB)
+      <a href="https://github.com/yungloof/portspc/raw/main/PortsPC.exe" class="btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" x2="12" y1="15" y2="3"/>
+        </svg>
+        <span>Baixar PortsPC.exe (43 KB)</span>
       </a>
     </div>
 
     <div class="stats-bar">
       <span id="statsCount">Carregando catálogo...</span>
-      <span>GitHub: <a href="https://github.com/yungloof/portspc" style="color: var(--primary); text-decoration: none;" target="_blank">yungloof/portspc</a></span>
+      <span>1 port definitivo por jogo</span>
     </div>
 
-    <div class="grid" id="gamesGrid"></div>
+    <div id="catalogContainer"></div>
   </main>
 
-  <!-- Modal -->
   <div class="modal-overlay" id="gameModal" onclick="closeModalOnBg(event)">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">×</button>
-      <div class="modal-title" id="mTitle"></div>
-      <div class="modal-category" id="mCat"></div>
-
-      <div class="modal-section">
-        <div class="modal-section-title amber">📋 O Que Você Precisa (ROM / ISO / DUMP):</div>
-        <div class="modal-section-text" id="mReq"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <div class="modal-top">
+        <div>
+          <div class="modal-title" id="mTitle"></div>
+          <div class="modal-meta" id="mCat"></div>
+        </div>
+        <button class="modal-close" onclick="closeModal()" aria-label="Fechar">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"/><path d="m6 6 12 12"/>
+          </svg>
+        </button>
       </div>
 
       <div class="modal-section">
-        <div class="modal-section-title emerald">🇧🇷 Português Brasileiro (PT-BR):</div>
-        <div class="modal-section-text">
-          <div style="font-weight: 700; margin-bottom: 0.4rem;" id="mPtStatus"></div>
+        <div class="modal-section-title">Requisitos / Arquivos Necessários</div>
+        <div class="modal-box" id="mReq"></div>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-section-title">Localização em Português Brasileiro (PT-BR)</div>
+        <div class="modal-box">
+          <div style="font-weight: 600; color: var(--text); margin-bottom: 0.35rem;" id="mPtStatus"></div>
           <div id="mPtDetails"></div>
         </div>
       </div>
 
       <div class="modal-buttons">
-        <a id="mWebBtn" class="modal-btn secondary" target="_blank">🌐 GitHub / Site Oficial</a>
-        <a id="mPtbrBtn" class="modal-btn ptbr" target="_blank" style="display: none;">🇧🇷 Baixar Tradução / Mod</a>
+        <a id="mWebBtn" class="modal-btn secondary" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          </svg>
+          <span>Repositório / Site Oficial</span>
+        </a>
+        <a id="mPtbrBtn" class="modal-btn ptbr" target="_blank" rel="noopener" style="display: none;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" x2="12" y1="15" y2="3"/>
+          </svg>
+          <span>Baixar Tradução / Mod PT-BR</span>
+        </a>
       </div>
     </div>
   </div>
@@ -536,16 +846,50 @@
     let allGames = [];
     let currentCategory = 'Todos';
     let onlyPtbr = false;
+    let currentSort = 'default';
+    let currentView = 'grid';
+    let searchTimer = null;
 
     fetch('catalog.json')
       .then(res => res.json())
       .then(data => {
         allGames = data;
+        document.getElementById('headerCount').textContent = `${data.length} PORTS`;
+        document.getElementById('launcherSubtitle').textContent =
+          `Catálogo com ${data.length} ports oficiais: baixa e extrai direto do GitHub em 1 clique e apaga arquivos temporários.`;
+        updateCategoryCounts();
         renderGames();
       })
       .catch(err => {
-        document.getElementById('statsCount').innerText = 'Erro ao carregar catalog.json: ' + err.message;
+        document.getElementById('statsCount').textContent = 'Erro ao carregar catalog.json: ' + err.message;
       });
+
+    function matchesCategory(g, cat) {
+      const c = (g.category || '').toLowerCase();
+      if (cat === 'Todos') return true;
+      if (cat === 'PlayStation') return c.includes('playstation');
+      if (cat === 'Xbox') return c.includes('xbox');
+      if (cat === 'Nintendo') return c.includes('nintendo') || c.includes('gamecube') || c.includes('harbour masters');
+      if (cat === 'PC & Outros') return c.includes('source ports');
+      if (cat === 'Fangames') return c.includes('fangames');
+      return true;
+    }
+
+    function updateCategoryCounts() {
+      const map = {
+        'cnt-Todos': 'Todos',
+        'cnt-PlayStation': 'PlayStation',
+        'cnt-Xbox': 'Xbox',
+        'cnt-Nintendo': 'Nintendo',
+        'cnt-PC': 'PC & Outros',
+        'cnt-Fangames': 'Fangames'
+      };
+      Object.entries(map).forEach(([elId, cat]) => {
+        const count = allGames.filter(g => matchesCategory(g, cat)).length;
+        const el = document.getElementById(elId);
+        if (el) el.textContent = count;
+      });
+    }
 
     function setCategory(cat, btn) {
       currentCategory = cat;
@@ -556,94 +900,219 @@
 
     function togglePtbr(val) {
       onlyPtbr = val;
+      document.getElementById('ptbrLabel').classList.toggle('on', val);
+      renderGames();
+    }
+
+    function setSort(val) {
+      currentSort = val;
+      renderGames();
+    }
+
+    function setView(mode) {
+      currentView = mode;
+      document.getElementById('viewGridBtn').classList.toggle('active', mode === 'grid');
+      document.getElementById('viewTableBtn').classList.toggle('active', mode === 'table');
       renderGames();
     }
 
     document.getElementById('searchInput').addEventListener('input', () => {
-      renderGames();
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(renderGames, 50);
     });
 
-    function getPlatformClass(platform) {
-      platform = platform || '';
-      if (platform.includes('PS')) return 'badge-ps';
-      if (platform.includes('Xbox')) return 'badge-xbox';
-      if (['Switch', 'Wii', 'GameCube', 'N64', 'SNES', 'NES', 'GBA'].some(p => platform.includes(p))) return 'badge-nintendo';
-      return 'badge-pc';
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== document.getElementById('searchInput')) {
+        e.preventDefault();
+        document.getElementById('searchInput').focus();
+      } else if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    function getPlatformDotClass(platform) {
+      const p = (platform || '').toLowerCase();
+      if (p.includes('ps1') || p.includes('ps2') || p.includes('ps3') || p.includes('ps4') || p.includes('psp')) return 'dot-ps';
+      if (p.includes('xbox')) return 'dot-xbox';
+      if (['switch', 'wii', 'gamecube', 'n64', 'snes', 'nes', 'gba', 'gbc', 'game boy', 'ds', '3ds', 'virtual boy', 'genesis', 'saturn', 'dreamcast', 'mega drive'].some(k => p.includes(k))) return 'dot-nintendo';
+      return 'dot-pc';
     }
 
-    function getPtbrBadge(status) {
-      status = status || '';
-      if (status.includes('Dublad')) return { cls: 'ptbr-dublado', text: '🎙️ ' + status };
-      if (status.includes('Nativo')) return { cls: 'ptbr-nativo', text: '🟢 ' + status };
-      if (status.includes('Mod')) return { cls: 'ptbr-mod', text: '🧩 ' + status };
-      if (status.includes('Tradução') || status.includes('ISO')) return { cls: 'ptbr-patch', text: '🛠️ ' + status };
-      return { cls: 'ptbr-ingles', text: '⚪ ' + status };
+    function getPtbrTier(status) {
+      const s = (status || '').toLowerCase();
+      if (s.includes('dublad') || s.includes('nativo') || s.includes('legendas oficiais')) return 'ptbr-nativo';
+      if (s.includes('mod pt-br') || s.includes('mods pt-br')) return 'ptbr-mod';
+      if (s.includes('tradução') || s.includes('patch') || s.includes('iso') || s.includes('compatível')) return 'ptbr-patch';
+      return 'ptbr-ingles';
+    }
+
+    function hasPtbr(g) {
+      const s = (g.ptbr_status || '').toLowerCase();
+      const nonPt = [
+        'em inglês', 'textos mínimos', 'luta arcade', 'corrida',
+        'sem tradução', 'sem texto', 'sem necessidade', 'puzzle arcade',
+        'microgames', 'esporte arcade', 'esporte / menus'
+      ];
+      return !nonPt.some(k => s.includes(k));
+    }
+
+    function createPtbrPill(status) {
+      const pill = document.createElement('div');
+      pill.className = 'ptbr-pill ' + getPtbrTier(status);
+      const lbl = document.createElement('span');
+      lbl.className = 'ptbr-label';
+      lbl.textContent = status || 'Verificar no projeto';
+      pill.appendChild(lbl);
+      return pill;
+    }
+
+    function createPlatformPill(platform) {
+      const pill = document.createElement('span');
+      pill.className = 'platform-pill';
+      const dot = document.createElement('span');
+      dot.className = 'dot ' + getPlatformDotClass(platform);
+      const txt = document.createTextNode(platform || 'PC');
+      pill.appendChild(dot);
+      pill.appendChild(txt);
+      return pill;
     }
 
     function renderGames() {
       const query = document.getElementById('searchInput').value.trim().toLowerCase();
-      const grid = document.getElementById('gamesGrid');
-      grid.innerHTML = '';
+      const container = document.getElementById('catalogContainer');
+      container.innerHTML = '';
 
-      const filtered = allGames.filter(g => {
-        // Category filter
-        if (currentCategory === 'PlayStation' && !g.category.toLowerCase().includes('playstation')) return false;
-        if (currentCategory === 'Xbox' && !g.category.toLowerCase().includes('xbox')) return false;
-        if (currentCategory === 'Nintendo' && !(g.category.toLowerCase().includes('nintendo') || g.category.toLowerCase().includes('gamecube') || g.category.toLowerCase().includes('harbour masters'))) return false;
-        if (currentCategory === 'PC & Outros' && !g.category.toLowerCase().includes('source ports')) return false;
-        if (currentCategory === 'Fangames' && !g.category.toLowerCase().includes('fangames')) return false;
-
-        // PTBR filter
-        if (onlyPtbr) {
-          const pt = (g.ptbr_status || '').toLowerCase();
-          if (pt.includes('em inglês') || pt.includes('textos mínimos') || pt.includes('luta arcade') || pt.includes('corrida simulação')) return false;
-        }
-
-        // Search query
+      let filtered = allGames.filter(g => {
+        if (!matchesCategory(g, currentCategory)) return false;
+        if (onlyPtbr && !hasPtbr(g)) return false;
         if (query) {
-          const haystack = (g.name + ' ' + g.game + ' ' + g.platform + ' ' + g.category + ' ' + g.ptbr_status).toLowerCase();
-          if (!haystack.includes(query)) return false;
+          const hay = `${g.name} ${g.game} ${g.platform} ${g.category} ${g.ptbr_status} ${g.github_repo}`.toLowerCase();
+          if (!hay.includes(query)) return false;
         }
-
         return true;
       });
 
-      document.getElementById('statsCount').innerText = `Exibindo ${filtered.length} de ${allGames.length} jogos catalogados`;
+      if (currentSort === 'name') {
+        filtered = [...filtered].sort((a, b) => (a.game || a.name).localeCompare(b.game || b.name, 'pt-BR'));
+      } else if (currentSort === 'platform') {
+        filtered = [...filtered].sort((a, b) => (a.platform || '').localeCompare(b.platform || '', 'pt-BR'));
+      }
 
-      filtered.forEach((game, idx) => {
+      document.getElementById('statsCount').innerHTML =
+        `Exibindo <strong>${filtered.length}</strong> de <strong>${allGames.length}</strong> títulos`;
+
+      if (filtered.length === 0) {
+        const empty = document.createElement('div');
+        empty.className = 'empty-state';
+        empty.textContent = 'Nenhum port encontrado para os filtros aplicados.';
+        container.appendChild(empty);
+        return;
+      }
+
+      if (currentView === 'table') {
+        const wrap = document.createElement('div');
+        wrap.className = 'table-wrap';
+        const table = document.createElement('table');
+        table.className = 'catalog-table';
+        table.innerHTML = '<thead><tr><th>Jogo</th><th>Projeto</th><th>Plataforma</th><th>Suporte PT-BR</th><th>Repositório</th></tr></thead>';
+        const tbody = document.createElement('tbody');
+        const frag = document.createDocumentFragment();
+
+        filtered.forEach(g => {
+          const tr = document.createElement('tr');
+          tr.onclick = () => openModal(g);
+
+          const tdGame = document.createElement('td');
+          tdGame.className = 'td-game';
+          tdGame.textContent = g.game || g.name;
+
+          const tdProj = document.createElement('td');
+          tdProj.className = 'td-project';
+          tdProj.textContent = g.name;
+
+          const tdPlat = document.createElement('td');
+          tdPlat.appendChild(createPlatformPill(g.platform));
+
+          const tdPt = document.createElement('td');
+          tdPt.appendChild(createPtbrPill(g.ptbr_status));
+
+          const tdRepo = document.createElement('td');
+          tdRepo.className = 'td-project';
+          tdRepo.textContent = g.github_repo || 'Site Oficial';
+
+          tr.append(tdGame, tdProj, tdPlat, tdPt, tdRepo);
+          frag.appendChild(tr);
+        });
+
+        tbody.appendChild(frag);
+        table.appendChild(tbody);
+        wrap.appendChild(table);
+        container.appendChild(wrap);
+        return;
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+      const frag = document.createDocumentFragment();
+
+      filtered.forEach(g => {
         const card = document.createElement('div');
         card.className = 'card';
-        card.onclick = () => openModal(game);
+        card.onclick = () => openModal(g);
 
-        const pt = getPtbrBadge(game.ptbr_status);
+        const top = document.createElement('div');
+        const hdr = document.createElement('div');
+        hdr.className = 'card-header';
+        hdr.appendChild(createPlatformPill(g.platform));
 
-        card.innerHTML = `
-          <div class="card-top">
-            <span class="platform-badge ${getPlatformClass(game.platform)}">${game.platform}</span>
-            <div class="card-title">${game.name}</div>
-            <div class="card-requires">${game.requires}</div>
-          </div>
-          <div>
-            <div class="ptbr-badge ${pt.cls}">${pt.text}</div>
-            <div class="card-footer">
-              <span style="font-size: 0.8rem; color: var(--text-muted);">${game.category.split('(')[0]}</span>
-              <button class="btn-action primary" onclick="event.stopPropagation(); openModal(allGames.find(x => x.id === '${game.id}'))">Detalhes</button>
-            </div>
-          </div>
-        `;
-        grid.appendChild(card);
+        const repoSpan = document.createElement('span');
+        repoSpan.style.cssText = 'font-family: ui-monospace, monospace; font-size: 0.7rem; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55%;';
+        repoSpan.textContent = g.github_repo || '';
+        hdr.appendChild(repoSpan);
+
+        const title = document.createElement('div');
+        title.className = 'card-title';
+        title.textContent = g.name;
+
+        const req = document.createElement('div');
+        req.className = 'card-requires';
+        req.textContent = g.requires;
+
+        top.append(hdr, title, req);
+
+        const bottom = document.createElement('div');
+        bottom.appendChild(createPtbrPill(g.ptbr_status));
+
+        const footer = document.createElement('div');
+        footer.className = 'card-footer';
+        footer.style.marginTop = '0.6rem';
+
+        const catTxt = document.createElement('span');
+        catTxt.textContent = (g.category || '').split('(')[0].trim();
+
+        const hint = document.createElement('span');
+        hint.className = 'card-link-hint';
+        hint.innerHTML = 'Detalhes <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>';
+
+        footer.append(catTxt, hint);
+        bottom.appendChild(footer);
+
+        card.append(top, bottom);
+        frag.appendChild(card);
       });
+
+      grid.appendChild(frag);
+      container.appendChild(grid);
     }
 
     function openModal(game) {
-      document.getElementById('mTitle').innerText = game.name;
-      document.getElementById('mCat').innerText = `Plataforma: ${game.platform} | Categoria: ${game.category}`;
-      document.getElementById('mReq').innerText = game.requires;
-      document.getElementById('mPtStatus').innerText = game.ptbr_status;
-      document.getElementById('mPtDetails').innerText = game.ptbr_details;
+      document.getElementById('mTitle').textContent = game.name;
+      document.getElementById('mCat').textContent = `${game.platform}  /  ${game.category}  /  ${game.github_repo || 'External'}`;
+      document.getElementById('mReq').textContent = game.requires;
+      document.getElementById('mPtStatus').textContent = game.ptbr_status;
+      document.getElementById('mPtDetails').textContent = game.ptbr_details;
 
-      const webBtn = document.getElementById('mWebBtn');
-      webBtn.href = game.website;
+      document.getElementById('mWebBtn').href = game.website;
 
       const ptBtn = document.getElementById('mPtbrBtn');
       if (game.ptbr_url) {

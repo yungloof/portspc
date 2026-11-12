@@ -1,46 +1,48 @@
-# 🇧🇷 Guia Completo de Traduções e Dublagens PT-BR para Ports de PC
+# Guia Completo de Traduções e Dublagens PT-BR para Ports de PC
+
+> **Navegação:** [Catálogo Principal](../README.md) · [Catálogo Web](../index.html)
 
 Este guia reúne o passo a passo exato e os links de onde baixar e instalar as **traduções e dublagens em Português Brasileiro (PT-BR)** para os ports nativos de console, recompilações estáticas (`PS2Recomp`, `XenonRecomp`, `ReXGlue`, `N64Recomp`, `libultraship`, `DolRecomp`) e source ports listados neste repositório.
 
 ---
 
-## 📊 Legenda dos 4 Tipos de Suporte a PT-BR
+## Legenda dos 4 Tipos de Suporte a PT-BR
 
-1. 🟢 **PT-BR Nativo / Oficial no Port:** O próprio executável do port ou a mídia original (como os discos brasileiros de PS4 e Xbox 360) já vem com Português Brasileiro integrado (basta escolher `Português (Brasil)` nas configurações).
-2. 🧩 **Mod Direto no Port (`.otr`, `.o2r`, `.nrm`, Mod Manager):** A tradução é um arquivo leve que você coloca na pasta `mods/` do port (ou ativa no Mod Manager próprio) **sem precisar alterar sua ROM/ISO original**.
-3. 🛠️ **Patch na ROM / ISO (`.bps`, `.xdelta`, `.ips`, `.pak`):** Você aplica a tradução na ROM/ISO (ou substitui os arquivos `.PAK`/`.WAD`) antes de o port extrair os assets.
-4. ⚪ **Sem Tradução Conhecida / Textos Mínimos:** Jogos de corrida/luta arcade com pouquíssimo texto ou projetos recentes cuja tradução ainda está em andamento.
+1. `Nativo PT-BR` **PT-BR Nativo / Oficial no Port:** O próprio executável do port ou a mídia original (como os discos brasileiros de PS4 e Xbox 360) já vem com Português Brasileiro integrado (basta escolher `Português (Brasil)` nas configurações).
+2. `Mod PT-BR` **Mod Direto no Port (`.otr`, `.o2r`, `.nrm`, Mod Manager):** A tradução é um arquivo leve que você coloca na pasta `mods/` do port (ou ativa no Mod Manager próprio) **sem precisar alterar sua ROM/ISO original**.
+3. `Patch PT-BR` **Patch na ROM / ISO (`.bps`, `.xdelta`, `.ips`, `.pak`):** Você aplica a tradução na ROM/ISO (ou substitui os arquivos `.PAK`/`.WAD`) antes de o port extrair os assets.
+4. `Inglês / Arcade` **Sem Tradução Conhecida / Textos Mínimos:** Jogos de corrida/luta arcade com pouquíssimo texto ou projetos recentes cuja tradução ainda está em andamento.
 
 ---
 
-## 1. 🟢 Jogos com PT-BR 100% Nativo (Zero Configuração Extra!)
+## 1. Jogos com PT-BR 100% Nativo (Zero Configuração Extra!)
 
 Estes projetos já trazem **Português Brasileiro** (muitos inclusive com **Dublagem Oficial Brasileira!**) direto de fábrica:
 
 | Jogo / Projeto | O que está em PT-BR? | Como ativar |
 | :--- | :--- | :--- |
-| **God of War III Remastered (`gow3_pc`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Use o dump da edição brasileira/latina (`CUSA01623`). O idioma já inicia em PT-BR nativamente! |
-| **Shadow of the Colossus Remake (`ShadowOfTheColossus-PC`)** | 📝 **Legendas e Menus Oficiais em PT-BR** | Já incluso nativamente nos arquivos do Remake (`CUSA08809`). |
-| **Bloodborne (`bloodborne_pc`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso nativamente no dump de *Bloodborne GOTY* (`CUSA03173` / `CUSA00900`). |
-| **MediEvil Remake (`medievil_2019_pc_port`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso nativamente nos arquivos do jogo. |
-| **Forza Horizon 1 (`pinyon-shift` / `FH1-ReImagined`) & Forza Horizon 2 (`fh2-recompiled`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso no disco original de Xbox 360. |
-| **Gears of War: Judgment (`gears-judgement-recomp`)** | 🎙️ **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso no disco original de Xbox 360. |
-| **Viva Piñata: Trouble in Paradise (`TiP-Recomp`)** | 🎙️ **Dublagem Oficial Brasileira + Textos PT-BR** | Já incluso no disco original de Xbox 360. |
-| **Jak and Daxter 1, Jak II e Jak 3 (`OpenGOAL`)** | 📝 **Menus, Diálogos e Legendas 100% em PT-BR** | No menu de opções do jogo no **OpenGOAL**, mude o idioma de texto/legenda para **Português (Brasil)**. |
-| **Silent Hill 2 (`Enhanced Edition`)** | 📝 **Menus, Cartas, Enigmas e Legendas 100% em PT-BR** | Durante o instalador oficial (`SH2EE Setup`), marque o pacote de idioma **Brazilian Portuguese**. |
-| **The Legend of Dragoon (`Severed Chains`)** | 📝 **Tradução PT-BR Completa (+ Projeto de Dublagem)** | Parceria oficial com a equipe brasileira **Projeto Dragoon** (`projeto-dragoon.com.br`). |
-| **Crash of the Titans (`MojoRecomp`)** | 📝 **Menus e Legendas 100% em PT-BR** | Criado pelo próprio tradutor brasileiro **OAleex**, com suporte nativo à sua tradução PT-BR! |
-| **Diablo 1 + Hellfire (`DevilutionX`)** | 📝 **100% em PT-BR** (+ pacote de dublagem PT-BR opcional) | Selecione `Português (Brasil)` em *Settings > Language*. |
-| **AM2R (Another Metroid 2 Remake)** | 📝 **Menus e Logs 100% em PT-BR** | Selecione `Português` nas opções de idioma do jogo. |
-| **OpenRCT2 / OpenTTD / CorsixTH / fheroes2 / VCMI** | 📝 **100% em PT-BR** | Selecione `Portuguese (Brazilian)` nas opções do launcher/jogo. |
-| **Grim Fandango / Full Throttle / The Dig (`ScummVM`)** | 🎙️ **Dublagem Clássica Oficial da Brasoft em PT-BR!** | Use os CDs brasileiros originais distribuídos pela Brasoft nos anos 90. |
-| **Disney's Hercules (`hercules-recompiled`)** | 🎙️ **Dublagem Clássica Oficial da Disney em PT-BR!** | Use a imagem de disco do CD original brasileiro de Hércules. O port carrega o áudio em português dos dubladores do filme automaticamente! |
-| **The Simpsons: Hit & Run (Donut Team / PC)** | 🎙️ **Dublagem dos Simpsons em PT-BR + Textos** | Baixe o pacote de dublagem brasileira e ative no **Lucas' Simpsons Hit & Run Mod Launcher**. |
-| **International Superstar Soccer Deluxe (`issd-native`)** | 🎙️ **Narração Brasileira Clássica (Ronaldinho 97!)** | Roda nativamente com a ROM modificada do Campeonato Brasileiro / Ronaldinho 97! |
+| **God of War III Remastered (`gow3_pc`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Use o dump da edição brasileira/latina (`CUSA01623`). O idioma já inicia em PT-BR nativamente! |
+| **Shadow of the Colossus Remake (`ShadowOfTheColossus-PC`)** | Legendas PT-BR **Legendas e Menus Oficiais em PT-BR** | Já incluso nativamente nos arquivos do Remake (`CUSA08809`). |
+| **Bloodborne (`bloodborne_pc`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso nativamente no dump de *Bloodborne GOTY* (`CUSA03173` / `CUSA00900`). |
+| **MediEvil Remake (`medievil_2019_pc_port`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso nativamente nos arquivos do jogo. |
+| **Forza Horizon 1 (`pinyon-shift` / `FH1-ReImagined`) & Forza Horizon 2 (`fh2-recompiled`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Legendas e Menus PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Gears of War: Judgment (`gears-judgement-recomp`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Legendas PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Viva Piñata: Trouble in Paradise (`TiP-Recomp`)** | `Dublado PT-BR` **Dublagem Oficial Brasileira + Textos PT-BR** | Já incluso no disco original de Xbox 360. |
+| **Jak and Daxter 1, Jak II e Jak 3 (`OpenGOAL`)** | Legendas PT-BR **Menus, Diálogos e Legendas 100% em PT-BR** | No menu de opções do jogo no **OpenGOAL**, mude o idioma de texto/legenda para **Português (Brasil)**. |
+| **Silent Hill 2 (`Enhanced Edition`)** | Legendas PT-BR **Menus, Cartas, Enigmas e Legendas 100% em PT-BR** | Durante o instalador oficial (`SH2EE Setup`), marque o pacote de idioma **Brazilian Portuguese**. |
+| **The Legend of Dragoon (`Severed Chains`)** | Legendas PT-BR **Tradução PT-BR Completa (+ Projeto de Dublagem)** | Parceria oficial com a equipe brasileira **Projeto Dragoon** (`projeto-dragoon.com.br`). |
+| **Crash of the Titans (`MojoRecomp`)** | Legendas PT-BR **Menus e Legendas 100% em PT-BR** | Criado pelo próprio tradutor brasileiro **OAleex**, com suporte nativo à sua tradução PT-BR! |
+| **Diablo 1 + Hellfire (`DevilutionX`)** | Legendas PT-BR **100% em PT-BR** (+ pacote de dublagem PT-BR opcional) | Selecione `Português (Brasil)` em *Settings > Language*. |
+| **AM2R (Another Metroid 2 Remake)** | Legendas PT-BR **Menus e Logs 100% em PT-BR** | Selecione `Português` nas opções de idioma do jogo. |
+| **OpenRCT2 / OpenTTD / CorsixTH / fheroes2 / VCMI** | Legendas PT-BR **100% em PT-BR** | Selecione `Portuguese (Brazilian)` nas opções do launcher/jogo. |
+| **Grim Fandango / Full Throttle / The Dig (`ScummVM`)** | `Dublado PT-BR` **Dublagem Clássica Oficial da Brasoft em PT-BR!** | Use os CDs brasileiros originais distribuídos pela Brasoft nos anos 90. |
+| **Disney's Hercules (`hercules-recompiled`)** | `Dublado PT-BR` **Dublagem Clássica Oficial da Disney em PT-BR!** | Use a imagem de disco do CD original brasileiro de Hércules. O port carrega o áudio em português dos dubladores do filme automaticamente! |
+| **The Simpsons: Hit & Run (Donut Team / PC)** | `Dublado PT-BR` **Dublagem dos Simpsons em PT-BR + Textos** | Baixe o pacote de dublagem brasileira e ative no **Lucas' Simpsons Hit & Run Mod Launcher**. |
+| **International Superstar Soccer Deluxe (`issd-native`)** | `Dublado PT-BR` **Narração Brasileira Clássica (Ronaldinho 97!)** | Roda nativamente com a ROM modificada do Campeonato Brasileiro / Ronaldinho 97! |
 
 ---
 
-## 2. 🧩 Como Instalar Mods PT-BR nos Ports de N64, Xbox 360 e GameCube/Wii U
+## 2. Como Instalar Mods PT-BR nos Ports de N64, Xbox 360 e GameCube/Wii U
 
 ### A. Ship of Harkinian (Ocarina of Time) & 2Ship2Harkinian (Majora's Mask)
 1. Gere o seu arquivo base normalmente com uma ROM original (**sem patch**) do jogo.
@@ -80,7 +82,7 @@ Os projetos baseados no `N64Recomp` suportam mods nativos no formato **`.nrm`** 
 
 ---
 
-## 3. 🛠️ Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
+## 3. Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
 
 ### A. Recompilações de PS2 (`PS2Recomp`) — *God of War 1 & 2, Shadow of the Colossus, Urban Reign, Burnout 3*
 Como os projetos baseados em `PS2Recomp` traduzem o executável principal (`SCUS`/`SLUS`) para C++ nativo, mas **carregam os arquivos de dados (`.PAK`, `.WAD`, `.DAT`, `.STR`) diretamente da ISO**:
@@ -98,7 +100,7 @@ Como os projetos baseados em `PS2Recomp` traduzem o executável principal (`SCUS
 
 ---
 
-## 🌐 Onde Encontrar Traduções e Dublagens Confiáveis no Brasil
+## Onde Encontrar Traduções e Dublagens Confiáveis no Brasil
 * [**GameBanana**](https://gamebanana.com/) — Principal hub de mods `.otr`, `.o2r` e `.nrm` para ports de N64, Xbox 360 e Sonic.
 * [**Fórum Unificado de Romhacking e Tradução (FURT / Romhacking.net.br)**](https://www.romhacking.net.br/) — Maior arquivo histórico de patches `.ips`, `.bps` e `.xdelta` para ROMs e ISOs no Brasil.
 * [**Central de Traduções**](https://www.centraldetraducoes.net.br/) & [**Tribo Gamer**](https://tribogamer.com/traducoes/) — Principais portais para traduções de PC, PS2, PS3, Xbox 360 e GameCube.

@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace PortsPCLauncher {
     public class GameItem {
@@ -56,9 +57,12 @@ namespace PortsPCLauncher {
 
         private List<GameItem> allGames = new List<GameItem>();
         private List<GameItem> filteredGames = new List<GameItem>();
+        private Dictionary<string, Border> cardBorders = new Dictionary<string, Border>();
         private GameItem selectedGame = null;
+        private DispatcherTimer searchTimer;
 
         private TextBox searchBox;
+        private TextBlock searchPlaceholder;
         private StackPanel cardsPanel;
         private TextBlock statsText;
         private Border detailPanel;
@@ -69,6 +73,7 @@ namespace PortsPCLauncher {
         private TextBlock detailCategory;
         private TextBlock detailRequires;
         private Border detailPtbrBadge;
+        private Ellipse detailPtbrDot;
         private TextBlock detailPtbrBadgeText;
         private TextBlock detailPtbrText;
         private Button btnInstall;
@@ -81,14 +86,34 @@ namespace PortsPCLauncher {
         private string currentFilter = "Todos";
         private bool onlyPtbr = false;
 
+        // Linear / GitHub Neutral Dark Palette
+        private static readonly Color BgPrimary = Color.FromRgb(9, 9, 11);         // #09090B
+        private static readonly Color BgSurface = Color.FromRgb(18, 18, 20);       // #121214
+        private static readonly Color BgControl = Color.FromRgb(24, 24, 27);       // #18181B
+        private static readonly Color BgElevated = Color.FromRgb(32, 32, 36);      // #202024
+        private static readonly Color BorderSubtle = Color.FromRgb(39, 39, 42);    // #27272A
+        private static readonly Color BorderHover = Color.FromRgb(63, 63, 70);     // #3F3F46
+        private static readonly Color TextPrimary = Color.FromRgb(244, 244, 245);  // #F4F4F5
+        private static readonly Color TextSecondary = Color.FromRgb(161, 161, 170);// #A1A1AA
+        private static readonly Color TextMuted = Color.FromRgb(113, 113, 122);    // #71717A
+        private static readonly Color AccentGreen = Color.FromRgb(16, 185, 129);   // #10B981
+        private static readonly Color AccentAmber = Color.FromRgb(245, 158, 11);   // #F59E0B
+        private static readonly Color AccentSky = Color.FromRgb(56, 189, 248);     // #38BDF8
+
         public MainWindow() {
-            Title = "PortsPC Launcher — O Catálogo Definitivo de Ports para PC";
-            Width = 1180;
-            Height = 740;
+            Title = "PortsPC Launcher — Catálogo de Recomps & Source Ports";
+            Width = 1200;
+            Height = 760;
             MinWidth = 980;
             MinHeight = 600;
             WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            Background = new SolidColorBrush(Color.FromRgb(11, 15, 25)); // #0B0F19
+            Background = new SolidColorBrush(BgPrimary);
+
+            searchTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(90) };
+            searchTimer.Tick += (s, e) => {
+                searchTimer.Stop();
+                ApplyFilter();
+            };
 
             SourceInitialized += (s, e) => {
                 try {
@@ -114,9 +139,9 @@ namespace PortsPCLauncher {
 
             // 2. Body Grid (Cards List on Left, Details on Right)
             var bodyGrid = new Grid();
-            bodyGrid.Margin = new Thickness(16, 0, 16, 16);
+            bodyGrid.Margin = new Thickness(18, 0, 18, 18);
             bodyGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-            bodyGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(420) });
+            bodyGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(430) });
 
             // Left side: Cards List inside ScrollViewer
             var leftStack = new Grid();
@@ -125,9 +150,10 @@ namespace PortsPCLauncher {
 
             statsText = new TextBlock {
                 Text = "Carregando catálogo...",
-                Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184)), // #94A3B8
-                FontSize = 13,
-                Margin = new Thickness(4, 0, 0, 8)
+                Foreground = new SolidColorBrush(TextMuted),
+                FontSize = 12,
+                FontWeight = FontWeights.Medium,
+                Margin = new Thickness(2, 0, 0, 10)
             };
             leftStack.Children.Add(statsText);
             Grid.SetRow(statsText, 0);
@@ -156,39 +182,65 @@ namespace PortsPCLauncher {
 
         private UIElement CreateHeaderBar() {
             var headerBorder = new Border {
-                Background = new SolidColorBrush(Color.FromRgb(17, 24, 39)), // #111827
-                BorderBrush = new SolidColorBrush(Color.FromRgb(31, 41, 55)), // #1F2937
+                Background = new SolidColorBrush(BgSurface),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
                 BorderThickness = new Thickness(0, 0, 0, 1),
-                Padding = new Thickness(16, 12, 16, 12),
+                Padding = new Thickness(18, 14, 18, 14),
                 Margin = new Thickness(0, 0, 0, 14)
             };
 
             var headerStack = new StackPanel { Orientation = Orientation.Vertical };
 
-            // Top Row: Logo & Search
+            // Top Row: Vector Mark + Title & Search
             var topRow = new Grid();
             topRow.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
             topRow.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
             var logoStack = new StackPanel { Orientation = Orientation.Horizontal, VerticalAlignment = VerticalAlignment.Center };
+
+            // Clean Vector Logo Box
+            var logoBox = new Border {
+                Width = 28,
+                Height = 28,
+                CornerRadius = new CornerRadius(6),
+                Background = new SolidColorBrush(BgControl),
+                BorderBrush = new SolidColorBrush(BorderHover),
+                BorderThickness = new Thickness(1),
+                Margin = new Thickness(0, 0, 10, 0),
+                VerticalAlignment = VerticalAlignment.Center,
+                Child = new System.Windows.Shapes.Path {
+                    Data = Geometry.Parse("M6,9 H18 A3,3 0 0 1 21,12 V15 A3,3 0 0 1 18,18 H6 A3,3 0 0 1 3,15 V12 A3,3 0 0 1 6,9 Z M8,12 V15 M6.5,13.5 H9.5 M15,12.5 A0.8,0.8 0 1 0 15,14.1 A0.8,0.8 0 1 0 15,12.5 Z M17.5,13.5 A0.8,0.8 0 1 0 17.5,15.1 A0.8,0.8 0 1 0 17.5,13.5 Z"),
+                    Stroke = new SolidColorBrush(TextPrimary),
+                    StrokeThickness = 1.5,
+                    Width = 18,
+                    Height = 18,
+                    Stretch = Stretch.Uniform,
+                    HorizontalAlignment = HorizontalAlignment.Center,
+                    VerticalAlignment = VerticalAlignment.Center
+                }
+            };
+            logoStack.Children.Add(logoBox);
+
             var title = new TextBlock {
-                Text = "🎮 PortsPC",
-                Foreground = Brushes.White,
-                FontSize = 20,
-                FontWeight = FontWeights.Bold,
+                Text = "PortsPC",
+                Foreground = new SolidColorBrush(TextPrimary),
+                FontSize = 18,
+                FontWeight = FontWeights.SemiBold,
                 VerticalAlignment = VerticalAlignment.Center
             };
             var badge = new Border {
-                Background = new SolidColorBrush(Color.FromRgb(79, 70, 229)), // Indigo #4F46E5
+                Background = new SolidColorBrush(BgControl),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
+                BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(4),
-                Padding = new Thickness(6, 2, 6, 2),
-                Margin = new Thickness(8, 0, 16, 0),
+                Padding = new Thickness(7, 2, 7, 2),
+                Margin = new Thickness(10, 1, 16, 0),
                 VerticalAlignment = VerticalAlignment.Center,
                 Child = new TextBlock {
-                    Text = "LAUNCHER",
-                    Foreground = Brushes.White,
+                    Text = "CATÁLOGO DE PORTS",
+                    Foreground = new SolidColorBrush(TextSecondary),
                     FontSize = 10,
-                    FontWeight = FontWeights.Bold
+                    FontWeight = FontWeights.SemiBold
                 }
             };
             logoStack.Children.Add(title);
@@ -198,13 +250,13 @@ namespace PortsPCLauncher {
 
             // Search Box
             var searchBorder = new Border {
-                Background = new SolidColorBrush(Color.FromRgb(30, 41, 59)), // #1E293B
-                BorderBrush = new SolidColorBrush(Color.FromRgb(51, 65, 85)), // #334155
+                Background = new SolidColorBrush(BgPrimary),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
                 BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(6),
-                Padding = new Thickness(10, 4, 10, 4),
+                Padding = new Thickness(10, 6, 10, 6),
                 VerticalAlignment = VerticalAlignment.Center,
-                MaxWidth = 550,
+                MaxWidth = 540,
                 HorizontalAlignment = HorizontalAlignment.Right
             };
 
@@ -212,27 +264,44 @@ namespace PortsPCLauncher {
             searchGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
             searchGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-            var searchIcon = new TextBlock {
-                Text = "🔍",
+            var searchIcon = new System.Windows.Shapes.Path {
+                Data = Geometry.Parse("M11,4 A7,7 0 1 0 11,18 A7,7 0 1 0 11,4 Z M20,20 L16,16"),
+                Stroke = new SolidColorBrush(TextMuted),
+                StrokeThickness = 1.6,
+                Width = 14,
+                Height = 14,
+                Stretch = Stretch.Uniform,
                 VerticalAlignment = VerticalAlignment.Center,
-                Margin = new Thickness(0, 0, 8, 0),
-                Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184))
+                Margin = new Thickness(0, 0, 8, 0)
             };
             searchGrid.Children.Add(searchIcon);
             Grid.SetColumn(searchIcon, 0);
 
+            var searchInputHost = new Grid { MinWidth = 360 };
+            searchPlaceholder = new TextBlock {
+                Text = "Buscar por título, console ou idioma...",
+                Foreground = new SolidColorBrush(TextMuted),
+                FontSize = 13,
+                VerticalAlignment = VerticalAlignment.Center,
+                IsHitTestVisible = false
+            };
             searchBox = new TextBox {
                 Background = Brushes.Transparent,
-                Foreground = Brushes.White,
+                Foreground = new SolidColorBrush(TextPrimary),
                 BorderThickness = new Thickness(0),
-                FontSize = 14,
+                FontSize = 13,
                 VerticalAlignment = VerticalAlignment.Center,
-                CaretBrush = Brushes.White,
-                MinWidth = 360
+                CaretBrush = new SolidColorBrush(TextPrimary)
             };
-            searchBox.TextChanged += (s, e) => ApplyFilter();
-            searchGrid.Children.Add(searchBox);
-            Grid.SetColumn(searchBox, 1);
+            searchBox.TextChanged += (s, e) => {
+                searchPlaceholder.Visibility = string.IsNullOrEmpty(searchBox.Text) ? Visibility.Visible : Visibility.Collapsed;
+                searchTimer.Stop();
+                searchTimer.Start();
+            };
+            searchInputHost.Children.Add(searchPlaceholder);
+            searchInputHost.Children.Add(searchBox);
+            searchGrid.Children.Add(searchInputHost);
+            Grid.SetColumn(searchInputHost, 1);
 
             searchBorder.Child = searchGrid;
             topRow.Children.Add(searchBorder);
@@ -240,36 +309,47 @@ namespace PortsPCLauncher {
 
             headerStack.Children.Add(topRow);
 
-            // Bottom Row: Category Chips + PT-BR checkbox
+            // Bottom Row: Category Chips + PT-BR checkbox + Sync button
             var filterRow = new WrapPanel { Margin = new Thickness(0, 12, 0, 0) };
 
-            string[] categories = new string[] { "Todos", "PlayStation", "Xbox", "Nintendo", "PC & Outros", "Fangames" };
+            string[] categories = new string[] { "Todos", "PlayStation", "Xbox", "Nintendo & Sega", "PC & Outros", "Fangames" };
             foreach (var cat in categories) {
                 var btn = CreateCategoryButton(cat);
                 filterRow.Children.Add(btn);
             }
 
             var chkPtbr = new CheckBox {
-                Content = "🇧🇷 Somente com PT-BR",
-                Foreground = new SolidColorBrush(Color.FromRgb(52, 211, 153)), // Emerald #34D399
+                Content = "Somente com PT-BR",
+                Foreground = new SolidColorBrush(TextSecondary),
                 VerticalAlignment = VerticalAlignment.Center,
-                Margin = new Thickness(16, 4, 16, 0),
-                FontWeight = FontWeights.SemiBold
+                Margin = new Thickness(14, 2, 14, 2),
+                FontSize = 12,
+                FontWeight = FontWeights.Medium,
+                Cursor = Cursors.Hand
             };
-            chkPtbr.Checked += (s, e) => { onlyPtbr = true; ApplyFilter(); };
-            chkPtbr.Unchecked += (s, e) => { onlyPtbr = false; ApplyFilter(); };
+            chkPtbr.Checked += (s, e) => {
+                onlyPtbr = true;
+                chkPtbr.Foreground = new SolidColorBrush(AccentGreen);
+                ApplyFilter();
+            };
+            chkPtbr.Unchecked += (s, e) => {
+                onlyPtbr = false;
+                chkPtbr.Foreground = new SolidColorBrush(TextSecondary);
+                ApplyFilter();
+            };
             filterRow.Children.Add(chkPtbr);
 
             var btnSync = new Button {
-                Content = "🔄 Buscar Novos Ports Online",
-                Margin = new Thickness(8, 0, 0, 4),
+                Content = "Sincronizar GitHub",
+                Margin = new Thickness(6, 0, 0, 4),
                 Padding = new Thickness(12, 5, 12, 5),
-                Background = new SolidColorBrush(Color.FromRgb(16, 185, 129)), // Emerald #10B981
-                Foreground = Brushes.White,
-                BorderThickness = new Thickness(0),
+                Background = new SolidColorBrush(BgControl),
+                Foreground = new SolidColorBrush(TextPrimary),
+                BorderBrush = new SolidColorBrush(BorderHover),
+                BorderThickness = new Thickness(1),
                 Cursor = Cursors.Hand,
                 FontSize = 12,
-                FontWeight = FontWeights.Bold
+                FontWeight = FontWeights.Medium
             };
             btnSync.Click += BtnUpdateCatalog_Click;
             filterRow.Children.Add(btnSync);
@@ -281,33 +361,33 @@ namespace PortsPCLauncher {
         }
 
         private Button CreateCategoryButton(string catName) {
+            bool isActive = (catName == currentFilter);
             var btn = new Button {
                 Content = catName,
-                Margin = new Thickness(0, 0, 8, 4),
-                Padding = new Thickness(12, 5, 12, 5),
-                Background = (catName == currentFilter)
-                    ? new SolidColorBrush(Color.FromRgb(79, 70, 229))
-                    : new SolidColorBrush(Color.FromRgb(30, 41, 59)),
-                Foreground = Brushes.White,
-                BorderBrush = new SolidColorBrush(Color.FromRgb(51, 65, 85)),
+                Margin = new Thickness(0, 0, 6, 4),
+                Padding = new Thickness(11, 5, 11, 5),
+                Background = new SolidColorBrush(isActive ? TextPrimary : BgControl),
+                Foreground = new SolidColorBrush(isActive ? BgPrimary : TextSecondary),
+                BorderBrush = new SolidColorBrush(isActive ? TextPrimary : BorderSubtle),
                 BorderThickness = new Thickness(1),
                 Cursor = Cursors.Hand,
                 FontSize = 12,
-                FontWeight = FontWeights.SemiBold
+                FontWeight = isActive ? FontWeights.SemiBold : FontWeights.Medium
             };
 
             btn.Click += (s, e) => {
                 currentFilter = catName;
                 ApplyFilter();
-                // Update visuals of all sibling buttons
                 var parent = btn.Parent as Panel;
                 if (parent != null) {
                     foreach (var child in parent.Children) {
                         var b = child as Button;
-                        if (b != null) {
-                            b.Background = (b.Content.ToString() == currentFilter)
-                                ? new SolidColorBrush(Color.FromRgb(79, 70, 229))
-                                : new SolidColorBrush(Color.FromRgb(30, 41, 59));
+                        if (b != null && b.Content != null && b.Content.ToString() != "Sincronizar GitHub" && b.Content.ToString() != "Sincronizando...") {
+                            bool active = (b.Content.ToString() == currentFilter);
+                            b.Background = new SolidColorBrush(active ? TextPrimary : BgControl);
+                            b.Foreground = new SolidColorBrush(active ? BgPrimary : TextSecondary);
+                            b.BorderBrush = new SolidColorBrush(active ? TextPrimary : BorderSubtle);
+                            b.FontWeight = active ? FontWeights.SemiBold : FontWeights.Medium;
                         }
                     }
                 }
@@ -317,12 +397,12 @@ namespace PortsPCLauncher {
 
         private UIElement CreateDetailPanel() {
             detailPanel = new Border {
-                Background = new SolidColorBrush(Color.FromRgb(17, 24, 39)), // #111827
-                BorderBrush = new SolidColorBrush(Color.FromRgb(31, 41, 55)), // #1F2937
+                Background = new SolidColorBrush(BgSurface),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
                 BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(8),
-                Padding = new Thickness(18),
-                Margin = new Thickness(12, 0, 0, 0)
+                Padding = new Thickness(20),
+                Margin = new Thickness(14, 0, 0, 0)
             };
 
             detailScroll = new ScrollViewer {
@@ -334,17 +414,17 @@ namespace PortsPCLauncher {
 
             detailTitle = new TextBlock {
                 Text = "Selecione um jogo",
-                Foreground = Brushes.White,
+                Foreground = new SolidColorBrush(TextPrimary),
                 FontSize = 18,
-                FontWeight = FontWeights.Bold,
+                FontWeight = FontWeights.SemiBold,
                 TextWrapping = TextWrapping.Wrap,
                 Margin = new Thickness(0, 0, 0, 4)
             };
             stack.Children.Add(detailTitle);
 
             detailCategory = new TextBlock {
-                Text = "Clique em um card ao lado para visualizar os detalhes e instalar.",
-                Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184)),
+                Text = "Clique em qualquer item da lista para ver os requisitos e instalar.",
+                Foreground = new SolidColorBrush(TextMuted),
                 FontSize = 12,
                 Margin = new Thickness(0, 0, 0, 14)
             };
@@ -353,65 +433,80 @@ namespace PortsPCLauncher {
             // Divider
             stack.Children.Add(new Rectangle {
                 Height = 1,
-                Fill = new SolidColorBrush(Color.FromRgb(31, 41, 55)),
-                Margin = new Thickness(0, 0, 0, 14)
+                Fill = new SolidColorBrush(BorderSubtle),
+                Margin = new Thickness(0, 0, 0, 16)
             });
 
             // Requirements Section
             stack.Children.Add(new TextBlock {
-                Text = "📋 O QUE VOCÊ PRECISA (ROM / ISO / DUMP):",
-                Foreground = new SolidColorBrush(Color.FromRgb(245, 158, 11)), // Amber #F59E0B
-                FontSize = 11,
-                FontWeight = FontWeights.Bold,
-                Margin = new Thickness(0, 0, 0, 4)
+                Text = "REQUISITOS (ROM / ISO / DUMP)",
+                Foreground = new SolidColorBrush(TextMuted),
+                FontSize = 10,
+                FontWeight = FontWeights.SemiBold,
+                Margin = new Thickness(0, 0, 0, 6)
             });
 
             detailRequires = new TextBlock {
                 Text = "---",
-                Foreground = new SolidColorBrush(Color.FromRgb(226, 232, 240)),
+                Foreground = new SolidColorBrush(TextPrimary),
                 FontSize = 13,
                 TextWrapping = TextWrapping.Wrap,
-                Margin = new Thickness(0, 0, 0, 14)
+                Margin = new Thickness(0, 0, 0, 16)
             };
             stack.Children.Add(detailRequires);
 
             // PT-BR Section
             stack.Children.Add(new TextBlock {
-                Text = "🇧🇷 STATUS & INSTRUÇÕES DE PORTUGUÊS BRASILEIRO:",
-                Foreground = new SolidColorBrush(Color.FromRgb(52, 211, 153)), // Emerald #34D399
-                FontSize = 11,
-                FontWeight = FontWeights.Bold,
+                Text = "LOCALIZAÇÃO & STATUS PT-BR",
+                Foreground = new SolidColorBrush(TextMuted),
+                FontSize = 10,
+                FontWeight = FontWeights.SemiBold,
                 Margin = new Thickness(0, 0, 0, 6)
             });
 
             detailPtbrBadge = new Border {
+                Background = new SolidColorBrush(BgControl),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
+                BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(4),
                 Padding = new Thickness(8, 4, 8, 4),
                 HorizontalAlignment = HorizontalAlignment.Left,
-                Margin = new Thickness(0, 0, 0, 6)
+                Margin = new Thickness(0, 0, 0, 8)
+            };
+            var badgeRow = new StackPanel { Orientation = Orientation.Horizontal };
+            detailPtbrDot = new Ellipse {
+                Width = 7,
+                Height = 7,
+                Fill = new SolidColorBrush(TextMuted),
+                VerticalAlignment = VerticalAlignment.Center,
+                Margin = new Thickness(0, 0, 6, 0)
             };
             detailPtbrBadgeText = new TextBlock {
                 Text = "---",
-                FontWeight = FontWeights.Bold,
-                FontSize = 11
+                Foreground = new SolidColorBrush(TextSecondary),
+                FontWeight = FontWeights.SemiBold,
+                FontSize = 11,
+                VerticalAlignment = VerticalAlignment.Center
             };
-            detailPtbrBadge.Child = detailPtbrBadgeText;
+            badgeRow.Children.Add(detailPtbrDot);
+            badgeRow.Children.Add(detailPtbrBadgeText);
+            detailPtbrBadge.Child = badgeRow;
             stack.Children.Add(detailPtbrBadge);
 
             detailPtbrText = new TextBlock {
                 Text = "---",
-                Foreground = new SolidColorBrush(Color.FromRgb(203, 213, 225)),
+                Foreground = new SolidColorBrush(TextSecondary),
                 FontSize = 12,
                 TextWrapping = TextWrapping.Wrap,
-                Margin = new Thickness(0, 0, 0, 16)
+                Margin = new Thickness(0, 0, 0, 18)
             };
             stack.Children.Add(detailPtbrText);
 
             // Live Progress Section
             progressBar = new ProgressBar {
-                Height = 8,
-                Foreground = new SolidColorBrush(Color.FromRgb(79, 70, 229)),
-                Background = new SolidColorBrush(Color.FromRgb(30, 41, 59)),
+                Height = 6,
+                Foreground = new SolidColorBrush(TextPrimary),
+                Background = new SolidColorBrush(BgControl),
                 BorderThickness = new Thickness(0),
                 Visibility = Visibility.Collapsed,
                 Margin = new Thickness(0, 0, 0, 6)
@@ -420,7 +515,7 @@ namespace PortsPCLauncher {
 
             progressStatus = new TextBlock {
                 Text = "",
-                Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184)),
+                Foreground = new SolidColorBrush(TextSecondary),
                 FontSize = 11,
                 TextWrapping = TextWrapping.Wrap,
                 Visibility = Visibility.Collapsed,
@@ -430,11 +525,11 @@ namespace PortsPCLauncher {
 
             // Action Buttons
             btnInstall = new Button {
-                Content = "📥 Instalar Jogo no PC",
-                Background = new SolidColorBrush(Color.FromRgb(79, 70, 229)), // Indigo
-                Foreground = Brushes.White,
-                FontWeight = FontWeights.Bold,
-                FontSize = 14,
+                Content = "Instalar Jogo no PC",
+                Background = new SolidColorBrush(TextPrimary),
+                Foreground = new SolidColorBrush(BgPrimary),
+                FontWeight = FontWeights.SemiBold,
+                FontSize = 13,
                 Padding = new Thickness(0, 10, 0, 10),
                 BorderThickness = new Thickness(0),
                 Cursor = Cursors.Hand,
@@ -445,13 +540,13 @@ namespace PortsPCLauncher {
             stack.Children.Add(btnInstall);
 
             btnOpenFolder = new Button {
-                Content = "📁 Abrir Pasta do Jogo",
-                Background = new SolidColorBrush(Color.FromRgb(30, 41, 59)),
-                Foreground = Brushes.White,
-                FontWeight = FontWeights.SemiBold,
+                Content = "Abrir Pasta do Jogo",
+                Background = new SolidColorBrush(BgControl),
+                Foreground = new SolidColorBrush(TextPrimary),
+                FontWeight = FontWeights.Medium,
                 FontSize = 12,
                 Padding = new Thickness(0, 8, 0, 8),
-                BorderBrush = new SolidColorBrush(Color.FromRgb(51, 65, 85)),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
                 BorderThickness = new Thickness(1),
                 Cursor = Cursors.Hand,
                 IsEnabled = false,
@@ -465,13 +560,13 @@ namespace PortsPCLauncher {
             stack.Children.Add(btnOpenFolder);
 
             btnWebsite = new Button {
-                Content = "🌐 Ver no GitHub / Site Oficial",
-                Background = new SolidColorBrush(Color.FromRgb(30, 41, 59)),
-                Foreground = Brushes.White,
-                FontWeight = FontWeights.SemiBold,
+                Content = "Abrir no GitHub / Site Oficial",
+                Background = new SolidColorBrush(BgControl),
+                Foreground = new SolidColorBrush(TextPrimary),
+                FontWeight = FontWeights.Medium,
                 FontSize = 12,
                 Padding = new Thickness(0, 8, 0, 8),
-                BorderBrush = new SolidColorBrush(Color.FromRgb(51, 65, 85)),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
                 BorderThickness = new Thickness(1),
                 Cursor = Cursors.Hand,
                 IsEnabled = false,
@@ -485,13 +580,14 @@ namespace PortsPCLauncher {
             stack.Children.Add(btnWebsite);
 
             btnPtbr = new Button {
-                Content = "🇧🇷 Baixar Tradução / Mod PT-BR",
-                Background = new SolidColorBrush(Color.FromRgb(6, 95, 70)), // Dark Emerald
-                Foreground = Brushes.White,
+                Content = "Baixar Tradução / Mod PT-BR",
+                Background = new SolidColorBrush(Color.FromRgb(6, 78, 59)),
+                Foreground = new SolidColorBrush(Color.FromRgb(167, 243, 208)),
                 FontWeight = FontWeights.SemiBold,
                 FontSize = 12,
                 Padding = new Thickness(0, 8, 0, 8),
-                BorderThickness = new Thickness(0),
+                BorderBrush = new SolidColorBrush(Color.FromRgb(16, 185, 129)),
+                BorderThickness = new Thickness(1),
                 Cursor = Cursors.Hand,
                 Visibility = Visibility.Collapsed,
                 Margin = new Thickness(0, 0, 0, 8)
@@ -544,7 +640,7 @@ namespace PortsPCLauncher {
             var btn = sender as Button;
             if (btn != null) {
                 btn.IsEnabled = false;
-                btn.Content = "⏳ Buscando novos ports...";
+                btn.Content = "Sincronizando...";
             }
             statsText.Text = "Sincronizando catálogo online e varrendo novos ports no GitHub...";
 
@@ -668,7 +764,7 @@ namespace PortsPCLauncher {
             } finally {
                 if (btn != null) {
                     btn.IsEnabled = true;
-                    btn.Content = "🔄 Buscar Novos Ports Online";
+                    btn.Content = "Sincronizar GitHub";
                 }
             }
         }
@@ -684,10 +780,13 @@ namespace PortsPCLauncher {
                     catMatch = game.category.IndexOf("PlayStation", StringComparison.OrdinalIgnoreCase) >= 0;
                 } else if (currentFilter == "Xbox") {
                     catMatch = game.category.IndexOf("Xbox", StringComparison.OrdinalIgnoreCase) >= 0;
-                } else if (currentFilter == "Nintendo") {
+                } else if (currentFilter == "Nintendo & Sega" || currentFilter == "Nintendo") {
                     catMatch = game.category.IndexOf("Nintendo", StringComparison.OrdinalIgnoreCase) >= 0 ||
                                game.category.IndexOf("GameCube", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                               game.category.IndexOf("Harbour Masters", StringComparison.OrdinalIgnoreCase) >= 0;
+                               game.category.IndexOf("Harbour Masters", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                               game.category.IndexOf("Sega", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                               game.platform.IndexOf("Dreamcast", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                               game.platform.IndexOf("Mega Drive", StringComparison.OrdinalIgnoreCase) >= 0;
                 } else if (currentFilter == "PC & Outros") {
                     catMatch = game.category.IndexOf("Source Ports", StringComparison.OrdinalIgnoreCase) >= 0;
                 } else if (currentFilter == "Fangames") {
@@ -719,32 +818,35 @@ namespace PortsPCLauncher {
 
         private void RenderCards() {
             cardsPanel.Children.Clear();
+            cardBorders.Clear();
 
             foreach (var item in filteredGames) {
                 var card = CreateGameCard(item);
+                if (!string.IsNullOrEmpty(item.id) && !cardBorders.ContainsKey(item.id)) {
+                    cardBorders[item.id] = card;
+                }
                 cardsPanel.Children.Add(card);
             }
 
             if (filteredGames.Count == 0) {
                 cardsPanel.Children.Add(new TextBlock {
                     Text = "Nenhum jogo encontrado para os filtros selecionados.",
-                    Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184)),
-                    FontSize = 14,
-                    Margin = new Thickness(20)
+                    Foreground = new SolidColorBrush(TextMuted),
+                    FontSize = 13,
+                    Margin = new Thickness(12, 24, 12, 24)
                 });
             }
         }
 
         private Border CreateGameCard(GameItem item) {
+            bool isSelected = (selectedGame != null && selectedGame.id == item.id);
             var border = new Border {
-                Background = new SolidColorBrush(Color.FromRgb(17, 24, 39)), // #111827
-                BorderBrush = (selectedGame != null && selectedGame.id == item.id)
-                    ? new SolidColorBrush(Color.FromRgb(99, 102, 241)) // Active border #6366F1
-                    : new SolidColorBrush(Color.FromRgb(31, 41, 55)), // Normal border #1F2937
-                BorderThickness = new Thickness((selectedGame != null && selectedGame.id == item.id) ? 2 : 1),
-                CornerRadius = new CornerRadius(8),
-                Padding = new Thickness(14),
-                Margin = new Thickness(0, 0, 0, 8),
+                Background = new SolidColorBrush(isSelected ? BgElevated : BgSurface),
+                BorderBrush = new SolidColorBrush(isSelected ? TextPrimary : BorderSubtle),
+                BorderThickness = new Thickness(1),
+                CornerRadius = new CornerRadius(6),
+                Padding = new Thickness(14, 11, 14, 11),
+                Margin = new Thickness(0, 0, 0, 6),
                 Cursor = Cursors.Hand
             };
 
@@ -755,46 +857,50 @@ namespace PortsPCLauncher {
 
             var platBadge = new Border {
                 Background = GetPlatformColor(item.platform),
+                BorderBrush = new SolidColorBrush(BorderHover),
+                BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(4),
                 Padding = new Thickness(6, 2, 6, 2),
                 Margin = new Thickness(0, 0, 8, 0),
                 VerticalAlignment = VerticalAlignment.Center,
                 Child = new TextBlock {
                     Text = item.platform,
-                    Foreground = Brushes.White,
+                    Foreground = new SolidColorBrush(TextPrimary),
                     FontSize = 10,
-                    FontWeight = FontWeights.Bold
+                    FontWeight = FontWeights.SemiBold
                 }
             };
             topLine.Children.Add(platBadge);
 
             var nameText = new TextBlock {
                 Text = item.name,
-                Foreground = Brushes.White,
+                Foreground = new SolidColorBrush(TextPrimary),
                 FontSize = 14,
-                FontWeight = FontWeights.Bold,
+                FontWeight = FontWeights.SemiBold,
                 VerticalAlignment = VerticalAlignment.Center
             };
             topLine.Children.Add(nameText);
             stack.Children.Add(topLine);
 
             // Middle Line: PT-BR Badge + Installed Badge
-            var badgeLine = new WrapPanel { Margin = new Thickness(0, 0, 0, 4) };
+            var badgeLine = new WrapPanel { Margin = new Thickness(0, 0, 0, 5) };
 
             var ptBadge = CreatePtbrBadge(item.ptbr_status);
             badgeLine.Children.Add(ptBadge);
 
             if (item.IsInstalled()) {
                 var instBadge = new Border {
-                    Background = new SolidColorBrush(Color.FromRgb(21, 128, 61)), // Green #15803D
+                    Background = new SolidColorBrush(Color.FromRgb(6, 78, 59)),
+                    BorderBrush = new SolidColorBrush(AccentGreen),
+                    BorderThickness = new Thickness(1),
                     CornerRadius = new CornerRadius(4),
                     Padding = new Thickness(6, 2, 6, 2),
                     Margin = new Thickness(6, 0, 0, 0),
                     Child = new TextBlock {
-                        Text = "📁 INSTALADO",
-                        Foreground = Brushes.White,
+                        Text = "INSTALADO",
+                        Foreground = new SolidColorBrush(Color.FromRgb(167, 243, 208)),
                         FontSize = 10,
-                        FontWeight = FontWeights.Bold
+                        FontWeight = FontWeights.SemiBold
                     }
                 };
                 badgeLine.Children.Add(instBadge);
@@ -805,7 +911,7 @@ namespace PortsPCLauncher {
             // Bottom snippet
             var reqSnippet = new TextBlock {
                 Text = item.requires,
-                Foreground = new SolidColorBrush(Color.FromRgb(148, 163, 184)),
+                Foreground = new SolidColorBrush(TextMuted),
                 FontSize = 11,
                 TextTrimming = TextTrimming.CharacterEllipsis,
                 MaxHeight = 16
@@ -817,14 +923,14 @@ namespace PortsPCLauncher {
             // Hover & Selection handlers
             border.MouseEnter += (s, e) => {
                 if (selectedGame == null || selectedGame.id != item.id) {
-                    border.BorderBrush = new SolidColorBrush(Color.FromRgb(79, 70, 229));
-                    border.Background = new SolidColorBrush(Color.FromRgb(24, 32, 47));
+                    border.BorderBrush = new SolidColorBrush(BorderHover);
+                    border.Background = new SolidColorBrush(BgControl);
                 }
             };
             border.MouseLeave += (s, e) => {
                 if (selectedGame == null || selectedGame.id != item.id) {
-                    border.BorderBrush = new SolidColorBrush(Color.FromRgb(31, 41, 55));
-                    border.Background = new SolidColorBrush(Color.FromRgb(17, 24, 39));
+                    border.BorderBrush = new SolidColorBrush(BorderSubtle);
+                    border.Background = new SolidColorBrush(BgSurface);
                 }
             };
             border.MouseLeftButtonUp += (s, e) => {
@@ -834,47 +940,54 @@ namespace PortsPCLauncher {
             return border;
         }
 
+        private Color GetPtbrDotColor(string ptStatus) {
+            ptStatus = ptStatus ?? "";
+            if (ptStatus.IndexOf("Dublad", StringComparison.OrdinalIgnoreCase) >= 0) return AccentGreen;
+            if (ptStatus.IndexOf("Nativo", StringComparison.OrdinalIgnoreCase) >= 0) return AccentGreen;
+            if (ptStatus.IndexOf("Mod", StringComparison.OrdinalIgnoreCase) >= 0) return AccentSky;
+            if (ptStatus.IndexOf("Tradução", StringComparison.OrdinalIgnoreCase) >= 0 || ptStatus.IndexOf("ISO", StringComparison.OrdinalIgnoreCase) >= 0) return AccentAmber;
+            return TextMuted;
+        }
+
         private Border CreatePtbrBadge(string ptStatus) {
             ptStatus = ptStatus ?? "";
-            Color bg = Color.FromRgb(51, 65, 85); // Slate fallback
-            Color fg = Colors.White;
-            string text = ptStatus;
+            Color dotColor = GetPtbrDotColor(ptStatus);
+            Color fg = (dotColor == TextMuted) ? TextSecondary : TextPrimary;
 
-            if (ptStatus.IndexOf("Dublad", StringComparison.OrdinalIgnoreCase) >= 0) {
-                bg = Color.FromRgb(5, 150, 105); // Emerald Green
-                text = "🎙️ " + ptStatus;
-            } else if (ptStatus.IndexOf("Nativo", StringComparison.OrdinalIgnoreCase) >= 0) {
-                bg = Color.FromRgb(16, 185, 129);
-                text = "🟢 " + ptStatus;
-            } else if (ptStatus.IndexOf("Mod", StringComparison.OrdinalIgnoreCase) >= 0) {
-                bg = Color.FromRgb(2, 132, 199); // Sky Blue
-                text = "🧩 " + ptStatus;
-            } else if (ptStatus.IndexOf("Tradução", StringComparison.OrdinalIgnoreCase) >= 0 || ptStatus.IndexOf("ISO", StringComparison.OrdinalIgnoreCase) >= 0) {
-                bg = Color.FromRgb(217, 119, 6); // Amber
-                text = "🛠️ " + ptStatus;
-            }
+            var row = new StackPanel { Orientation = Orientation.Horizontal };
+            row.Children.Add(new Ellipse {
+                Width = 6,
+                Height = 6,
+                Fill = new SolidColorBrush(dotColor),
+                VerticalAlignment = VerticalAlignment.Center,
+                Margin = new Thickness(0, 0, 6, 0)
+            });
+            row.Children.Add(new TextBlock {
+                Text = ptStatus,
+                Foreground = new SolidColorBrush(fg),
+                FontSize = 10,
+                FontWeight = FontWeights.Medium,
+                VerticalAlignment = VerticalAlignment.Center
+            });
 
             return new Border {
-                Background = new SolidColorBrush(bg),
+                Background = new SolidColorBrush(BgControl),
+                BorderBrush = new SolidColorBrush(BorderSubtle),
+                BorderThickness = new Thickness(1),
                 CornerRadius = new CornerRadius(4),
-                Padding = new Thickness(6, 2, 6, 2),
+                Padding = new Thickness(7, 2, 7, 2),
                 Margin = new Thickness(0, 0, 4, 0),
-                Child = new TextBlock {
-                    Text = text,
-                    Foreground = new SolidColorBrush(fg),
-                    FontSize = 10,
-                    FontWeight = FontWeights.Bold
-                }
+                Child = row
             };
         }
 
         private SolidColorBrush GetPlatformColor(string platform) {
             platform = platform ?? "";
             if (platform.IndexOf("PS", StringComparison.OrdinalIgnoreCase) >= 0) {
-                return new SolidColorBrush(Color.FromRgb(0, 67, 156)); // PlayStation Blue
+                return new SolidColorBrush(Color.FromRgb(23, 37, 84)); // Muted Deep Navy
             }
             if (platform.IndexOf("Xbox", StringComparison.OrdinalIgnoreCase) >= 0) {
-                return new SolidColorBrush(Color.FromRgb(16, 124, 16)); // Xbox Green
+                return new SolidColorBrush(Color.FromRgb(6, 78, 59)); // Muted Deep Emerald
             }
             if (platform.IndexOf("Switch", StringComparison.OrdinalIgnoreCase) >= 0 ||
                 platform.IndexOf("Wii", StringComparison.OrdinalIgnoreCase) >= 0 ||
@@ -882,31 +995,37 @@ namespace PortsPCLauncher {
                 platform.IndexOf("N64", StringComparison.OrdinalIgnoreCase) >= 0 ||
                 platform.IndexOf("SNES", StringComparison.OrdinalIgnoreCase) >= 0 ||
                 platform.IndexOf("NES", StringComparison.OrdinalIgnoreCase) >= 0 ||
-                platform.IndexOf("GBA", StringComparison.OrdinalIgnoreCase) >= 0) {
-                return new SolidColorBrush(Color.FromRgb(220, 38, 38)); // Nintendo Red
+                platform.IndexOf("GBA", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                platform.IndexOf("DS", StringComparison.OrdinalIgnoreCase) >= 0) {
+                return new SolidColorBrush(Color.FromRgb(69, 10, 10)); // Muted Crimson
             }
-            return new SolidColorBrush(Color.FromRgb(124, 58, 237)); // Purple
+            return new SolidColorBrush(BgControl);
         }
 
         private void SelectGame(GameItem game) {
+            GameItem previous = selectedGame;
             selectedGame = game;
-            RenderCards();
+
+            if (previous != null && !string.IsNullOrEmpty(previous.id) && cardBorders.ContainsKey(previous.id)) {
+                var prevBorder = cardBorders[previous.id];
+                prevBorder.Background = new SolidColorBrush(BgSurface);
+                prevBorder.BorderBrush = new SolidColorBrush(BorderSubtle);
+            }
+            if (game != null && !string.IsNullOrEmpty(game.id) && cardBorders.ContainsKey(game.id)) {
+                var currBorder = cardBorders[game.id];
+                currBorder.Background = new SolidColorBrush(BgElevated);
+                currBorder.BorderBrush = new SolidColorBrush(TextPrimary);
+            }
 
             detailTitle.Text = game.name;
-            detailCategory.Text = string.Format("Plataforma: {0} | Categoria: {1}", game.platform, game.category);
+            detailCategory.Text = string.Format("Plataforma: {0}  |  Categoria: {1}", game.platform, game.category);
             detailRequires.Text = game.requires;
             detailPtbrText.Text = game.ptbr_details;
 
             // PT-BR badge
             string pt = game.ptbr_status ?? "";
             detailPtbrBadgeText.Text = pt;
-            if (pt.IndexOf("Dublad", StringComparison.OrdinalIgnoreCase) >= 0) {
-                detailPtbrBadge.Background = new SolidColorBrush(Color.FromRgb(5, 150, 105));
-            } else if (pt.IndexOf("Nativo", StringComparison.OrdinalIgnoreCase) >= 0) {
-                detailPtbrBadge.Background = new SolidColorBrush(Color.FromRgb(16, 185, 129));
-            } else {
-                detailPtbrBadge.Background = new SolidColorBrush(Color.FromRgb(2, 132, 199));
-            }
+            detailPtbrDot.Fill = new SolidColorBrush(GetPtbrDotColor(pt));
 
             btnInstall.IsEnabled = true;
             btnWebsite.IsEnabled = !string.IsNullOrEmpty(game.website);
@@ -914,7 +1033,7 @@ namespace PortsPCLauncher {
 
             if (!string.IsNullOrEmpty(game.ptbr_url)) {
                 btnPtbr.Visibility = Visibility.Visible;
-                btnPtbr.Content = "🇧🇷 Baixar Tradução / Mod PT-BR";
+                btnPtbr.Content = "Baixar Tradução / Mod PT-BR";
             } else {
                 btnPtbr.Visibility = Visibility.Collapsed;
             }
@@ -1088,8 +1207,8 @@ namespace PortsPCLauncher {
 
                 progressBar.IsIndeterminate = false;
                 progressBar.Value = 100;
-                progressStatus.Text = string.Format("✅ Instalação concluída com sucesso em: {0}! Arquivo temporário apagado.", targetDir);
-                progressStatus.Foreground = new SolidColorBrush(Color.FromRgb(52, 211, 153));
+                progressStatus.Text = string.Format("Instalação concluída em: {0}. Arquivo temporário removido.", targetDir);
+                progressStatus.Foreground = new SolidColorBrush(AccentGreen);
 
                 btnOpenFolder.IsEnabled = true;
                 btnInstall.IsEnabled = true;

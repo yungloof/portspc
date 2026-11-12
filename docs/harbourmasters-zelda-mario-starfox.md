@@ -1,4 +1,6 @@
-# 🚢 Guia: Ecossistema HarbourMasters (`libultraship`) no PC
+# Guia: Ecossistema HarbourMasters (`libultraship`) no PC
+
+> **Navegação:** [Catálogo Principal](../README.md) · [Catálogo Web](../index.html) · [Guia PT-BR](guia-traducoes-ptbr.md)
 
 Os projetos da equipe **HarbourMasters** são ports nativos de Nintendo 64 para PC (Windows, Linux/Steam Deck, macOS, Android e Switch) construídos sobre o motor **libultraship**. Eles oferecem:
 - Taxa de quadros destravada (**60 FPS a 240+ FPS** com interpolação nativa)
@@ -13,21 +15,21 @@ Os projetos da equipe **HarbourMasters** são ports nativos de Nintendo 64 para 
 
 ---
 
-## 📋 Tabela Resumo dos Ports HarbourMasters
+## Tabela Resumo dos Ports HarbourMasters
 
 | Port | Jogo Original | ROM Necessária (Limpa) | Status PT-BR | Onde Baixar a Tradução PT-BR |
 | :--- | :--- | :--- | :--- | :--- |
-| **[Ship of Harkinian](https://github.com/HarbourMasters/Shipwright/releases)** | *The Legend of Zelda: Ocarina of Time* | `USA v1.0` / `v1.1` / `v1.2` ou `PAL Debug MQ` (`.z64`) | 🟡 **Mod `.o2r`/`.otr` Completo** | [GameBanana - SoH Translations](https://gamebanana.com/mods/cats/17165) |
-| **[2 Ship 2 Harkinian](https://github.com/HarbourMasters/2ship2harkinian/releases)** | *The Legend of Zelda: Majora's Mask* | `USA v1.0` (`baserom.us.rev0.z64`) | 🟡 **Mod `.o2r`/`.otr` Completo** | [GameBanana - 2S2H Mods](https://gamebanana.com/games/20369) |
-| **[Starship](https://github.com/HarbourMasters/Starship/releases)** | *Star Fox 64* | `USA v1.1 (Rev A)` (`.z64`) | 🟡 **Mod de Texto e Dublagem PT-BR** | [GameBanana - Starship Mods](https://gamebanana.com/games/21291) |
-| **[SpaghettiKart](https://github.com/HarbourMasters/SpaghettiKart/releases)** | *Mario Kart 64* | `USA v1.0` (`.z64`) | ⚪ **Mínimo de texto / Mods de UI** | [GameBanana - SpaghettiKart](https://gamebanana.com/games/21847) |
-| **[Ghostship](https://github.com/HarbourMasters/Ghostship/releases)** | *Super Mario 64* | `USA v1.0` (`baserom.us.z64`) | 🟡 **Mods `.o2r`** *(ou use `sm64coopdx`)* | [GameBanana - Ghostship](https://gamebanana.com/games/21290) |
-| **[Lighthouse](https://github.com/HarbourMasters/Lighthouse/releases)** | *Banjo-Kazooie* | `USA v1.0` (`.z64`) | 🟡 **Suporte a Mods `.o2r`** *(ou use `BanjoRecomp`)* | [GameBanana - Lighthouse](https://gamebanana.com/games/21848) |
-| **[PaperBoat](https://github.com/HarbourMasters/PaperBoat/releases)** | *Paper Mario* | `USA v1.0` (`.z64`) | ⚪ **Em desenvolvimento (WIP)** | [GameBanana - PaperBoat](https://gamebanana.com/games/21849) |
+| **[Ship of Harkinian](https://github.com/HarbourMasters/Shipwright/releases)** | *The Legend of Zelda: Ocarina of Time* | `USA v1.0` / `v1.1` / `v1.2` ou `PAL Debug MQ` (`.z64`) | `Patch PT-BR` **Mod `.o2r`/`.otr` Completo** | [GameBanana - SoH Translations](https://gamebanana.com/mods/cats/17165) |
+| **[2 Ship 2 Harkinian](https://github.com/HarbourMasters/2ship2harkinian/releases)** | *The Legend of Zelda: Majora's Mask* | `USA v1.0` (`baserom.us.rev0.z64`) | `Patch PT-BR` **Mod `.o2r`/`.otr` Completo** | [GameBanana - 2S2H Mods](https://gamebanana.com/games/20369) |
+| **[Starship](https://github.com/HarbourMasters/Starship/releases)** | *Star Fox 64* | `USA v1.1 (Rev A)` (`.z64`) | `Patch PT-BR` **Mod de Texto e Dublagem PT-BR** | [GameBanana - Starship Mods](https://gamebanana.com/games/21291) |
+| **[SpaghettiKart](https://github.com/HarbourMasters/SpaghettiKart/releases)** | *Mario Kart 64* | `USA v1.0` (`.z64`) | `Inglês / Arcade` **Mínimo de texto / Mods de UI** | [GameBanana - SpaghettiKart](https://gamebanana.com/games/21847) |
+| **[Ghostship](https://github.com/HarbourMasters/Ghostship/releases)** | *Super Mario 64* | `USA v1.0` (`baserom.us.z64`) | `Patch PT-BR` **Mods `.o2r`** *(ou use `sm64coopdx`)* | [GameBanana - Ghostship](https://gamebanana.com/games/21290) |
+| **[Lighthouse](https://github.com/HarbourMasters/Lighthouse/releases)** | *Banjo-Kazooie* | `USA v1.0` (`.z64`) | `Patch PT-BR` **Suporte a Mods `.o2r`** *(ou use `BanjoRecomp`)* | [GameBanana - Lighthouse](https://gamebanana.com/games/21848) |
+| **[PaperBoat](https://github.com/HarbourMasters/PaperBoat/releases)** | *Paper Mario* | `USA v1.0` (`.z64`) | `Inglês / Arcade` **Em desenvolvimento (WIP)** | [GameBanana - PaperBoat](https://gamebanana.com/games/21849) |
 
 ---
 
-## 🛠️ Passo a Passo de Instalação (Windows)
+## Passo a Passo de Instalação (Windows)
 
 ### 1. Ship of Harkinian (*Zelda: Ocarina of Time*)
 1. Baixe a última versão para Windows (`SoH-*-Win64.zip`) em [HarbourMasters/Shipwright Releases](https://github.com/HarbourMasters/Shipwright/releases) (ou use o nosso script `Instalar-Ports.bat`).
@@ -63,6 +65,6 @@ Os projetos da equipe **HarbourMasters** são ports nativos de Nintendo 64 para 
 
 ---
 
-## 🐧 Notas para Linux e Steam Deck
+## Notas para Linux e Steam Deck
 - Todos os jogos da HarbourMasters possuem builds nativas para Linux em formato **AppImage** ou **Flatpak** nos links de Releases oficiais.
 - No Steam Deck, basta baixar o `.AppImage`, marcar como executável (`chmod +x`) e adicionar como Jogo Não-Steam. A pasta `mods/` funciona exatamente da mesma maneira que no Windows!
