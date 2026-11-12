@@ -939,25 +939,31 @@ namespace PortsPCLauncher {
                 ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
 
                 string apiUrl = string.Format("https://api.github.com/repos/{0}/releases/latest", selectedGame.github_repo);
-                string json = "";
+                var serializer = new JavaScriptSerializer();
+                Dictionary<string, object> release = null;
 
                 using (var web = new WebClient()) {
                     web.Headers["User-Agent"] = "PortsPC-Launcher";
+                    bool tryPreRelease = false;
                     try {
-                        json = await web.DownloadStringTaskAsync(apiUrl);
+                        string json = await web.DownloadStringTaskAsync(apiUrl);
+                        release = serializer.Deserialize<Dictionary<string, object>>(json);
                     } catch {
-                        // fallback to website
-                        progressStatus.Text = "Este projeto não possui binários automáticos no GitHub. Abrindo o site oficial no navegador...";
-                        Process.Start(selectedGame.website);
-                        btnInstall.IsEnabled = true;
-                        return;
+                        tryPreRelease = true;
+                    }
+                    if (tryPreRelease) {
+                        try {
+                            string preUrl = string.Format("https://api.github.com/repos/{0}/releases?per_page=1", selectedGame.github_repo);
+                            string preJson = await web.DownloadStringTaskAsync(preUrl);
+                            var preList = serializer.Deserialize<System.Collections.ArrayList>(preJson);
+                            if (preList != null && preList.Count > 0) {
+                                release = preList[0] as Dictionary<string, object>;
+                            }
+                        } catch { }
                     }
                 }
 
-                var serializer = new JavaScriptSerializer();
-                var release = serializer.Deserialize<Dictionary<string, object>>(json);
-
-                if (!release.ContainsKey("assets")) {
+                if (release == null || !release.ContainsKey("assets")) {
                     progressStatus.Text = "Nenhuma release pronta identificada. Abrindo página oficial no navegador...";
                     Process.Start(selectedGame.website);
                     btnInstall.IsEnabled = true;

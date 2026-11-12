@@ -67,6 +67,11 @@ Entre 2025 e 2026, a cena de **Recompilação Estática** explodiu no **Xbox 360
 | **Mortal Kombat vs. DC Universe** | [**MKVDCU-Recomp** (`KawaiiBunga/MKVDCU-Recomp`)](https://github.com/KawaiiBunga/MKVDCU-Recomp) | ✅ **Jogável (Release v0.2.1)** | 🟡 Possui tradução PT-BR |
 | **Tony Hawk's Project 8** | [**Project8Recomp** (`theokyr/Project8Recomp`)](https://github.com/theokyr/Project8Recomp) | ✅ **Jogável (Release v0.3.0)** | ⚪ Em inglês |
 | **The Simpsons Game (2007)** | [**TheSimpsonsGameRecomp** (`YesterMester`)](https://github.com/YesterMester/TheSimpsonsGameRecomp) | 🚧 **Em desenvolvimento** | 🟢 Possui tradução PT-BR na comunidade Xbox 360 |
+| **Grand Theft Auto V (Xbox 360 TU27)** | [**gtav-recomp** (`andrewnakas/gtav-recomp`)](https://github.com/andrewnakas/gtav-recomp) | ✅ **Jogável (`ReXGlue` v0.3.0)** — Windows, Linux, macOS | 🟢 **Legendas Oficiais em PT-BR** |
+| **Ninja Gaiden II (2008)** | [**ng2recomp** (`gamboozino/ng2recomp`)](https://github.com/gamboozino/ng2recomp) | ✅ **Jogável (`v0.5.67` Vulkan)** — 60 FPS cravados, 8x, Mouse/Teclado | ⚪ Em inglês |
+| **Dragon Age: Origins** | [**Dragon-Age-Origins-Recomp** (`96dot`)](https://github.com/96dot/Dragon-Age-Origins-Recomp) | ✅ **Jogável (`v1.0.0-dev.5`)** | 🛠️ **Tradução PT-BR** (*Avengers of Balduran / Nasher*) |
+| **Marvel: Ultimate Alliance 1 & 2 / SSF2T HD Remix** | [**marvel-ultimate-alliance-bundle**](https://github.com/saulob/marvel-ultimate-alliance-bundle-recompiled) / [**ssf2t-hd-remix**](https://github.com/saulob/ssf2t-hd-remix-recompiled) | ✅ **Jogáveis (`saulob`)** — 4K, Ultrawide, Launcher TRG | ⚪ Em inglês (MUA tem PT-BR no PC) |
+| **WWE 2K14, DOAX2 & Naruto: The Broken Bond** | [**wwe2k14-recomp**](https://github.com/PromethenDev/wwe2k14-recomp) / [**DOAX2-Recomp**](https://github.com/hibikifukui22/Dead-or-Alive-Xtreme-2-Recompilation) / [**broken-bond-recomp**](https://github.com/jorjbarbosa/broken-bond-recomp) | ✅ **Jogáveis (Releases Windows)** | ⚪ Em inglês |
 | **Grand Theft Auto IV (360)** | [**Theft4** (`KoreanSeats1/Theft4`)](https://github.com/KoreanSeats1/Theft4) | 🚧 **Em desenvolvimento** | 🟢 Tradução PT-BR completa disponível |
 
 ---
@@ -88,6 +93,10 @@ Entre 2025 e 2026, a cena de **Recompilação Estática** explodiu no **Xbox 360
 | **Midtown Madness 3** | [**midtown-madness-3-PC-Native** (`lakshya16157`)](https://github.com/lakshya16157/midtown-madness-3-PC-Native) | ✅ **Jogável** — D3D11 no Windows | ⚪ Em inglês |
 | **RalliSport Challenge 2** | [**RallisportChallenge2-decomp** (`Mortify7612`)](https://github.com/Mortify7612/RallisportChallenge2-decomp) | ✅ **Jogável** — Vulkan no Windows/Linux | ⚪ Corrida |
 | **X-Men Legends** | [**OpenXML1xbox** (`GTTeancum/OpenXML1xbox`)](https://github.com/GTTeancum/OpenXML1xbox) | ✅ **Jogável (Release v0.9.1b)** | 🟡 Possui tradução PT-BR |
+| **Conker: Live & Reloaded** | [**Conker-Recomped-and-Reloaded** (`Mabec-games`)](https://github.com/Mabec-games/Conker-Recomped-and-Reloaded) | ✅ **Jogável (`v1.4.2`)** — Até 240 FPS, Widescreen e Online | 🛠️ **Tradução e Dublagem PT-BR** (*joaohrs2*) |
+| **Panzer Dragoon Orta & Futurama (2003)** | [**OrtaRecomp** (`wootbeer/ortarecomp`)](https://github.com/wootbeer/ortarecomp) / [**Futurama-Recomp** (`hiburn8`)](https://github.com/hiburn8/Futurama-The-Game-The-Recomp) | ✅ **Jogáveis (`v0.1.3` / `v1.8.0`)** | ⚪ Em inglês |
+| **007: Nightfire, Everything or Nothing & Agent Under Fire** | [**nightfire-recomp**](https://github.com/hk21x/nightfire-recomp) / [**007eon-recomp**](https://github.com/hk21x/007eon-recomp) / [**007-agentunderfire**](https://github.com/hk21x/007-agentunderfire-recomp) | ✅ **Jogáveis (Releases Windows `hk21x`)** | ⚪ Em inglês |
+| **Project Gotham Racing 1 & Forza Motorsport (2005)** | [**pgr1-recomp** (`hk21x`)](https://github.com/hk21x/pgr1-recomp) / [**redline-recompiled** (`DivxPlays`)](https://github.com/DivxPlays/redline-recompiled) | ✅ **Jogáveis (Forza 1 com até 144 FPS/DLSS)** | ⚪ Corrida |
 | **Ninja Gaiden Black** | [**ngbrecomp** (`gamboozino/ngbrecomp`)](https://github.com/gamboozino/ngbrecomp) | 🚧 **Em desenvolvimento** | ⚪ Em inglês |
 | **SSX Tricky** | [**OpenTricky** (`GiZcesi/OpenTricky`)](https://github.com/GiZcesi/OpenTricky) | 🚧 **Em desenvolvimento** | ⚪ Em inglês |
 | **Spider-Man 2 (Console Version)** | [**SM2-Recomp** (`SirSymo/SM2-Recomp`)](https://github.com/SirSymo/SM2-Recomp) | 🚧 **Em desenvolvimento** (O verdadeiro Spider-Man 2 de consoles no PC!) | 🟡 Possui tradução PT-BR na versão PS2/GC |
