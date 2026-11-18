@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cat%C3%A1logo-508%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="508 Jogos Catalogados">
+  <img src="https://img.shields.io/badge/Cat%C3%A1logo-509%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="509 Jogos Catalogados">
   <img src="https://img.shields.io/badge/Plataformas-Windows%20%26%20Linux-18181b?style=flat-square&labelColor=09090b" alt="Windows e Linux">
   <img src="https://img.shields.io/badge/Launcher-PortsPC.exe%20(43%20KB)-10b981?style=flat-square&labelColor=09090b" alt="PortsPC.exe 43 KB">
   <img src="https://img.shields.io/badge/Localiza%C3%A7%C3%A3o-Guia%20PT--BR-18181b?style=flat-square&labelColor=09090b" alt="Guia PT-BR">
 </p>
 
 <p align="center">
-  Catálogo comunitário com <strong>508 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
+  Catálogo comunitário com <strong>509 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
 </p>
 
 > **Economia de Espaço em Disco:** Este repositório ocupa menos de **2 MB** no disco. O launcher **`PortsPC.exe`** baixa apenas o port selecionado direto do GitHub para `F:\Jogos\PortsPC\<Jogo>`, extrai os arquivos e **apaga o `.zip` temporário imediatamente**.
@@ -53,7 +53,7 @@
 
 ---
 
-# Tabela Mestra Completa (508 Jogos Catalogados)
+# Tabela Mestra Completa (509 Jogos Catalogados)
 
 ## 1. PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (109 jogos)
 
@@ -311,7 +311,7 @@
 
 ---
 
-## 3. GameCube, Wii, Wii U & Nintendo Switch 1/2 (56 jogos)
+## 3. GameCube, Wii, Wii U & Nintendo Switch 1/2 (57 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -343,6 +343,7 @@
 | **Luigi's Mansion** | [**Luigi's Mansion Recompiled (GameCube PC)**](https://github.com/rob646464/luigis-mansion-recompiled) | `GameCube` | `Patch PT-BR` **Tradução e Dublagem PT-BR na ISO!** | Compatível com a ISO traduzida e dublada em PT-BR de Luigi's Mansion de GameCube! ([Link PT-BR](https://github.com/rob646464/luigis-mansion-recompiled/releases)) |
 | **Kirby's Return to Dream Land** | [**Kirby Wii Recomp (Kirby's Return to Dream Land PC)**](https://github.com/ExpansionPak/ModernGekko) | `Wii` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Suporta Co-op local para 4 jogadores a 60+ FPS em 4K. ([Link PT-BR](https://github.com/ExpansionPak/ModernGekko/releases)) |
 | **Pokémon: Let's Go, Pikachu! / Let's Go, Eevee!** | [**Let's Go Recomp (Pokémon: Let's Go, Pikachu! & Eevee! PC)**](https://github.com/raulzrrs/letsgo-recomp) | `Nintendo Switch` | `Patch PT-BR` **Tradução PT-BR 100% Completa Disponível!** | Recompilação estática nativa para Windows com controles tradicionais e suporte à tradução PT-BR! ([Link PT-BR](https://github.com/raulzrrs/letsgo-recomp/releases)) |
+| **Pokémon Sword / Pokémon Shield** | [**SwSh Recomp (Pokémon Sword & Shield PC Port)**](https://github.com/raulzrrs/swsh-recomp) | `Nintendo Switch` | `Mod PT-BR` **Mod PT-BR Completo (Menus, Itens e História via LayeredFS)** | Recompilação nativa para Windows com 60 FPS, FSR 1, DLAA/SMAA, suporte a controles/mouse e tradução PT-BR na pasta `mods/Traducao PT-BR`. ([Link PT-BR](https://github.com/raulzrrs/swsh-recomp/releases)) |
 | **Super Mario Maker 2** | [**SMM2 Recomp (Super Mario Maker 2 Switch PC Port)**](https://github.com/smm2recomp/smm2recomp) | `Nintendo Switch` | `Patch PT-BR` **Tradução PT-BR Disponível!** | Crie e jogue fases no PC com suporte nativo ao Mouse para edição! ([Link PT-BR](https://github.com/smm2recomp/smm2recomp/releases)) |
 | **Metroid Dread** | [**Metroid Dread Recompiled (Switch Native PC)**](https://github.com/yozander2009-stack/Metroid-Dread-Recomp) | `Nintendo Switch` | `Patch PT-BR` **Tradução e Dublagem PT-BR Completas no GameBanana!** | Compatível com os mods de legendas e dublagem brasileira completa da E.M.M.I. / ADAM no GameBanana! ([Link PT-BR](https://gamebanana.com/games/14373)) |
 | **Eternal Darkness: Sanity's Requiem** | [**Eternal Darkness: Sanity's Requiem Recompiled**](https://github.com/griches/EternalDarknessRecomp) | `GameCube` | `Patch PT-BR` **Tradução PT-BR 100% Completa Disponível!** | Terror psicológico clássico da Silicon Knights nativo no PC com suporte à tradução PT-BR. ([Link PT-BR](https://github.com/griches/EternalDarknessRecomp/releases)) |

@@ -82,6 +82,16 @@ Os projetos baseados no `N64Recomp` suportam mods nativos no formato **`.nrm`** 
 
 ---
 
+### F. Pokémon Sword & Shield Recomp (`SwShRecomp`)
+* Baixe ou extraia o mod de tradução PT-BR (formato RomFS / LayeredFS).
+* Coloque a pasta do mod dentro do diretório do jogo em: `mods/Traducao PT-BR/romfs/`.
+* No arquivo `larecomp.ini` (ou pelo menu F12 dentro do jogo), defina:
+  ```ini
+  fps = 60
+  mod = Traducao PT-BR
+  ```
+* O recompiler carrega automaticamente os arquivos traduzidos de diálogos, itens e menus da pasta `romfs` e executa o jogo liso a 60 FPS com anti-aliasing e FSR.
+
 ## 3. Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
 
 ### A. Recompilações de PS2 (`PS2Recomp`) — *God of War 1 & 2, Shadow of the Colossus, Urban Reign, Burnout 3*
