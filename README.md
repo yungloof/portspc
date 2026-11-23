@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cat%C3%A1logo-511%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="511 Jogos Catalogados">
+  <img src="https://img.shields.io/badge/Cat%C3%A1logo-551%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="551 Jogos Catalogados">
   <img src="https://img.shields.io/badge/Plataformas-Windows%20%26%20Linux-18181b?style=flat-square&labelColor=09090b" alt="Windows e Linux">
   <img src="https://img.shields.io/badge/Launcher-PortsPC.exe%20(43%20KB)-10b981?style=flat-square&labelColor=09090b" alt="PortsPC.exe 43 KB">
   <img src="https://img.shields.io/badge/Localiza%C3%A7%C3%A3o-Guia%20PT--BR-18181b?style=flat-square&labelColor=09090b" alt="Guia PT-BR">
 </p>
 
 <p align="center">
-  Catálogo comunitário com <strong>511 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
+  Catálogo comunitário com <strong>551 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
 </p>
 
 > **Economia de Espaço em Disco:** Este repositório ocupa menos de **2 MB** no disco. O launcher **`PortsPC.exe`** baixa apenas o port selecionado direto do GitHub para `F:\Jogos\PortsPC\<Jogo>`, extrai os arquivos e **apaga o `.zip` temporário imediatamente**.
@@ -53,9 +53,9 @@
 
 ---
 
-# Tabela Mestra Completa (511 Jogos Catalogados)
+# Tabela Mestra Completa (551 Jogos Catalogados)
 
-## 1. PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (109 jogos)
+## 1. PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (124 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -169,9 +169,25 @@
 | **Battle Arena Toshinden** | [**Battle Arena Toshinden Recomp (PS1 PC Port)**](https://github.com/mstan/BattleArenaToshindenRecomp) | `PS1` | `Inglês / Arcade` **Ação / Luta Arcade (Sem Texto Complexo)** | Recompilação estática de PS1 com widescreen adaptativo opcional, mods de elenco extra e netplay rollback para 2 jogadores. ([Link](https://github.com/mstan/BattleArenaToshindenRecomp)) |
 | **Monster Hunter Freedom Unite** | [**Monster Hunter Freedom Unite Recomp (PSP)**](https://github.com/PateeerQ/FreedomUniteRecomp) | `PSP` | `Patch PT-BR` **Compatível com Tradução PT-BR Completa (Comunidade PSP!)** | Port nativo para Windows, Linux e Android com suporte a multiplayer cross-platform. A ISO de PSP conta com tradução PT-BR de menus, missões e equipamentos. ([Link](https://github.com/PateeerQ/FreedomUniteRecomp)) |
 
+| **Gravity Rush 2** | [**GR2port (Gravity Rush 2 PS4 Native PC Port)**](https://github.com/junminlee2004/GR2port) | `PS4` | `Nativo PT-BR` **100% Nativo Oficial (Legendas e Menus em PT-BR pela Sony!)** | Port nativo de Gravity Rush 2 (PS4) para PC a 60+ FPS; o jogo original da Sony já inclui localização oficial completa em Português Brasileiro! ([Link](https://github.com/junminlee2004/GR2port/releases)) |
+| **Killzone 2** | [**Project Pyrrhus (Killzone 2 PS3 Static Recomp)**](https://github.com/undecuple/project-pyrrhus) | `PS3` | `Patch PT-BR` **Português Oficial no Disco / Patch PT-BR** | Recompilação estática nativa de Killzone 2 (PS3) para PC com suporte a Mouse/Teclado e alta taxa de quadros. ([Link](https://github.com/undecuple/project-pyrrhus)) |
+| **Killzone 3** | [**Project Helghast (Killzone 3 PS3 Static Recomp)**](https://github.com/undecuple/project-helghast) | `PS3` | `Dublado PT-BR` **100% Nativo Oficial (Dublado e Legendado em PT-BR pela Sony!)** | Recompilação estática nativa de Killzone 3 (PS3) para PC; inclui dublagem e legendas oficiais em Português Brasileiro no disco! ([Link](https://github.com/undecuple/project-helghast)) |
+| **Resistance: Fall of Man** | [**Resistance: Fall of Man Recomp (PS3 PC Port D3D12 + DLSS)**](https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp) | `PS3` | `Nativo PT-BR` **Português Oficial no Disco** | Port nativo para Windows via recompilação estática de Resistance: Fall of Man (PS3), com renderizador Direct3D 12, NVIDIA DLSS e mira nativa em Mouse/Teclado. ([Link](https://github.com/miroslavdanutalexandru-alt/Resistance-Fall-of-Man-Recomp/releases)) |
+| **Ratchet & Clank Future: A Crack in Time** | [**RACiT (Ratchet & Clank: A Crack in Time PS3 PC Recomp)**](https://github.com/HighDrexler/RACiT) | `PS3` | `Patch PT-BR` **Português / Tradução da Comunidade** | Recompilação estática nativa de Ratchet & Clank Future: A Crack in Time (PS3) para PC. ([Link](https://github.com/HighDrexler/RACiT/releases)) |
+| **Formula One Championship Edition** | [**F1 CE PS3 Recomp (Formula One Championship Edition PC)**](https://github.com/mauricristiano95-hub/F1_CE_PS3) | `PS3` | `Nativo PT-BR` **Português Oficial no Disco (Narração e Menus)** | Recompilação estática nativa do clássico F1 Championship Edition (PS3) para PC. ([Link](https://github.com/mauricristiano95-hub/F1_CE_PS3/releases)) |
+| **Gran Turismo 3: A-Spec** | [**GT3 PC Enhanced (Gran Turismo 3: A-Spec Native PC)**](https://github.com/Silentwarior112/GT3-PC-ENHANCED) | `PS2` | `Patch PT-BR` **Tradução PT-BR Disponível na ISO** | Port nativo aprimorado de Gran Turismo 3: A-Spec (PS2) para PC com widescreen nativo, 60+ FPS e suporte a volantes modernos. ([Link](https://github.com/Silentwarior112/GT3-PC-ENHANCED/releases)) |
+| **Fatal Frame (Project Zero)** | [**Himuro (Fatal Frame / Project Zero 1 PS2 Recomp)**](https://github.com/Mikompilation/Himuro) | `PS2` | `Patch PT-BR` **Tradução PT-BR Completa Disponível na ISO!** | Recompilação estática nativa de Fatal Frame 1 (PS2) para PC; compatível com a ISO traduzida em Português Brasileiro. ([Link](https://github.com/Mikompilation/Himuro/releases)) |
+| **King's Field: The Ancient City (King's Field IV)** | [**Holyland / KFIV-PC (King's Field IV: The Ancient City)**](https://github.com/Voicedrew11/holyland) | `PS2` | `Patch PT-BR` **Tradução PT-BR Disponível na ISO** | Recompilação estática nativa do clássico RPG sombrio da FromSoftware (King's Field IV de PS2) para PC a 60 FPS. ([Link](https://github.com/Voicedrew11/holyland/releases)) |
+| **Burnout Dominator** | [**BurnoutDominatorReversed (Burnout Dominator PS2 PC)**](https://github.com/literalynn/BurnoutDominatorReversed) | `PS2` | `Patch PT-BR` **Tradução PT-BR Disponível na ISO** | Descompilação e port nativo para PC de Burnout Dominator (PS2). ([Link](https://github.com/literalynn/BurnoutDominatorReversed/releases)) |
+| **Vagrant Story** | [**VS-NativePort (Vagrant Story PS1 Native PC Port)**](https://github.com/JEschete/VS-NativePort) | `PS1` | `Patch PT-BR` **Tradução PT-BR Completa Disponível na ISO!** | Port nativo de Vagrant Story (PS1) para PC com alta resolução e compatibilidade com a ISO traduzida em PT-BR. ([Link](https://github.com/JEschete/VS-NativePort/releases)) |
+| **Breath of Fire IV** | [**BoF4 Recomp (Breath of Fire IV PS1 Static Recomp)**](https://github.com/plaught-armor/bof4-recomp) | `PS1` | `Patch PT-BR` **Tradução PT-BR 100% Completa Disponível na ISO!** | Recompilação estática nativa de Breath of Fire IV (PS1) para PC, compatível com a clássica tradução PT-BR. ([Link](https://github.com/plaught-armor/bof4-recomp/releases)) |
+| **Shadow Tower** | [**ReShadowTower (Shadow Tower PS1 Native PC Port)**](https://github.com/JFryy/reshadowtower) | `PS1` | `Patch PT-BR` **Tradução PT-BR Disponível na ISO** | Recompilação e port nativo para PC do clássico RPG em primeira pessoa Shadow Tower (PS1) da FromSoftware. ([Link](https://github.com/JFryy/reshadowtower/releases)) |
+| **R4: Ridge Racer Type 4** | [**RidgeRacerType4Remaster (R4: Ridge Racer Type 4 PC)**](https://github.com/tetrisgm/RidgeRacerType4Remaster) | `PS1` | `Inglês / Arcade` **Corrida Arcade / Menus em Inglês** | Recompilação estática nativa de R4: Ridge Racer Type 4 (PS1) para PC a 60 FPS e widescreen sem distorção de texturas. ([Link](https://github.com/tetrisgm/RidgeRacerType4Remaster/releases)) |
+| **Vigilante 8** | [**Vigilante 8 Recomp (PS1 Native PC Port)**](https://github.com/GTTeancum/Vigilante-8-recomp) | `PS1` | `Inglês / Arcade` **Combate Veicular Arcade** | Recompilação estática nativa do clássico de combate veicular Vigilante 8 (PS1) para PC. ([Link](https://github.com/GTTeancum/Vigilante-8-recomp/releases)) |
+
 ---
 
-## 2. Xbox 360 & Xbox Clássico (`XenonRecomp`, `ReXGlue` & `XBERecomp`) (133 jogos)
+## 2. Xbox 360 & Xbox Clássico (`XenonRecomp`, `ReXGlue` & `XBERecomp`) (144 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -309,9 +325,21 @@
 | **Project Gotham Racing** | [**Project Gotham Racing 1 Recomp (Xbox)**](https://github.com/hk21x/pgr1-recomp) | `Xbox Clássico` | `Inglês / Arcade` **Corrida / Menus Simples em Inglês** | Recompilação nativa para Windows do primeiro Project Gotham Racing da Bizarre Creations. ([Link](https://github.com/hk21x/pgr1-recomp)) |
 | **Forza Motorsport (2005)** | [**Redline Recompiled (Forza Motorsport 2005 Xbox)**](https://github.com/DivxPlays/redline-recompiled) | `Xbox Clássico` | `Inglês / Arcade` **Corrida / Menus em Inglês** | Port estático experimental (alpha) do primeiro Forza Motorsport com até 144 FPS, 4x resolução, ultrawide, DLSS e FSR. ([Link](https://github.com/DivxPlays/redline-recompiled)) |
 
+| **Grand Theft Auto VI (Leonida Recomp)** | [**Leonida (Grand Theft Auto VI Xbox Series Static Recomp)**](https://github.com/ItsNotRexed/Leonida) | `Xbox Series X|S` | `Nativo PT-BR` **100% Nativo Oficial (Legendas e Interface em PT-BR pela Rockstar!)** | Projeto de recompilação estática nativa para Windows x64 da versão Xbox de Grand Theft Auto 6 pelo criador do Hookshot (`ItsNotRexed`). ([Link](https://github.com/ItsNotRexed/Leonida)) |
+| **Metal Gear Rising: Revengeance** | [**Zandatsu (Metal Gear Rising: Revengeance Xbox 360 Recomp)**](https://github.com/dfdx047/Zandatsu) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Completa Disponível (Tribo Gamer)** | Recompilação estática nativa de Metal Gear Rising: Revengeance (Xbox 360) com suporte a 120+ FPS, Ultrawide e tradução PT-BR. ([Link](https://github.com/dfdx047/Zandatsu/releases)) |
+| **Shadow the Hedgehog** | [**ShadowRecomp (Shadow the Hedgehog Native PC Port)**](https://github.com/FoxWorkshop/ShadowRecomp) | `Xbox` | `Mod PT-BR` **Mod de Tradução PT-BR Disponível!** | Recompilação estática nativa da versão Xbox de Shadow the Hedgehog para PC a 60+ FPS e Widescreen 16:9/21:9. ([Link](https://github.com/FoxWorkshop/ShadowRecomp/releases)) |
+| **Predator: Concrete Jungle** | [**Concrete-Jungle-PC (Predator: Concrete Jungle Xbox Recomp)**](https://github.com/Adolini1715/Concrete-Jungle-PC) | `Xbox` | `Inglês / Arcade` **Ação / Menus em Inglês** | Recompilação estática nativa do clássico Predator: Concrete Jungle (Xbox) para Windows x64. ([Link](https://github.com/Adolini1715/Concrete-Jungle-PC/releases)) |
+| **Dead or Alive 2 Ultimate** | [**doa2u-re (Dead or Alive 2 Ultimate Xbox Static Recomp)**](https://github.com/NoRain211/doa2u-re) | `Xbox` | `Inglês / Arcade` **Luta Arcade (60 FPS Nativo)** | Port nativo para Windows de Dead or Alive 2 Ultimate (Xbox) construído por recompilação estática. ([Link](https://github.com/NoRain211/doa2u-re/releases)) |
+| **Army of Two: The Devil's Cartel** | [**ArmyOfTwoTDC-Recomp (Army of Two: The Devil's Cartel PC)**](https://github.com/BrewSparrow/ArmyOfTwoTDC-Recomp) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Disponível (Xbox 360 BR)** | Recompilação estática nativa de Army of Two: The Devil's Cartel (Xbox 360) para PC. ([Link](https://github.com/BrewSparrow/ArmyOfTwoTDC-Recomp/releases)) |
+| **Battlefield: Bad Company** | [**Battlefield: Bad Company 1 Recomp (Xbox 360 Native PC)**](https://github.com/solidussnake95/battlefield-bad-company-xbox360-recomp-) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Disponível** | Traz o primeiro Battlefield: Bad Company (exclusivo de consoles) nativamente para Windows via recompilação estática do Xbox 360! ([Link](https://github.com/solidussnake95/battlefield-bad-company-xbox360-recomp-/releases)) |
+| **Afro Samurai** | [**AfroSamuraiRecomp (Afro Samurai Xbox 360 Native PC)**](https://github.com/LomoXSoft/AfroSamuraiRecomp) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Disponível (Xbox 360 BR)** | Recompilação estática nativa do hack-and-slash exclusivo de consoles Afro Samurai (Xbox 360) para PC. ([Link](https://github.com/LomoXSoft/AfroSamuraiRecomp/releases)) |
+| **Trials HD** | [**TrialsHD-Recomp (Trials HD Xbox 360 Native PC)**](https://github.com/trev82usa/TrialsHD-Recomp) | `Xbox 360` | `Inglês / Arcade` **Arcade / Física de Motos** | Recompilação estática nativa de Trials HD (Xbox 360) para Windows x64. ([Link](https://github.com/trev82usa/TrialsHD-Recomp/releases)) |
+| **UFC Undisputed 3** | [**UFC3MONS (UFC Undisputed 3 Xbox 360 Native PC Port)**](https://github.com/monscriser/UFC3MONS) | `Xbox 360` | `Inglês / Arcade` **Esporte / Luta MMA (Menus Simples)** | Recompilação estática nativa do aclamado UFC Undisputed 3 (com modo PRIDE) de Xbox 360 para PC. ([Link](https://github.com/monscriser/UFC3MONS/releases)) |
+| **WWE 2K16** | [**WWE 2K16 Recomp (Xbox 360 Native PC Port)**](https://github.com/itsbybanshee/wwe2k16-pc) | `Xbox 360` | `Inglês / Arcade` **Luta Arcade / Menus em Inglês** | Recompilação estática nativa da versão Xbox 360 de WWE 2K16 para PC. ([Link](https://github.com/itsbybanshee/wwe2k16-pc/releases)) |
+
 ---
 
-## 3. GameCube, Wii, Wii U & Nintendo Switch 1/2 (57 jogos)
+## 3. GameCube, Wii, Wii U & Nintendo Switch 1/2 (68 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -374,6 +402,15 @@
 | **Resident Evil: The Umbrella Chronicles** | [**REUC Recomp (Resident Evil: The Umbrella Chronicles PC)**](https://github.com/solleo95/reuc-recomp) | `Wii` | `Patch PT-BR` **Compatível com Tradução PT-BR (Lobo Nintendista — Mod NTSC-U)** | Port nativo impressionante com FPS destravado, mira com mouse, DLSS/FSR 3.1 + Frame Generation, sombras Ray-Traced, HDR, co-op online e mods. Possui tradução PT-BR completa de Wii por Lobo Nintendista. ([Link](https://github.com/solleo95/reuc-recomp)) |
 | **Monster Hunter 3 Ultimate** | [**Cha-Cha (Monster Hunter 3 Ultimate Recomp)**](https://github.com/BoyClinton/Cha-Cha) | `Wii U` | `Patch PT-BR` **Em Inglês (Sem Tradução PT-BR)** | Recompilação estática nativa para Windows, Linux e Android. ([Link](https://github.com/BoyClinton/Cha-Cha)) |
 
+| **Pokémon Scarlet / Pokémon Violet** | [**Tera Recomp (Pokémon Scarlet & Violet PC Port)**](https://github.com/raulzrrs/Tera-recomp) | `Nintendo Switch` | `Mod PT-BR` **Mod PT-BR Completo Disponível (LayeredFS)** | Recompilação estática nativa ARM64 -> Windows x64 por `raulzrrs` (mesmo autor do SwSh Recomp e Let's Go Recomp), compatível com os mods LayeredFS de tradução PT-BR. ([Link](https://github.com/raulzrrs/Tera-recomp)) |
+| **Bayonetta 3** | [**Witch-Time & B3-Express (Bayonetta 3 PC Recomp)**](https://github.com/Zexyen/Witch-Time) | `Nintendo Switch` | `Mod PT-BR` **Mod PT-BR Completo Disponível (LayeredFS)** | Recompilação estática nativa de Bayonetta 3 v1.2.0 para PC com renderizador NVN/Vulkan e suporte à tradução PT-BR. ([Link](https://github.com/Zexyen/Witch-Time)) |
+| **Mario & Luigi: Brothership** | [**Brothership Recomp (Mario & Luigi: Brothership PC)**](https://github.com/Coaltergeist/Brothership-Recomp) | `Nintendo Switch` | `Nativo PT-BR` **100% Nativo Oficial (Menus e Diálogos em PT-BR pela Nintendo!)** | Recompilação estática nativa de Mario & Luigi: Brothership para PC; o jogo já conta com localização oficial completa da Nintendo em Português do Brasil! ([Link](https://github.com/Coaltergeist/Brothership-Recomp/releases)) |
+| **Cruis'n Blast** | [**Cruis'n Blast Recomp (Switch Native PC Port)**](https://github.com/darkuni/cruisn-blast-recomp) | `Nintendo Switch` | `Inglês / Arcade` **Corrida Arcade (Menus Simples)** | Recompilação estática nativa do frenético arcade de corrida Cruis'n Blast do Switch para PC. ([Link](https://github.com/darkuni/cruisn-blast-recomp/releases)) |
+| **Tsukihime -A piece of blue glass moon-** | [**Tsukire PC Port (Tsukihime Remake Switch PC)**](https://github.com/Broomstick-Girl-Magical-Amber/tsukire-pc-port) | `Nintendo Switch` | `Mod PT-BR` **Mod PT-BR em Andamento / Visual Novel** | Port nativo para PC via recompilação estática da visual novel Tsukihime Remake da Type-Moon. ([Link](https://github.com/Broomstick-Girl-Magical-Amber/tsukire-pc-port/releases)) |
+| **Sonic and the Black Knight** | [**BlackKnightRecomp (Sonic and the Black Knight PC)**](https://github.com/yunophilia/BlackKnightRecomp) | `Wii` | `Mod PT-BR` **Mod de Tradução PT-BR Disponível!** | Recompilação estática nativa de Sonic and the Black Knight (Wii) para PC com suporte a controles tradicionais sem Wii Remote. ([Link](https://github.com/yunophilia/BlackKnightRecomp/releases)) |
+| **Splatoon (Wii U)** | [**SplatPC (Splatoon 1 Wii U Native PC Port)**](https://github.com/PC-PORTERS/SplatPC-Splatoon-Native-PC-Port) | `Wii U` | `Patch PT-BR` **Patch PT-BR Completa Disponível (Wii U BR)** | Port nativo de Splatoon 1 (Wii U) para PC com suporte a mira por Mouse/Teclado, alta taxa de quadros e tradução PT-BR. ([Link](https://github.com/PC-PORTERS/SplatPC-Splatoon-Native-PC-Port/releases)) |
+| **Super Smash Bros. for Wii U** | [**Smash4PC (Super Smash Bros. for Wii U Recompiled)**](https://github.com/josiahg2502-glitch/Smash4PC) | `Wii U` | `Mod PT-BR` **Mod PT-BR Disponível (Menus e Troféus)** | Recompilação estática nativa de Super Smash Bros. for Wii U para Windows x64. ([Link](https://github.com/josiahg2502-glitch/Smash4PC/releases)) |
+
 ---
 
 ## 4. Ecossistema Harbour Masters (`libultraship`) (8 jogos)
@@ -391,7 +428,7 @@
 
 ---
 
-## 5. Nintendo 64, 3DS, DS, GBA, GBC, SNES, Mega Drive, Saturn & Dreamcast (103 jogos)
+## 5. Nintendo 64, 3DS, DS, GBA, GBC, SNES, Mega Drive, Saturn & Dreamcast (109 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -498,6 +535,13 @@
 | **Mario's Tennis (Virtual Boy)** | [**MarioTennisVirtualBoyRecomp (Com Mod Full-Color)**](https://github.com/mstan/MarioTennisVirtualBoyRecomp) | `Virtual Boy` | `Inglês / Arcade` **Esporte / Menus Simples (Inclui Mod Full Color!)** | Recompilação estática de Virtual Boy via vbrecomp com mod oficial Full-Color (.vbmod) nas releases para jogar em cores! ([Link](https://github.com/mstan/MarioTennisVirtualBoyRecomp/releases)) |
 | **Duck Hunt** | [**DuckHuntNESRecomp (NES com Mira por Mouse)**](https://github.com/mstan/DuckHuntNESRecomp) | `NES` | `Inglês / Arcade` **Arcade Zapper / Mouse Nativo (Sem Texto Complexo)** | Recompilação estática via nesrecomp trazendo Duck Hunt nativamente para Windows com mira direta usando o mouse! ([Link](https://github.com/mstan/DuckHuntNESRecomp)) |
 | **Yoshi's Cookie** | [**YoshisCookieRecomp (NES PC Port)**](https://github.com/mstan/YoshisCookieRecomp) | `NES` | `Inglês / Arcade` **Puzzle Arcade (Sem Texto Complexo)** | Recompilação estática de NES via nesrecomp para Windows x64. ([Link](https://github.com/mstan/YoshisCookieRecomp)) |
+
+| **Super Mario 3D Land** | [**Super Mario 3D Land Recompiled (3DS Native PC Port)**](https://github.com/Okxmir/super-mario-3d-land-recompiled) | `3DS` | `Patch PT-BR` **Tradução PT-BR Completa Disponível (ROM 3DS)** | Recompilação estática nativa de Super Mario 3D Land (3DS) para PC em tela única widescreen, 60 FPS e alta resolução, compatível com a ROM traduzida em PT-BR. ([Link](https://github.com/Okxmir/super-mario-3d-land-recompiled/releases)) |
+| **Metroid: Samus Returns** | [**msr2ds (Metroid: Samus Returns 3DS Native PC Port)**](https://github.com/gminustwo/msr2ds) | `3DS` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Recompilação estática nativa de Metroid: Samus Returns (3DS) para PC sem emulador (pelo autor do PrimeRecomp), compatível com o patch de tradução PT-BR. ([Link](https://github.com/gminustwo/msr2ds/releases)) |
+| **Kirby Super Star** | [**KSSSNESRecomp (Kirby Super Star SNES PC Port)**](https://github.com/mpolizel/KSSSNESRecomp) | `SNES` | `Patch PT-BR` **Tradução PT-BR Completa Disponível na ROM!** | Recompilação estática nativa de Kirby Super Star (SNES) para PC; compatível com a ROM traduzida em PT-BR. ([Link](https://github.com/mpolizel/KSSSNESRecomp)) |
+| **Kirby's Dream Land 3** | [**KirbysDreamLand3Recomp (Kirby's Dream Land 3 SNES PC)**](https://github.com/marciliofilho/KirbysDreamLand3Recomp) | `SNES` | `Patch PT-BR` **Tradução PT-BR Disponível na ROM!** | Recompilação estática nativa de Kirby's Dream Land 3 (SNES) para PC construída com `snesrecomp` e `recomp-ui`. ([Link](https://github.com/marciliofilho/KirbysDreamLand3Recomp)) |
+| **Kirby's Dream Course** | [**kirbysdreamcourse-recomp (Kirby's Dream Course SNES PC)**](https://github.com/alondero/kirbysdreamcourse-recomp) | `SNES` | `Patch PT-BR` **Tradução PT-BR Disponível na ROM** | Recompilação estática nativa de Kirby's Dream Course (SNES) para PC. ([Link](https://github.com/alondero/kirbysdreamcourse-recomp)) |
+| **Jungle Strike (SNES)** | [**Jungle-Strike-SNES-Static-Recomp (Jungle Strike PC)**](https://github.com/Junior-Jones/Jungle-Strike-SNES-Static-Recomp) | `SNES` | `Inglês / Arcade` **Ação / Helicóptero Arcade** | Recompilação estática nativa de Jungle Strike (SNES) para Windows e Linux. ([Link](https://github.com/Junior-Jones/Jungle-Strike-SNES-Static-Recomp/releases)) |
 
 ---
 
