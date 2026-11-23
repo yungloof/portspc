@@ -92,6 +92,11 @@ Os projetos baseados no `N64Recomp` suportam mods nativos no formato **`.nrm`** 
   ```
 * O recompiler carrega automaticamente os arquivos traduzidos de diálogos, itens e menus da pasta `romfs` e executa o jogo liso a 60 FPS com anti-aliasing e FSR.
 
+### G. Kirby and the Forgotten Land Recompiled (`ForgottenLandRecomp`)
+* O projeto `scarxity/kirby-forgotten-land-recompiled` (construído sobre a engine do LAS Recomp) suporta nativamente mods no formato LayeredFS (`mods/<nome>/romfs/...`).
+* Extraia o mod de tradução PT-BR da **PKG Traduções** (e opcionalmente o mod de 60 FPS) dentro da pasta `mods/` do diretório do jogo (ex.: `mods/Traducao PT-BR/romfs/`).
+* Abra o `ForgottenLandLauncher.exe`, acesse a aba **Settings** para ativar os mods e definir a ordem de prioridade, e clique em **Play**.
+
 ## 3. Como Usar ISOs e ROMs Traduzidas no PS2, PS1 e SNES
 
 ### A. Recompilações de PS2 (`PS2Recomp`) — *God of War 1 & 2, Shadow of the Colossus, Urban Reign, Burnout 3*
