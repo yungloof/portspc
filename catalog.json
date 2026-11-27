@@ -3825,18 +3825,18 @@
   },
   {
     "id": "nfsu2-recompiled",
-    "name": "Need for Speed: Underground 1 & 2 Recompiled (pcrecomp)",
-    "game": "Need for Speed: Underground & Underground 2",
+    "name": "nfsu2-recompiled (Need for Speed: Underground 2 Native Recomp)",
+    "game": "Need for Speed: Underground 2 (2004)",
     "platform": "PC",
     "category": "Source Ports de Clássicos",
     "github_repo": "codepdbh/nfsu2-recompiled",
-    "website": "https://github.com/codepdbh/nfsu1-recompiled",
+    "website": "https://github.com/codepdbh/nfsu2-recompiled",
     "asset_regex": ".*(win|windows|x64|nfsu).*\\.(zip|7z)$",
     "windows": true,
     "linux": true,
-    "requires": "Arquivos originais de Need for Speed: Underground 1 ou 2",
+    "requires": "Arquivos originais de Need for Speed: Underground 2 (SPEED2.EXE v1.2 US)",
     "ptbr_status": "100% Compatível com Tradução e Dublagem PT-BR!",
-    "ptbr_details": "Recompilação estática nativa x86-64 com widescreen moderno, suporte a controles e compatível com as traduções PT-BR!",
+    "ptbr_details": "Recompilação estática completa do SPEED2.EXE para código C nativo (Windows e Android ARM64 via pcrecomp + DXVK/Vulkan), com widescreen moderno, suporte a controles e 100% compatível com a tradução e dublagem PT-BR!",
     "ptbr_url": "https://github.com/codepdbh/nfsu2-recompiled/releases"
   },
   {
