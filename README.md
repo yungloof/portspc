@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cat%C3%A1logo-551%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="551 Jogos Catalogados">
+  <img src="https://img.shields.io/badge/Cat%C3%A1logo-563%20Jogos-18181b?style=flat-square&labelColor=09090b" alt="563 Jogos Catalogados">
   <img src="https://img.shields.io/badge/Plataformas-Windows%20%26%20Linux-18181b?style=flat-square&labelColor=09090b" alt="Windows e Linux">
   <img src="https://img.shields.io/badge/Launcher-PortsPC.exe%20(43%20KB)-10b981?style=flat-square&labelColor=09090b" alt="PortsPC.exe 43 KB">
   <img src="https://img.shields.io/badge/Localiza%C3%A7%C3%A3o-Guia%20PT--BR-18181b?style=flat-square&labelColor=09090b" alt="Guia PT-BR">
 </p>
 
 <p align="center">
-  Catálogo comunitário com <strong>551 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
+  Catálogo comunitário com <strong>563 ports nativos de console para PC, recompilações estáticas, descompilações e source ports</strong>, focado em <strong>Windows</strong> e <strong>Linux / Steam Deck</strong> com mapeamento completo de traduções e dublagens em <strong>Português Brasileiro (PT-BR)</strong>.
 </p>
 
 > **Economia de Espaço em Disco:** Este repositório ocupa menos de **2 MB** no disco. O launcher **`PortsPC.exe`** baixa apenas o port selecionado direto do GitHub para `F:\Jogos\PortsPC\<Jogo>`, extrai os arquivos e **apaga o `.zip` temporário imediatamente**.
@@ -53,9 +53,9 @@
 
 ---
 
-# Tabela Mestra Completa (551 Jogos Catalogados)
+# Tabela Mestra Completa (563 Jogos Catalogados)
 
-## 1. PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (124 jogos)
+## 1. PlayStation 4, PlayStation 3, PlayStation 2, PlayStation 1 & PSP (128 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -185,9 +185,14 @@
 | **R4: Ridge Racer Type 4** | [**RidgeRacerType4Remaster (R4: Ridge Racer Type 4 PC)**](https://github.com/tetrisgm/RidgeRacerType4Remaster) | `PS1` | `Inglês / Arcade` **Corrida Arcade / Menus em Inglês** | Recompilação estática nativa de R4: Ridge Racer Type 4 (PS1) para PC a 60 FPS e widescreen sem distorção de texturas. ([Link](https://github.com/tetrisgm/RidgeRacerType4Remaster/releases)) |
 | **Vigilante 8** | [**Vigilante 8 Recomp (PS1 Native PC Port)**](https://github.com/GTTeancum/Vigilante-8-recomp) | `PS1` | `Inglês / Arcade` **Combate Veicular Arcade** | Recompilação estática nativa do clássico de combate veicular Vigilante 8 (PS1) para PC. ([Link](https://github.com/GTTeancum/Vigilante-8-recomp/releases)) |
 
+| **Need for Speed: Hot Pursuit 2 (Edição PS2 Black Box)** | [**nfshp2-port-win (Need for Speed: Hot Pursuit 2 PS2 Black Box no PC!)**](https://github.com/ZloiKILLER/nfshp2-port-win) | `PS2` | `Patch PT-BR` **Tradução PT-BR Disponível!** | Traz a aclamada versão de PS2 da EA Black Box de Need for Speed: Hot Pursuit 2 (muito superior ao port antigo de PC) recompilada nativamente para Windows x64 a 60+ FPS! ([Link](https://github.com/ZloiKILLER/nfshp2-port-win/releases)) |
+| **Need for Speed III: Hot Pursuit (1998)** | [**NFS3 Recompiled (Need for Speed III: Hot Pursuit)**](https://github.com/ZloiKILLER/nfs3recompiled-android) | `PS1 / PC` | `Patch PT-BR` **Tradução PT-BR Disponível (Clássica PC/PS1)** | Recompilação estática e port nativo de Need for Speed III: Hot Pursuit com suporte a alta resolução e widescreen. ([Link](https://github.com/ZloiKILLER/nfs3recompiled-android/releases)) |
+| **Need for Speed: High Stakes (1999)** | [**NFS4 Recomp (Need for Speed: High Stakes PS1 Static Recomp)**](https://github.com/mayhemdotcpp/nfs4-recomp) | `PS1` | `Patch PT-BR` **Tradução PT-BR Disponível** | Recompilação estática nativa da versão PlayStation 1 de Need for Speed: High Stakes (1999) para PC. ([Link](https://github.com/mayhemdotcpp/nfs4-recomp)) |
+| **Need for Speed: Porsche Unleashed (2000)** | [**NFSPU Recomp (Need for Speed: Porsche Unleashed)**](https://github.com/paintenzero/nfspu-recomp) | `PS1 / PC` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Recompilação estática nativa do clássico Need for Speed: Porsche Unleashed (2000) para PC. ([Link](https://github.com/paintenzero/nfspu-recomp)) |
+
 ---
 
-## 2. Xbox 360 & Xbox Clássico (`XenonRecomp`, `ReXGlue` & `XBERecomp`) (144 jogos)
+## 2. Xbox 360 & Xbox Clássico (`XenonRecomp`, `ReXGlue` & `XBERecomp`) (148 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -336,6 +341,11 @@
 | **Trials HD** | [**TrialsHD-Recomp (Trials HD Xbox 360 Native PC)**](https://github.com/trev82usa/TrialsHD-Recomp) | `Xbox 360` | `Inglês / Arcade` **Arcade / Física de Motos** | Recompilação estática nativa de Trials HD (Xbox 360) para Windows x64. ([Link](https://github.com/trev82usa/TrialsHD-Recomp/releases)) |
 | **UFC Undisputed 3** | [**UFC3MONS (UFC Undisputed 3 Xbox 360 Native PC Port)**](https://github.com/monscriser/UFC3MONS) | `Xbox 360` | `Inglês / Arcade` **Esporte / Luta MMA (Menus Simples)** | Recompilação estática nativa do aclamado UFC Undisputed 3 (com modo PRIDE) de Xbox 360 para PC. ([Link](https://github.com/monscriser/UFC3MONS/releases)) |
 | **WWE 2K16** | [**WWE 2K16 Recomp (Xbox 360 Native PC Port)**](https://github.com/itsbybanshee/wwe2k16-pc) | `Xbox 360` | `Inglês / Arcade` **Luta Arcade / Menus em Inglês** | Recompilação estática nativa da versão Xbox 360 de WWE 2K16 para PC. ([Link](https://github.com/itsbybanshee/wwe2k16-pc/releases)) |
+
+| **Need for Speed: Most Wanted (2005 - Xbox 360 Recompiled)** | [**NFSMW-Recompiled (Need for Speed: Most Wanted 2005 Xbox 360 PC)**](https://github.com/madelrandel-blip/NFSMW-Recompiled) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Recompilação estática nativa da versão Xbox 360 de Need for Speed: Most Wanted (2005), trazendo os gráficos e shaders next-gen exclusivos do Xbox 360 para o PC! ([Link](https://github.com/madelrandel-blip/NFSMW-Recompiled/releases)) |
+| **Need for Speed: Carbon (Xbox 360 Version)** | [**Speedbreaker: Carbon (Need for Speed: Carbon Xbox 360 Recomp)**](https://github.com/SpeedBreakerProject/speedbreaker-carbon) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Recompilação estática nativa da edição Xbox 360 de Need for Speed: Carbon para Windows e Linux com gráficos superiores aos do port antigo de PC. ([Link](https://github.com/SpeedBreakerProject/speedbreaker-carbon/releases)) |
+| **Need for Speed: Carbon Collector's Edition** | [**NFS-CARBON-360-RECOMP (NFS Carbon Collector's Edition ReXGlue)**](https://github.com/codepdbh/NFS-CARBON-360-ANDROID-RECOMP) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Completa Disponível!** | Recompilação estática via ReXGlue da Collector's Edition de Need for Speed: Carbon (Xbox 360) para Windows x64 e Android. ([Link](https://github.com/codepdbh/NFS-CARBON-360-ANDROID-RECOMP/releases)) |
+| **Need for Speed: Undercover** | [**nfsuc-recomp (Need for Speed: Undercover Xbox 360 Recomp)**](https://github.com/AliEnes2/nfsuc-recomp) | `Xbox 360` | `Patch PT-BR` **Tradução PT-BR Completa Disponível (Tribo Gamer / GameVicio)** | Port nativo para Windows de Need for Speed: Undercover (Xbox 360) construído por recompilação estática via ReXGlue. ([Link](https://github.com/AliEnes2/nfsuc-recomp)) |
 
 ---
 
@@ -545,7 +555,7 @@
 
 ---
 
-## 6. Source Ports de Clássicos de PC, Arcade & Fangames (99 jogos)
+## 6. Source Ports de Clássicos de PC, Arcade & Fangames (103 jogos)
 
 | Jogo | Port Nativo / Projeto Definitivo | Plataforma | Status PT-BR | Como Ativar / Requisitos |
 | :--- | :--- | :--- | :--- | :--- |
@@ -648,6 +658,11 @@
 | **wc1-re** | [**wc1-re**](https://github.com/neuromancer/wc1-re/releases) | `PC` | `Inglês / Arcade` **Simulador Espacial Clássico / Menus em Inglês** | Wing Commander I reimplementado para sistemas contemporâneos. ([Link PT-BR](https://github.com/neuromancer/wc1-re)) |
 | **F-15 II** | [**F-15 II**](https://github.com/neuviemeporte/f15se2-re/releases) | `DOS` | `Inglês / Arcade` **Simulador Militar de Caça / Pouco Texto** | F-15 Strike Eagle II com combates aéreos clássicos. ([Link PT-BR](https://github.com/neuviemeporte/f15se2-re)) |
 | **Castlevania: Grimoire of Souls** | [**Grimoire of Souls Recomp (PC Native Port)**](https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp) | `PC / Apple Arcade` | `Nativo PT-BR` **100% Nativo Oficial (Menus e Legendas em PT-BR!)** | Traz Castlevania: Grimoire of Souls (exclusivo do Apple Arcade/macOS) nativamente para Windows. O jogo já inclui localização oficial da Konami em Português Brasileiro! ([Link](https://github.com/BLSNCVS/Castlevania-Grimoire-of-Souls-Recomp)) |
+
+| **The Need for Speed: Special Edition (1996)** | [**NFSSE (The Need for Speed: Special Edition 64-bit Port)**](https://github.com/Buyukcaglar/NFSSE) | `PC / DOS / PS1` | `Inglês / Arcade` **Corrida Clássica (Menus Simples)** | Port nativo de 64 bits do primeiro The Need for Speed: Special Edition para Windows modernos, macOS, PS3 e PS Vita. ([Link](https://github.com/Buyukcaglar/NFSSE)) |
+| **Need for Speed II: Special Edition** | [**NFSIISE (Need for Speed II: Special Edition Recompiled)**](https://github.com/zaps166/NFSIISE) | `PC` | `Patch PT-BR` **Tradução PT-BR Disponível / Clássico 1997** | Recompilação estática multiplataforma de Need for Speed II: Special Edition para Windows, Linux e macOS com aceleração OpenGL/Glide, widescreen e 60+ FPS. ([Link](https://github.com/zaps166/NFSIISE/releases)) |
+| **Need for Speed: Underground (2003)** | [**nfsu1-recompiled (Need for Speed: Underground 1 Native Recomp)**](https://github.com/codepdbh/nfsu1-recompiled) | `PC / Console` | `Dublado PT-BR` **Tradução e Dublagem PT-BR 100% Compatíveis!** | Recompilação estática dedicada do primeiro Need for Speed: Underground (2003) para código nativo 64 bits no Windows, Linux e Android. ([Link](https://github.com/codepdbh/nfsu1-recompiled/releases)) |
+| **Need for Speed: Most Wanted Black Edition (2005)** | [**nfsmwpc-recompiled (NFS: Most Wanted 2005 Black Edition x64)**](https://github.com/codepdbh/nfsmwpc-recompiled) | `PC / Console` | `Dublado PT-BR` **Tradução e Dublagem PT-BR 100% Compatíveis!** | Recompilação estática de Need for Speed: Most Wanted (2005) Black Edition para código 64-bit moderno no Windows, Linux, macOS e Android com suporte total à tradução e dublagem PT-BR. ([Link](https://github.com/codepdbh/nfsmwpc-recompiled/releases)) |
 
 ---
 
